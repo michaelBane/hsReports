@@ -1,0 +1,155 @@
+---
+title: "Curious Glimmerroot"
+output:
+  html_document: default
+  html_notebook: default
+---
+
+```{r setup, include=FALSE}
+library(dplyr)
+library(ggplot2)
+library(scales)
+library(tidyr)
+
+hsColors <- c('#FF7D0A', '#ABD473', '#69CCF0', '#F58CBA',
+              '#000000', '#FFF569', '#0070DE', '#9482C9', '#C79C6E')
+
+playDataFine <- read.csv('rawData/glimmerroot_data_withCard_may20th_to_may27th.csv') %>%
+  filter(game_type %in% c('BGT_ARENA',
+                          'BGT_RANKED_STANDARD',
+                          'BGT_RANKED_WILD'),
+         rank <= 20,
+         player_turn <= 15,
+         player_turn > 1) %>%
+  mutate(`rank bucket` = ifelse(rank < 0, 'Arena',
+                        ifelse(rank == 0, 'legend',
+                               ifelse(rank <= 5, '1-5',
+                                      ifelse(rank <= 10, '6-10',
+                                             ifelse(rank <= 15, '11-15',
+                                                    ifelse(rank <= 20, '16-20',
+                                                           'other')))))),
+         game_type = ifelse(game_type == 'BGT_ARENA', 'Arena',
+                            ifelse(game_type == 'BGT_RANKED_WILD', 'Ranked Wild',
+                                   ifelse(game_type == 'BGT_RANKED_STANDARD', 'Ranked Standard',
+                                          'other'))))
+
+playDataFine$`rank bucket` <- factor(playDataFine$`rank bucket`, 
+                                     levels = c('legend', '1-5', '6-10', '11-15', '16-20'))
+
+playData <- playDataFine %>%
+  group_by(game_type, rank, `rank bucket`, opponent_class, player_turn) %>%
+  summarise(num_glimmerroots_played = sum(count), 
+            num_correct_choices = sum(num_correct_choices))
+```
+
+<img class="card-image" src="https://hydra-media.cursecdn.com/hearthstone.gamepedia.com/thumb/b/b9/Curious_Glimmerroot%2855486%29.png/200px-Curious_Glimmerroot%2855486%29.png?version=70fb4eae488ce7b378f987d5c3d19b6e" alt="Curious Glimmerroot" align="right">Hearthstone has always been friendly towards new players, and many of its mechanics and design philosophies are simplified to make the game easy to pick up and play. Curious Glimmerroot is an outlier to this, both in its complexity and in the skill-set it rewards.
+
+The cards very unique battlecry is shown to the right. For a start, that's 19 whole words on a card, anathema for team 5! Secondly, its asking you to know what _your opponent_ is doing, which is an important skill to master but never before rewarded so tangibly. Finally, its one of the only cards with effect identical in appearance to discover, leading to potential confusion. Luckily its an epic, imagine cracking this guy in a welcome pack, it would be completely overwhelming!
+
+But in all seriousness its this uniqueness that makes the card so popular among the established player community. It always feels good when you pick correctly and its a lot of fun to try. The following article is an investigation of this most curious minions battlecry, and how it seperates the contenders from the pretenders on ladder.
+
+### Glimmerroot, the ultimate test of skill?
+
+Have you ever wondered how often people get it right? Well the short answer is 81% of the time!
+
+The long answer is a little more interesting. Curious Glimmerroot is a card that rewards a players knowledge of the overall meta-game, however you can circumvent all of that by just waiting to _see_ what's in you opponents deck. In theory, we should see a correlation between the turn the card was played, the skill (rank) of the player and the chance they chance they will chose correctly.
+
+**Figure 1: (Left) Probability of successfully picking the correct card when playing Curious Glimmerroot by players rank and the turn the card was played. (Right) Probability of success by rank (Rank 0 = Legend). Data is for Ranked Standard only.**
+
+```{r, echo=FALSE, out.width=c('450px', '350px'), fig.show='hold'}
+playData %>%
+  filter(game_type == 'Ranked Standard') %>%
+  group_by(turn = player_turn, 
+           `rank bucket`) %>%
+  summarise(accuracy = sum(num_correct_choices) / sum(num_glimmerroots_played),
+            plays = sum(num_glimmerroots_played)) %>%
+  ggplot(aes(x = turn,
+             y = accuracy,
+             color = `rank bucket`)) +
+  geom_line() +
+  scale_y_continuous(labels = scales::percent)
+
+playData %>%
+  filter(game_type == 'Ranked Standard') %>%
+  group_by(rank) %>%
+  summarise(accuracy = sum(num_correct_choices) / sum(num_glimmerroots_played),
+            plays = sum(num_glimmerroots_played)) %>%
+  ggplot(aes(y = accuracy,
+             x = rank,
+             fill = plays)) +
+  geom_bar(stat = 'identity', position = 'dodge') +
+  scale_y_continuous(labels = scales::percent)
+```
+
+The trend of success with turn is different across the different rank buckets. Rank 15-20 players are almost 10% more likely to pick correctly by turn-10 compared to turn-2, whereas a rank 5-10 or legend player really doesn't see any improvement. Of course, whether this effect is a result of a lack-of knowledge of the meta-game, or the wider deck diversity at lower rank (as players might not have as complete collections) is up for debate. 
+
+With this in mind, we can begin to explain the dips in success rate at ranks 5, 10 and 15. As players here should be of a fairly consistent skill-level, this effect can be attributed the much wider diversity in deck composition at these ranks. Players are more likely to be taking a break from the ladder grind here as their rank is safe, and playing 'fun' decks (in-fact, Glimmerroot itself is most often played at these ranks), which are less familiar to the wider player population and therefore harder to pick.
+
+There is daylight between the probabilities of success across the different rank buckets when the card is played in the early game. Many argue that hearthstone laddering is a pure numbers game, with rank merely being a measure of how many games you could squeeze into a season. Figure 1 directly contradicts that notion, and provides a concrete example of how players of better rank are measurably more knowledgeable about the overall meta-game. Turn-2 or 3 Glimmerroot success, a proxy for a players overall knoweledge of the meta, does indeed differentiate a good rank 5 player from a legend player.
+
+But what about other modes? Wild lets you play with every card ever printed, leading to a much wider range of potential options and in arena, your deck is generated semi-randomly! What chance do you have picking correctly?
+
+**Figure 2: Probability of successfully picking the correct card when playing Curious Glimmerroot by game mode and the turn the card was played.**
+
+```{r, echo=FALSE, out.width='450px'}
+playData %>%
+  filter(game_type %in% c('Arena',
+                          'Ranked Standard',
+                          'Ranked Wild')) %>%
+  group_by(`game type` = game_type, 
+           turn = player_turn) %>%
+  summarise(accuracy = sum(num_correct_choices) / sum(num_glimmerroots_played),
+            plays = sum(num_glimmerroots_played)) %>%
+  arrange(desc(plays)) %>%
+  ggplot(aes(x = turn,
+             y = accuracy,
+             color = `game type`)) +
+  geom_line() +
+  scale_y_continuous(labels = scales::percent)
+```
+
+Wild appears to be have around a 5% penalty over ranked, however the player base is quite different. Anecdotally, Wild is played less competitively by many and its certainly far less popular (10:1 Standard vs. Wild games recorded) which may lead contribute to this poorer performance.
+
+Arena is a different story, and your chance of picking correctly before turn 5 is pretty terrible (remember, pure chance is 33%). So in theory you should wait if you want to win the value game, however Arena has been tempo oriented for a long time now. Waiting is generally not a good idea in arena. Hearth-Arena [rates the card as "above average"](http://www.heartharena.com/tierlist) in the class, whereas guaranteed card generation tools like Kabal Courier, Stonehill Defender and Crystalline Oracle are classed as "Good", perhaps for this reason.
+
+### Its a trap!
+
+Some cards are harder to pick than other, for example if you a see a quest you can be fairly sure if it started in your opponents deck given they either played it or didn't on turn-1. On the other hand, some are much harder, particularly those that see fringe play. So what cards are being shown and fooling players most frequently?
+
+**Figure 3: Top 5 least likely to be in deck by opponents class. Players must have picked the card more than 50 times to be included in the chart. Ranked Standard only.**
+
+```{r, echo=FALSE, fig.height=6}
+playDataFine %>%
+  filter(game_type == 'Ranked Standard') %>%
+  group_by(opponent_class, choice_entity_name) %>%
+  summarise(num_choices = sum(count),
+            num_correct_choices = sum(num_correct_choices),
+            accuracy = sum(num_correct_choices) / sum(count)) %>%
+  filter(num_choices > 50) %>%
+  arrange(opponent_class, accuracy) %>%
+  group_by(opponent_class) %>%
+  mutate(unity = 1, 
+         rank = cumsum(unity)) %>%
+  filter(rank <= 5) %>%
+  ggplot(aes(x = reorder(choice_entity_name, -accuracy),
+             y = accuracy,
+             fill = opponent_class)) +
+  geom_bar(stat = 'identity',
+           alpha = 7/10) +
+  facet_wrap(~ opponent_class, 
+             scales = 'free_y',
+             ncol = 2) +
+  scale_y_continuous(labels = scales::percent,
+                     limits = c(0, 1)) +
+  scale_fill_manual(values = hsColors,
+                    guide = FALSE) +
+  coord_flip() +
+  xlab('')
+```
+
+For whatever reason, Mage and Priest have plenty of cards that are wrong more than 50% of the time they are picked. They both share Kazakus as a common trap card, and Priest's worst offender is another 'Reno' deck style card, Raza the Chained.  Its probably safe to say some people haven't quite caught up with the Year of the Mammoth meta if their picking cards like these.
+In Mage, the two secrets shown see some play but appear to be the wrong choice most of the time they are shown, as are the Legendaries Pyros and Archmage Antonidis.
+
+In fact, many of these cards are legendaries (13/45). For example, Rogue's 3 of the top 5 worst offenders are legendaries, as is Shamans most frequently incorrectly picked card, White Eyes. Wickerflame Burnbristle, Fandral Staghelm, Grommash Hellscream and Kalimnos, Primal Lord also make the list. Perhaps players are willing to gamble for such high impact cards, maybe there cost prohibits some players playing them in decks they typically would slot in too, or perhaps new players are just dazzled by them, and forgetting there not just discovering a card!
+
+Oh, and if your offered Explosive Trap... its probably a trap.

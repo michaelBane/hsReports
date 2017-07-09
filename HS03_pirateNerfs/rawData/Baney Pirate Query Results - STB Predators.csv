@@ -1,0 +1,4194 @@
+predator_class,predator_name,num_patches_killed
+SHAMAN,Thrall,98335
+WARRIOR,Garrosh Hellscream,74678
+ROGUE,Backstab,69717
+SHAMAN,Maelstrom Portal,69246
+SHAMAN,Lightning Storm,63062
+DRUID,Living Roots,50039
+WARLOCK,Demonwrath,47643
+SHAMAN,Lightning Bolt,42832
+DRUID,Wrath,37613
+SHAMAN,Morgl the Oracle,36113
+WARLOCK,Hellfire,35398
+MAGE,Volcanic Potion,34662
+MAGE,Arcane Blast,32593
+DRUID,Swipe,28598
+PRIEST,Holy Nova,27355
+ROGUE,Valeera Sanguinar,21920
+MAGE,Blizzard,19279
+MAGE,Fireblast,19263
+MAGE,Frostbolt,18139
+ROGUE,SI:7 Agent,17252
+SHAMAN,Spirit Wolf,16784
+SHAMAN,Totem Golem,15806
+ROGUE,Fan of Knives,15298
+WARRIOR,Patches the Pirate,14927
+MAGE,Flamestrike,14916
+SHAMAN,Patches the Pirate,13951
+WARLOCK,Abyssal Enforcer,13595
+WARLOCK,Shadowflame,12864
+PRIEST,Dragonfire Potion,12557
+WARRIOR,Southsea Deckhand,12145
+PALADIN,Consecration,11884
+SHAMAN,Jade Lightning,11759
+MAGE,Forgotten Torch,11735
+PRIEST,Blackwing Corruptor,11558
+DRUID,Malfurion Stormrage,11519
+PRIEST,Twilight Whelp,11483
+ROGUE,Eviscerate,11371
+PRIEST,Wyrmrest Agent,11075
+SHAMAN,Southsea Deckhand,10202
+SHAMAN,Tunnel Trogg,9646
+PRIEST,Excavated Evil,8558
+WARRIOR,Slam,8275
+PRIEST,Twilight Guardian,7656
+WARLOCK,Kazakus Potion,7026
+WARLOCK,Imp Gang Boss,6640
+SHAMAN,Small-Time Buccaneer,6201
+SHAMAN,Jade Golem,5974
+MAGE,Forbidden Flame,5763
+WARRIOR,Bloodsail Raider,5688
+WARRIOR,Bash,5669
+WARLOCK,Shadow Bolt,5649
+MAGE,Kazakus Potion,5615
+WARRIOR,Magni Bronzebeard,5431
+DRUID,Jade Spirit,5428
+WARRIOR,Kor'kron Elite,5427
+PRIEST,Kabal Talonpriest,5206
+DRUID,Jade Golem,5171
+PRIEST,Holy Smite,5105
+WARRIOR,Ravaging Ghoul,5089
+DRUID,Jade Behemoth,5067
+ROGUE,Jade Shuriken,4931
+WARLOCK,Second-Rate Bruiser,4839
+PALADIN,Bluegill Warrior,4818
+SHAMAN,Jinyu Waterspeaker,4748
+WARLOCK,Dirty Rat,4664
+WARRIOR,Frothing Berserker,4543
+WARRIOR,Blackwing Corruptor,4495
+WARRIOR,Small-Time Buccaneer,4487
+PALADIN,Wild Pyromancer,4392
+SHAMAN,Flamewreathed Faceless,4284
+ROGUE,Patches the Pirate,4255
+WARRIOR,Alexstrasza's Champion,4028
+WARRIOR,Revenge,3979
+MAGE,Arcane Missiles,3910
+WARRIOR,Dread Corsair,3890
+ROGUE,Small-Time Buccaneer,3889
+SHAMAN,Jade Spirit,3859
+WARLOCK,Kazakus Potion,3644
+WARLOCK,Dark Peddler,3593
+DRUID,Jade Golem,3405
+WARLOCK,Mistress of Mixtures,3337
+WARRIOR,Bloodsail Cultist,3336
+WARLOCK,Refreshment Vendor,3263
+PRIEST,Northshire Cleric,3253
+WARLOCK,Twilight Drake,3192
+ROGUE,Argent Horserider,3158
+WARLOCK,Mortal Coil,3111
+ROGUE,Southsea Deckhand,3095
+SHAMAN,Thing from Below,3041
+DRUID,Ancient of War,3004
+WARLOCK,Soulfire,2935
+SHAMAN,Jade Golem,2879
+WARLOCK,Acidic Swamp Ooze,2858
+MAGE,Dirty Rat,2811
+SHAMAN,Healing Totem,2798
+SHAMAN,Azure Drake,2797
+PRIEST,Netherspite Historian,2775
+DRUID,Disciple of C'Thun,2626
+PRIEST,Drakonid Operative,2603
+HUNTER,Quick Shot,2597
+MAGE,Flamewaker,2554
+WARLOCK,Kazakus,2517
+SHAMAN,Elemental Destruction,2494
+SHAMAN,Jade Golem,2488
+WARLOCK,Earthen Ring Farseer,2406
+WARRIOR,N'Zoth's First Mate,2373
+WARRIOR,Shield Slam,2321
+SHAMAN,Searing Totem,2312
+PALADIN,Uther Lightbringer,2298
+ROGUE,Tomb Pillager,2266
+PRIEST,Kazakus Potion,2252
+HUNTER,Explosive Trap,2168
+DRUID,Moonfire,2162
+DRUID,Druid of the Claw,2150
+WARLOCK,Felfire Potion,2139
+DRUID,Azure Drake,2138
+MAGE,Kazakus Potion,2105
+SHAMAN,Lava Shock,2081
+DRUID,Fandral Staghelm,2074
+WARLOCK,Reno Jackson,2050
+WARRIOR,Twilight Guardian,2017
+MAGE,Water Elemental,2014
+PRIEST,Blackwing Technician,2007
+DRUID,Sapling,1994
+MAGE,Fireblast,1951
+WARRIOR,Argent Horserider,1896
+MAGE,Kazakus,1883
+WARRIOR,Fireblast,1842
+WARLOCK,Brann Bronzebeard,1841
+PRIEST,Brann Bronzebeard,1802
+WARRIOR,Sir Finley Mrrgglton,1795
+ROGUE,Azure Drake,1793
+WARRIOR,Sleep with the Fishes,1792
+WARRIOR,Fierce Monkey,1743
+MAGE,Acidic Swamp Ooze,1725
+SHAMAN,Sir Finley Mrrgglton,1718
+WARLOCK,Sunfury Protector,1708
+ROGUE,Swashburglar,1690
+ROGUE,Edwin VanCleef,1581
+PRIEST,Wild Pyromancer,1524
+ROGUE,Shiv,1503
+DRUID,Jade Golem,1467
+MAGE,Reno Jackson,1467
+WARRIOR,Southsea Captain,1433
+SHAMAN,Wrath of Air Totem,1392
+PRIEST,Acidic Swamp Ooze,1373
+MAGE,Firelands Portal,1335
+MAGE,Kabal Courier,1328
+WARLOCK,Defender of Argus,1320
+DRUID,Jade Golem,1291
+DRUID,Starfall,1288
+SHAMAN,Aya Blackpaw,1278
+MAGE,Mana Wyrm,1271
+MAGE,Refreshment Vendor,1246
+SHAMAN,Fireblast,1245
+HUNTER,Rexxar,1196
+PRIEST,Mind Spike,1176
+PRIEST,Book Wyrm,1170
+PRIEST,Circle of Healing,1162
+WARRIOR,Dirty Rat,1138
+SHAMAN,Jade Golem,1127
+SHAMAN,Jade Chieftain,1126
+WARRIOR,Mortal Strike,1122
+HUNTER,Dispatch Kodo,1107
+HUNTER,Powershot,1107
+MAGE,Mistress of Mixtures,1101
+MAGE,Azure Drake,1082
+MAGE,Arcane Explosion,1081
+MAGE,Brann Bronzebeard,1070
+PRIEST,Azure Drake,1043
+ROGUE,Questing Adventurer,1021
+WARRIOR,Alley Armorsmith,984
+PALADIN,Argent Horserider,974
+WARLOCK,Demonfire,971
+ROGUE,"Shaku, the Collector",967
+ROGUE,Bluegill Warrior,962
+SHAMAN,Lava Burst,956
+WARRIOR,Disciple of C'Thun,953
+PRIEST,Twilight Drake,953
+MAGE,Fireblast,951
+HUNTER,Hound,950
+SHAMAN,Brann Bronzebeard,940
+WARLOCK,Disciple of C'Thun,928
+WARLOCK,Faceless Shambler,903
+MAGE,Twilight Flamecaller,897
+PRIEST,Patches the Pirate,897
+MAGE,Second-Rate Bruiser,890
+WARLOCK,Mountain Giant,874
+SHAMAN,Stoneclaw Totem,865
+WARLOCK,Emperor Thaurissan,858
+WARLOCK,Mind Control Tech,855
+DRUID,Brann Bronzebeard,835
+PRIEST,Kazakus Potion,825
+DRUID,Aya Blackpaw,808
+PRIEST,Southsea Deckhand,792
+WARRIOR,Acidic Swamp Ooze,785
+DRUID,Jade Golem,779
+PALADIN,Aldor Peacekeeper,766
+PRIEST,Chillmaw,765
+PRIEST,Kazakus,762
+MAGE,Kazakus Potion,757
+MAGE,Manic Soulcaster,748
+ROGUE,Undercity Huckster,739
+WARLOCK,Imp,721
+WARLOCK,Voidwalker,717
+PRIEST,Backstab,715
+WARRIOR,Cruel Taskmaster,704
+MAGE,Fireball,702
+PRIEST,Priest of the Feast,701
+WARLOCK,Lord Jaraxxus,699
+ROGUE,Dark Iron Skulker,684
+WARLOCK,Kabal Courier,682
+PALADIN,Murloc Warleader,656
+ROGUE,Gadgetzan Auctioneer,656
+ROGUE,Shadow Strike,644
+WARRIOR,Bluegill Warrior,638
+HUNTER,Arcane Shot,637
+SHAMAN,Deathwing,630
+PRIEST,Lightning Storm,621
+WARRIOR,Azure Drake,610
+PRIEST,Defender of Argus,608
+SHAMAN,Jade Golem,606
+PALADIN,Lady Liadrin,600
+SHAMAN,Fire Elemental,594
+MAGE,Emperor Thaurissan,585
+DRUID,Dark Arakkoa,583
+PRIEST,Maelstrom Portal,582
+ROGUE,Argent Squire,571
+WARRIOR,Grommash Hellscream,570
+MAGE,Sorcerer's Apprentice,566
+PRIEST,Dirty Rat,565
+WARLOCK,Flame Imp,555
+DRUID,C'Thun,552
+MAGE,Babbling Book,541
+ROGUE,Lightning Storm,528
+PRIEST,Kabal Courier,527
+DRUID,Gadgetzan Auctioneer,519
+PALADIN,Silver Hand Recruit,504
+WARRIOR,Faerie Dragon,495
+WARRIOR,The Curator,491
+MAGE,Medivh's Valet,483
+PALADIN,Wickerflame Burnbristle,472
+MAGE,Mind Control Tech,472
+WARLOCK,Kazakus Potion,469
+DRUID,Enchanted Raven,467
+SHAMAN,Argent Horserider,458
+PRIEST,Reno Jackson,451
+PRIEST,Raza the Chained,449
+PALADIN,"Finja, the Flying Star",444
+HUNTER,Kill Command,442
+SHAMAN,Flametongue Totem,436
+PRIEST,Anduin Wrynn,429
+HUNTER,Snipe,420
+ROGUE,Elemental Destruction,413
+ROGUE,Forked Lightning,402
+WARLOCK,Knife Juggler,400
+PALADIN,Second-Rate Bruiser,397
+SHAMAN,Bluegill Warrior,395
+ROGUE,Firebloom Toxin,392
+MAGE,Burgly Bully,392
+SHAMAN,Tentacle of N'Zoth,390
+PRIEST,Disciple of C'Thun,387
+WARRIOR,Drakonid Crusher,387
+WARRIOR,Bloodhoof Brave,385
+PALADIN,Acolyte of Pain,376
+WARLOCK,Possessed Villager,373
+WARRIOR,Acolyte of Pain,371
+SHAMAN,Acidic Swamp Ooze,370
+PALADIN,Mistress of Mixtures,369
+ROGUE,Jade Golem,368
+WARRIOR,Cleave,368
+WARLOCK,Spellbreaker,367
+HUNTER,Cloaked Huntress,366
+WARRIOR,Ragnaros the Firelord,361
+WARRIOR,Elise Starseeker,357
+PRIEST,Deathwing,357
+WARLOCK,Malchezaar's Imp,356
+WARRIOR,Whirlwind,355
+DRUID,Acidic Swamp Ooze,350
+SHAMAN,Mistress of Mixtures,350
+WARRIOR,Slime,348
+ROGUE,Unearthed Raptor,347
+ROGUE,Jade Swarmer,345
+PRIEST,Spirit Wolf,344
+MAGE,Greater Arcane Missiles,338
+SHAMAN,Bloodmage Thalnos,336
+PRIEST,Second-Rate Bruiser,334
+WARLOCK,Ragnaros the Firelord,334
+PRIEST,Lesser Heal,332
+DRUID,Mire Keeper,332
+HUNTER,Explosive Shot,331
+WARLOCK,Deathwing,330
+PALADIN,Tirion Fordring,328
+WARLOCK,Sylvanas Windrunner,328
+MAGE,Alexstrasza,323
+SHAMAN,Stonetusk Boar,321
+SHAMAN,Earth Shock,314
+ROGUE,"Finja, the Flying Star",314
+DRUID,Sabertooth Lion,313
+WARRIOR,Naga Corsair,312
+WARLOCK,Doomguard,307
+MAGE,Cone of Cold,304
+WARLOCK,Drain Life,297
+DRUID,Jade Golem,297
+PRIEST,Tunnel Trogg,293
+HUNTER,Big Bad Wolf,292
+MAGE,Deathwing,285
+WARRIOR,Blood To Ichor,283
+ROGUE,Jade Spirit,282
+SHAMAN,Injured Kvaldir,282
+DRUID,Wild Pyromancer,281
+PALADIN,Barnes,280
+PALADIN,Ivory Knight,275
+DRUID,Druid of the Claw,274
+ROGUE,Lava Shock,273
+PRIEST,Kabal Songstealer,273
+PRIEST,Lightning Bolt,272
+SHAMAN,Mana Tide Totem,271
+MAGE,Cult Sorcerer,269
+PALADIN,Dirty Rat,268
+SHAMAN,Jade Golem,266
+WARLOCK,Shadowbeast,265
+DRUID,Sabertooth Panther,263
+PRIEST,Ancient Watcher,263
+ROGUE,Barnes,263
+HUNTER,Kindly Grandmother,260
+HUNTER,Tundra Rhino,260
+WARLOCK,Bane of Doom,260
+PALADIN,Hammer of Wrath,259
+MAGE,Loot Hoarder,258
+MAGE,Archmage Antonidas,257
+ROGUE,Cleave,254
+PRIEST,Ysera Awakens,254
+PRIEST,Mistress of Mixtures,252
+SHAMAN,Whelp,248
+HUNTER,Huffer,247
+DRUID,Whelp,243
+SHAMAN,White Eyes,242
+WARLOCK,Darkshire Councilman,235
+PRIEST,Jade Golem,233
+WARRIOR,Justicar Trueheart,233
+PALADIN,Blackwing Corruptor,231
+HUNTER,Leokk,227
+SHAMAN,Argent Squire,227
+PALADIN,Argent Squire,223
+SHAMAN,Worgen Infiltrator,221
+MAGE,Ethereal Conjurer,216
+HUNTER,Ironfur Grizzly,215
+SHAMAN,Stormcrack,214
+PALADIN,Loot Hoarder,208
+PRIEST,Faerie Dragon,204
+DRUID,Deathwing,202
+DRUID,Ragnaros the Firelord,199
+DRUID,Bluegill Warrior,198
+HUNTER,Misha,198
+WARRIOR,"Finja, the Flying Star",197
+MAGE,Demonwrath,196
+PRIEST,Kazakus Potion,195
+ROGUE,Murloc Warleader,194
+MAGE,Holy Nova,193
+HUNTER,Rat Pack,192
+PALADIN,Grimestreet Outfitter,192
+MAGE,Ragnaros the Firelord,188
+ROGUE,Jade Golem,187
+MAGE,Bloodmage Thalnos,187
+ROGUE,Perdition's Blade,186
+WARLOCK,Kabal Demon,185
+WARLOCK,Patches the Pirate,184
+PRIEST,SI:7 Agent,184
+PRIEST,Ragnaros the Firelord,183
+ROGUE,Disciple of C'Thun,183
+PRIEST,Mind Control Tech,182
+DRUID,Sir Finley Mrrgglton,178
+HUNTER,Secretkeeper,176
+PALADIN,Sen'jin Shieldmasta,176
+SHAMAN,Enchanted Raven,176
+HUNTER,King's Elekk,171
+MAGE,Disciple of C'Thun,171
+MAGE,Acolyte of Pain,170
+ROGUE,Maelstrom Portal,170
+SHAMAN,Forked Lightning,170
+WARRIOR,Hobart Grapplehammer,170
+PRIEST,Argent Horserider,169
+WARLOCK,Silverware Golem,169
+SHAMAN,Fiery Bat,168
+SHAMAN,Barnes,168
+SHAMAN,Vilefin Inquisitor,167
+PALADIN,"Ragnaros, Lightlord",166
+PALADIN,Acidic Swamp Ooze,166
+DRUID,Dragon Egg,166
+MAGE,Hellfire,164
+ROGUE,Lightning Bolt,163
+MAGE,Roaring Torch,161
+ROGUE,"Xaril, Poisoned Mind",161
+PALADIN,Meanstreet Marshal,159
+ROGUE,Revenge,157
+ROGUE,Mistress of Mixtures,156
+MAGE,Barnes,155
+DRUID,Beckoner of Evil,154
+PRIEST,Bluegill Warrior,154
+PRIEST,Fan of Knives,153
+DRUID,Slime,152
+WARLOCK,Icky Tentacle,152
+PRIEST,Whelp,151
+MAGE,Earthen Ring Farseer,150
+WARLOCK,Dire Wolf Alpha,150
+HUNTER,Houndmaster,148
+SHAMAN,Mana Wyrm,148
+MAGE,Kabal Demon,147
+ROGUE,Ravaging Ghoul,147
+PALADIN,Patches the Pirate,147
+SHAMAN,Al'Akir the Windlord,147
+WARLOCK,Argent Horserider,146
+WARLOCK,C'Thun,145
+PALADIN,Twilight Guardian,144
+PRIEST,Sunfury Protector,144
+MAGE,Inkmaster Solia,144
+WARRIOR,Murloc Warleader,143
+WARLOCK,Beckoner of Evil,141
+WARLOCK,Blackwing Corruptor,139
+DRUID,Panther,139
+HUNTER,Argent Horserider,139
+MAGE,Dragonfire Potion,139
+DRUID,Emperor Thaurissan,138
+ROGUE,Naga Corsair,138
+MAGE,Whelp,137
+HUNTER,Huge Toad,137
+ROGUE,Jade Golem,137
+SHAMAN,Malchezaar's Imp,137
+PRIEST,Shifting Shade,135
+SHAMAN,Ragnaros the Firelord,135
+SHAMAN,Murloc Tidecaller,134
+HUNTER,Fiery Bat,133
+DRUID,Argent Squire,133
+WARRIOR,Baron Geddon,133
+SHAMAN,Voidwalker,133
+PRIEST,Volcanic Potion,133
+DRUID,Violet Teacher,132
+HUNTER,Infested Wolf,132
+HUNTER,Alleycat,132
+SHAMAN,Earth Elemental,132
+PRIEST,Acolyte of Pain,131
+PRIEST,Injured Blademaster,131
+WARLOCK,Argent Squire,131
+WARLOCK,Darkshire Librarian,130
+DRUID,Patches the Pirate,130
+MAGE,Excavated Evil,130
+PALADIN,Worgen Infiltrator,129
+WARRIOR,Deathwing,129
+WARRIOR,C'Thun,129
+HUNTER,Shaky Zipgunner,128
+PALADIN,Disciple of C'Thun,128
+PALADIN,Grimestreet Enforcer,127
+PALADIN,Avenging Wrath,127
+HUNTER,Barnes,126
+PRIEST,Tyrande Whisperwind,126
+MAGE,"Medivh, the Guardian",125
+SHAMAN,Northshire Cleric,124
+PALADIN,Sir Finley Mrrgglton,124
+SHAMAN,Kobold Geomancer,124
+WARLOCK,Spreading Madness,123
+MAGE,Felfire Potion,123
+SHAMAN,Jade Golem,122
+PALADIN,Southsea Deckhand,121
+DRUID,Barnes,121
+DRUID,Druid of the Flame,120
+SHAMAN,Lowly Squire,120
+DRUID,Jade Golem,118
+HUNTER,Rat,116
+PALADIN,Blackwing Technician,116
+SHAMAN,Murloc Raider,116
+PRIEST,Cabal Shadow Priest,116
+WARRIOR,Whelp,116
+SHAMAN,Meanstreet Marshal,115
+SHAMAN,Selfless Hero,115
+MAGE,Dragon's Breath,115
+WARLOCK,Elven Archer,114
+SHAMAN,Murloc Tinyfin,114
+PRIEST,Museum Curator,114
+DRUID,Mounted Raptor,113
+ROGUE,Fire Elemental,113
+ROGUE,Cruel Taskmaster,113
+WARRIOR,Book Wyrm,113
+WARLOCK,Volcanic Potion,113
+SHAMAN,Possessed Villager,112
+ROGUE,Emperor Thaurissan,112
+PRIEST,Jade Golem,111
+DRUID,Darnassus Aspirant,111
+WARRIOR,Inner Rage,111
+ROGUE,Nerubian,111
+WARLOCK,Infernal,111
+HUNTER,Tabbycat,110
+DRUID,North Sea Kraken,110
+ROGUE,Sleep with the Fishes,109
+HUNTER,Trogg Beastrager,109
+MAGE,Abyssal Enforcer,109
+ROGUE,Acidic Swamp Ooze,107
+SHAMAN,Arcane Anomaly,107
+WARRIOR,Armorsmith,106
+SHAMAN,Grimscale Chum,106
+PRIEST,Jade Lightning,106
+ROGUE,Inner Rage,105
+MAGE,Backstab,105
+PRIEST,Ysera,105
+HUNTER,Hyena,105
+WARRIOR,Wild Pyromancer,104
+SHAMAN,Gadgetzan Jouster,104
+WARLOCK,Sen'jin Shieldmasta,104
+WARRIOR,Harrison Jones,103
+DRUID,Twilight Elder,103
+ROGUE,Spirit Wolf,103
+WARRIOR,Grimy Gadgeteer,102
+PRIEST,Eerie Statue,102
+WARLOCK,Bloodsail Corsair,102
+WARRIOR,Sylvanas Windrunner,102
+SHAMAN,Bloodsail Corsair,101
+SHAMAN,Dragon Egg,101
+SHAMAN,Hungry Crab,101
+SHAMAN,Lightwarden,100
+DRUID,Druid of the Claw,100
+ROGUE,Slam,99
+ROGUE,Brann Bronzebeard,99
+SHAMAN,Voodoo Doctor,98
+HUNTER,Savannah Highmane,97
+HUNTER,Snake,97
+SHAMAN,Wisp,97
+PRIEST,Loot Hoarder,96
+PALADIN,Keeper of Uldaman,96
+ROGUE,Whirlwind,96
+SHAMAN,Bladed Cultist,96
+SHAMAN,Runic Egg,96
+DRUID,Second-Rate Bruiser,95
+HUNTER,Knife Juggler,95
+WARLOCK,Whelp,95
+SHAMAN,Flame Imp,94
+DRUID,The Curator,94
+WARLOCK,Holy Nova,94
+WARLOCK,Succubus,93
+SHAMAN,Buccaneer,93
+SHAMAN,Kabal Lackey,92
+PRIEST,Hellfire,90
+DRUID,Arcane Giant,90
+ROGUE,Bash,90
+DRUID,Violet Apprentice,90
+WARLOCK,Bluegill Warrior,90
+HUNTER,Alleria Windrunner,90
+SHAMAN,Thunder Bluff Valiant,89
+ROGUE,Stormcrack,89
+DRUID,Runic Egg,89
+PRIEST,Faceless Shambler,89
+DRUID,Coldlight Oracle,88
+SHAMAN,Brave Archer,88
+PRIEST,N'Zoth's First Mate,88
+SHAMAN,Frog,88
+PRIEST,Lesser Heal,88
+HUNTER,Scavenging Hyena,87
+DRUID,Keeper of the Grove,86
+SHAMAN,Secretkeeper,86
+WARLOCK,Worgen Infiltrator,85
+MAGE,Blackwing Corruptor,85
+PRIEST,Dragonkin Sorcerer,85
+ROGUE,Southsea Captain,85
+SHAMAN,Twilight Whelp,85
+PRIEST,Eviscerate,83
+PALADIN,Cyclopian Horror,82
+HUNTER,Bluegill Warrior,82
+MAGE,Faceless Summoner,81
+DRUID,Ironbark Protector,81
+WARLOCK,Twilight Guardian,81
+PRIEST,Jade Spirit,80
+ROGUE,Refreshment Vendor,80
+SHAMAN,Weasel Tunneler,80
+MAGE,Kirin Tor Mage,80
+DRUID,Soggoth the Slitherer,79
+HUNTER,Multi-Shot,79
+PRIEST,Beckoner of Evil,79
+WARRIOR,Leeroy Jenkins,79
+HUNTER,Cat in a Hat,78
+ROGUE,Defender of Argus,78
+MAGE,Mind Spike,78
+DRUID,Bog Creeper,78
+SHAMAN,Shadowbeast,78
+MAGE,Bane of Doom,78
+WARLOCK,Cult Apothecary,78
+SHAMAN,Goldshire Footman,77
+WARLOCK,Abusive Sergeant,77
+ROGUE,Aya Blackpaw,76
+MAGE,Holy Smite,76
+WARLOCK,Backstab,76
+SHAMAN,Dirty Rat,76
+WARLOCK,Tentacle of N'Zoth,76
+PRIEST,Darkshire Alchemist,75
+MAGE,Kabal Chemist,75
+WARRIOR,Beckoner of Evil,75
+PALADIN,Infested Tauren,75
+SHAMAN,Reliquary Seeker,75
+HUNTER,Wild Pyromancer,75
+PALADIN,Brann Bronzebeard,74
+ROGUE,Lightning Jolt,74
+SHAMAN,Forbidden Ancient,73
+DRUID,Fireblast,73
+PRIEST,Frothing Berserker,73
+SHAMAN,Leper Gnome,73
+PRIEST,Bloodsail Raider,72
+PRIEST,Blizzard,72
+SHAMAN,Young Priestess,72
+SHAMAN,Zealous Initiate,72
+ROGUE,Earth Shock,71
+PALADIN,Netherspite Historian,71
+ROGUE,Jade Lightning,70
+WARRIOR,Ysera Awakens,70
+PALADIN,Small-Time Buccaneer,69
+SHAMAN,Alleycat,69
+PRIEST,Justicar Trueheart,69
+SHAMAN,Loot Hoarder,69
+SHAMAN,Blood Imp,69
+WARRIOR,Chillmaw,69
+SHAMAN,Grimscale Oracle,69
+WARRIOR,Backstab,69
+SHAMAN,Shifter Zerus,69
+MAGE,Twilight Guardian,68
+SHAMAN,Babbling Book,68
+DRUID,C'Thun's Chosen,68
+SHAMAN,N'Zoth's First Mate,68
+PALADIN,Flame Juggler,68
+WARLOCK,Harrison Jones,68
+WARLOCK,Fist of Jaraxxus,68
+SHAMAN,Dust Devil,68
+DRUID,Savage Combatant,67
+PALADIN,Grimestreet Smuggler,67
+PRIEST,Demonwrath,67
+DRUID,"Finja, the Flying Star",67
+ROGUE,Frost Shock,67
+HUNTER,On the Hunt,67
+PRIEST,Abomination,67
+PRIEST,Auchenai Soulpriest,66
+PALADIN,Argent Protector,66
+ROGUE,Buccaneer,66
+ROGUE,Rumbling Elemental,66
+WARRIOR,Infested Tauren,66
+ROGUE,Earthen Ring Farseer,65
+MAGE,Shadowflame,65
+SHAMAN,Swashburglar,65
+PRIEST,Sir Finley Mrrgglton,64
+PALADIN,Fireblast,64
+SHAMAN,Elven Archer,64
+SHAMAN,Pit Snake,64
+SHAMAN,Abusive Sergeant,64
+SHAMAN,Disciple of C'Thun,64
+WARLOCK,Flame Juggler,64
+DRUID,Baron Geddon,64
+WARLOCK,Crazed Worshipper,64
+PALADIN,Defender of Argus,64
+PALADIN,Selfless Hero,63
+ROGUE,Whelp,63
+ROGUE,Bloodmage Thalnos,63
+SHAMAN,Corrupted Seer,63
+MAGE,Harrison Jones,63
+SHAMAN,Twilight Guardian,63
+DRUID,Black Whelp,62
+PALADIN,The Curator,62
+SHAMAN,Blackwing Corruptor,62
+PRIEST,Refreshment Vendor,62
+ROGUE,Jade Golem,62
+MAGE,Drain Life,61
+SHAMAN,Timber Wolf,61
+MAGE,Flame Lance,61
+WARLOCK,Blizzard,61
+PRIEST,Infested Tauren,61
+PALADIN,Faerie Dragon,61
+PALADIN,Nightbane Templar,60
+PRIEST,"Shaku, the Collector",60
+ROGUE,Ethereal Peddler,60
+WARLOCK,Twilight Elder,60
+WARRIOR,Slime,60
+PRIEST,Felfire Potion,59
+ROGUE,Loot Hoarder,59
+WARLOCK,Dragonfire Potion,59
+PRIEST,Sylvanas Windrunner,59
+MAGE,Abomination,58
+PRIEST,Mana Geode,58
+WARLOCK,Azure Drake,58
+DRUID,Excavated Evil,58
+PALADIN,Azure Drake,58
+ROGUE,The Curator,58
+MAGE,Spellslinger,57
+HUNTER,Spider,57
+PALADIN,Deathwing,57
+HUNTER,Acidic Swamp Ooze,56
+DRUID,Kun the Forgotten King,56
+PRIEST,Hungry Dragon,56
+MAGE,Twilight Drake,56
+WARLOCK,Holy Smite,56
+ROGUE,Blade Flurry,56
+DRUID,Lightning Storm,55
+SHAMAN,Tournament Attendee,55
+ROGUE,Deathwing,55
+PRIEST,Emperor Thaurissan,55
+DRUID,Stranglethorn Tiger,54
+PRIEST,Bloodmage Thalnos,54
+SHAMAN,"Finja, the Flying Star",54
+SHAMAN,Angry Chicken,54
+PALADIN,Slime,54
+WARRIOR,Reckless Rocketeer,54
+DRUID,Twin Emperor Vek'lor,53
+PALADIN,Murloc Tidecaller,53
+ROGUE,Leeroy Jenkins,53
+SHAMAN,Murloc Razorgill,53
+ROGUE,Second-Rate Bruiser,53
+MAGE,Tundra Rhino,52
+PALADIN,Stampeding Kodo,52
+MAGE,Anomalus,52
+PRIEST,Alexstrasza's Champion,52
+PRIEST,Tentacle of N'Zoth,52
+ROGUE,Bladed Cultist,52
+PALADIN,Vilefin Inquisitor,52
+MAGE,Beckoner of Evil,52
+HUNTER,The Curator,51
+DRUID,Defender of Argus,51
+WARLOCK,Arcane Blast,51
+PRIEST,Kabal Demon,51
+DRUID,Backstab,51
+MAGE,Ice Lance,51
+ROGUE,Earth Elemental,50
+DRUID,Harrison Jones,50
+ROGUE,Infested Tauren,50
+PRIEST,Barnes,50
+WARLOCK,Excavated Evil,50
+ROGUE,Undercity Valiant,50
+PRIEST,Undercity Huckster,49
+PRIEST,Swashburglar,49
+PALADIN,Corrupted Seer,49
+SHAMAN,Murloc Warleader,49
+WARLOCK,Tiny Knight of Evil,49
+MAGE,Spreading Madness,49
+WARLOCK,Kabal Chemist,49
+DRUID,Loot Hoarder,48
+HUNTER,Carrion Grub,48
+PALADIN,Squirming Tentacle,48
+PRIEST,Totem Golem,48
+MAGE,"Finja, the Flying Star",48
+ROGUE,Jinyu Waterspeaker,48
+WARRIOR,Blackwing Technician,48
+SHAMAN,Hellfire,48
+HUNTER,Azure Drake,47
+DRUID,Elemental Destruction,47
+PRIEST,Fel Orc Soulfiend,47
+PRIEST,Garrison Commander,47
+WARLOCK,Spirit Wolf,47
+DRUID,Felfire Potion,46
+SHAMAN,Young Dragonhawk,46
+ROGUE,Totem Golem,46
+DRUID,Shadowflame,46
+WARLOCK,Frost Elemental,45
+ROGUE,Lotus Agents,45
+DRUID,Murloc Warleader,44
+MAGE,Small-Time Buccaneer,44
+DRUID,Mistress of Mixtures,44
+ROGUE,Defias Ringleader,44
+PRIEST,Kabal Chemist,44
+SHAMAN,Blowgill Sniper,44
+SHAMAN,Jade Golem,44
+SHAMAN,The Storm Guardian,44
+WARLOCK,Wrathguard,44
+HUNTER,Injured Kvaldir,43
+DRUID,Malygos,43
+DRUID,Ysera Awakens,43
+HUNTER,Desert Camel,43
+DRUID,Klaxxi Amber-Weaver,43
+DRUID,Blackwing Corruptor,43
+DRUID,Sylvanas Windrunner,42
+MAGE,Novice Engineer,42
+MAGE,Kabal Lackey,42
+ROGUE,Murloc Razorgill,42
+PALADIN,Grimscale Chum,42
+WARLOCK,Crystalweaver,42
+HUNTER,Reno Jackson,41
+DRUID,Jade Golem,41
+PRIEST,Slime,41
+ROGUE,Al'Akir the Windlord,41
+DRUID,Starfire,40
+PRIEST,Twilight Elder,40
+ROGUE,Reno Jackson,40
+PRIEST,The Curator,40
+DRUID,Blizzard,40
+PRIEST,Abyssal Enforcer,40
+MAGE,Jaina Proudmoore,40
+PRIEST,Jinyu Waterspeaker,39
+PALADIN,Bilefin Tidehunter,39
+ROGUE,Slime,39
+PRIEST,Harvest Golem,39
+WARLOCK,C'Thun's Chosen,39
+DRUID,Master Jouster,39
+DRUID,Lotus Agents,39
+DRUID,Savagery,39
+SHAMAN,Wicked Witchdoctor,38
+ROGUE,Grimestreet Smuggler,38
+PRIEST,Flamewreathed Faceless,38
+HUNTER,Infested Tauren,38
+WARRIOR,Netherspite Historian,38
+WARRIOR,Wolfrider,38
+HUNTER,Loot Hoarder,37
+DRUID,Treant,37
+WARRIOR,Brann Bronzebeard,37
+DRUID,Twin Emperor Vek'nilash,37
+WARRIOR,Golden Monkey,37
+WARLOCK,Voodoo Doctor,37
+SHAMAN,Unbound Elemental,37
+ROGUE,Axe Flinger,37
+MAGE,Sylvanas Windrunner,37
+MAGE,Kabal Crystal Runner,37
+PRIEST,Holy Fire,37
+HUNTER,Ragnaros the Firelord,37
+SHAMAN,Backstab,37
+PRIEST,Small-Time Buccaneer,37
+ROGUE,White Eyes,36
+PRIEST,Midnight Drake,36
+SHAMAN,Volcanic Potion,36
+HUNTER,Fireblast,36
+WARRIOR,Second-Rate Bruiser,36
+HUNTER,Slime,36
+PRIEST,Flamestrike,36
+ROGUE,Unbound Elemental,36
+ROGUE,Alexstrasza's Champion,36
+DRUID,Chillmaw,35
+MAGE,Argent Horserider,35
+ROGUE,Bloodhoof Brave,35
+ROGUE,Coldlight Oracle,35
+SHAMAN,Black Whelp,35
+SHAMAN,Harrison Jones,35
+DRUID,Dirty Rat,35
+PALADIN,Blowgill Sniper,35
+SHAMAN,Shieldbearer,35
+DRUID,Bloodsail Corsair,35
+DRUID,Revenge,35
+DRUID,Bloodmage Thalnos,34
+PRIEST,Searing Totem,34
+WARLOCK,Kabal Trafficker,34
+ROGUE,Flamewreathed Faceless,34
+PRIEST,Elise Starseeker,34
+SHAMAN,Dragonfire Potion,34
+SHAMAN,Master of Evolution,34
+MAGE,Mortal Coil,34
+MAGE,Demonfire,34
+WARRIOR,C'Thun's Chosen,34
+DRUID,Flamestrike,34
+PRIEST,Chromaggus,34
+MAGE,Doomguard,33
+MAGE,Darkshire Alchemist,33
+MAGE,Bluegill Warrior,33
+PALADIN,Grimestreet Informant,33
+DRUID,Tentacle of N'Zoth,33
+PRIEST,Edwin VanCleef,33
+PALADIN,Ragnaros the Firelord,33
+WARLOCK,Gadgetzan Jouster,33
+PRIEST,Dread Corsair,33
+WARRIOR,Grimestreet Informant,33
+SHAMAN,The Curator,33
+DRUID,Argent Horserider,32
+SHAMAN,Silver Hand Recruit,32
+HUNTER,Dire Wolf Alpha,32
+MAGE,Gurubashi Berserker,32
+PALADIN,Chillmaw,32
+WARLOCK,Crazed Alchemist,32
+MAGE,Coldlight Oracle,32
+HUNTER,Sir Finley Mrrgglton,32
+SHAMAN,Ravaging Ghoul,32
+DRUID,Treant,32
+DRUID,Volcanic Potion,32
+PRIEST,Wrathion,32
+DRUID,Sunwalker,32
+DRUID,Consecration,32
+PRIEST,Arcane Blast,32
+PRIEST,Harrison Jones,32
+ROGUE,Violet Teacher,32
+ROGUE,C'Thun,32
+PALADIN,Harvest Golem,31
+MAGE,C'Thun,31
+DRUID,Hellfire,31
+PRIEST,Drakonid Crusher,31
+DRUID,Slime,31
+SHAMAN,Nerubian Prophet,31
+ROGUE,Fireguard Destroyer,31
+WARRIOR,Soggoth the Slitherer,31
+WARRIOR,Cairne Bloodhoof,31
+WARLOCK,Harvest Golem,31
+SHAMAN,Abyssal Enforcer,31
+DRUID,Cleave,31
+PRIEST,Kor'kron Elite,31
+HUNTER,Flame Juggler,30
+DRUID,Menagerie Warden,30
+SHAMAN,Tuskarr Totemic,30
+PALADIN,Earthen Ring Farseer,30
+WARRIOR,Ancient Shieldbearer,30
+PALADIN,Whelp,30
+SHAMAN,Jeweled Scarab,30
+WARLOCK,Youthful Brewmaster,30
+MAGE,Boar,30
+WARLOCK,Unlicensed Apothecary,30
+MAGE,Patches the Pirate,30
+DRUID,Crazed Worshipper,30
+WARRIOR,Silver Hand Recruit,30
+DRUID,Twilight Guardian,29
+PRIEST,Holy Champion,29
+MAGE,Avian Watcher,29
+ROGUE,Alley Armorsmith,29
+PALADIN,Mind Control Tech,29
+ROGUE,Stranglethorn Tiger,29
+PRIEST,Whelp,29
+DRUID,Dragonfire Potion,29
+PRIEST,Djinni of Zephyrs,29
+DRUID,Infested Tauren,29
+ROGUE,Tentacle of N'Zoth,29
+PALADIN,Psych-o-Tron,29
+DRUID,Aviana,28
+ROGUE,Shadowcaster,28
+PRIEST,Aya Blackpaw,28
+PRIEST,Buccaneer,28
+PRIEST,"Finja, the Flying Star",28
+WARLOCK,Dark Bargain,28
+DRUID,Forked Lightning,28
+PRIEST,Onyx Bishop,28
+PRIEST,Questing Adventurer,28
+ROGUE,Frothing Berserker,28
+MAGE,Stampeding Kodo,28
+ROGUE,Defias Bandit,28
+DRUID,Multi-Shot,28
+WARLOCK,Twin Emperor Vek'lor,28
+PALADIN,Dragon Consort,27
+DRUID,Alexstrasza,27
+MAGE,Totem Golem,27
+WARLOCK,Totem Golem,27
+SHAMAN,Second-Rate Bruiser,27
+WARLOCK,Stonetusk Boar,27
+PRIEST,Dark Iron Skulker,27
+WARRIOR,Ysera,27
+DRUID,Holy Nova,27
+PALADIN,Doppelgangster,27
+MAGE,Elise Starseeker,27
+WARLOCK,Forgotten Torch,27
+MAGE,Psych-o-Tron,27
+WARLOCK,Flamestrike,27
+PRIEST,Hozen Healer,27
+PRIEST,Scaled Nightmare,27
+ROGUE,Gadgetzan Ferryman,27
+PALADIN,Doppelgangster,27
+PRIEST,Twilight Flamecaller,27
+ROGUE,Thing from Below,26
+DRUID,Burgly Bully,26
+SHAMAN,Demonwrath,26
+HUNTER,Argent Squire,26
+PALADIN,Backstab,26
+PRIEST,Shadowflame,26
+WARLOCK,Sergeant Sally,26
+PALADIN,Knife Juggler,26
+PALADIN,Defender,26
+WARRIOR,Hellfire,26
+DRUID,"Yogg-Saron, Hope's End",26
+PRIEST,Youthful Brewmaster,26
+PALADIN,Twilight Geomancer,26
+ROGUE,Shady Dealer,26
+WARRIOR,Tentacle of N'Zoth,26
+ROGUE,Jungle Panther,26
+DRUID,Faerie Dragon,26
+MAGE,Ethereal Arcanist,26
+WARLOCK,Bilefin Tidehunter,26
+WARLOCK,Friendly Bartender,25
+MAGE,Red Mana Wyrm,25
+DRUID,Treant,25
+MAGE,Crazed Worshipper,25
+DRUID,Sen'jin Shieldmasta,25
+MAGE,Chillmaw,25
+HUNTER,Grimestreet Smuggler,25
+DRUID,Corrupted Seer,25
+DRUID,Spreading Madness,25
+ROGUE,Sylvanas Windrunner,25
+SHAMAN,Chillmaw,25
+WARLOCK,Tunnel Trogg,25
+WARRIOR,Twilight Elder,25
+ROGUE,Ragnaros the Firelord,25
+SHAMAN,Lotus Agents,25
+MAGE,Grook Fu Master,24
+PRIEST,Fierce Monkey,24
+PALADIN,Sylvanas Windrunner,24
+WARLOCK,Young Priestess,24
+WARLOCK,Flamewreathed Faceless,24
+MAGE,Grim Patron,24
+WARRIOR,Flame Juggler,24
+WARLOCK,Blood Imp,24
+DRUID,Greater Arcane Missiles,24
+PRIEST,Drain Life,24
+SHAMAN,Excavated Evil,24
+ROGUE,Abomination,24
+WARLOCK,Southsea Deckhand,24
+ROGUE,Magnataur Alpha,24
+WARRIOR,Captain Greenskin,24
+MAGE,Spirit Wolf,23
+SHAMAN,Fireguard Destroyer,23
+PALADIN,Murloc Knight,23
+WARLOCK,Frostbolt,23
+PRIEST,C'Thun,23
+WARRIOR,Twin Emperor Vek'lor,23
+WARRIOR,Twin Emperor Vek'nilash,23
+ROGUE,Shadow Sensei,23
+WARRIOR,Public Defender,23
+MAGE,Earth Elemental,23
+ROGUE,Wicked Witchdoctor,23
+PRIEST,Confessor Paletress,23
+WARRIOR,Grimestreet Smuggler,23
+ROGUE,Thunder Bluff Valiant,23
+WARLOCK,Kabal Demon,23
+MAGE,Darkscale Healer,22
+MAGE,Ysera Awakens,22
+WARLOCK,Book Wyrm,22
+PRIEST,Alexstrasza,22
+SHAMAN,Sylvanas Windrunner,22
+WARLOCK,Forbidden Flame,22
+WARRIOR,Grimestreet Pawnbroker,22
+PALADIN,Silent Knight,22
+MAGE,Alley Armorsmith,22
+ROGUE,Fierce Monkey,22
+PRIEST,Huge Toad,22
+PRIEST,Jade Shuriken,22
+DRUID,Demonwrath,22
+PRIEST,Lava Burst,22
+WARLOCK,Dark Iron Dwarf,22
+DRUID,Wisp,21
+PALADIN,Argent Commander,21
+MAGE,Drakonid Operative,21
+PRIEST,Thing from Below,21
+PALADIN,Steward of Darkshire,21
+WARLOCK,Gul'dan,21
+ROGUE,Volcanic Potion,21
+PRIEST,Nefarian,21
+ROGUE,Southsea Squidface,21
+WARLOCK,Leeroy Jenkins,21
+WARRIOR,Reno Jackson,21
+DRUID,Zoobot,20
+ROGUE,Deadly Fork,20
+DRUID,Reno Jackson,20
+ROGUE,Jade Golem,20
+WARLOCK,Tournament Attendee,20
+SHAMAN,Hallazeal the Ascended,20
+WARRIOR,Powershot,20
+SHAMAN,Emperor Thaurissan,20
+ROGUE,Tunnel Trogg,20
+MAGE,Clockwork Knight,20
+MAGE,Sen'jin Shieldmasta,20
+SHAMAN,Murloc Scout,20
+MAGE,Knuckles,20
+SHAMAN,Doppelgangster,20
+PALADIN,Whelp,20
+ROGUE,Hallazeal the Ascended,20
+PRIEST,Spreading Madness,20
+ROGUE,Patient Assassin,20
+ROGUE,Lotus Illusionist,20
+MAGE,Soulfire,20
+MAGE,Gadgetzan Auctioneer,20
+PALADIN,Abusive Sergeant,20
+DRUID,Abomination,19
+MAGE,Frostwolf Warlord,19
+MAGE,Ethereal Peddler,19
+MAGE,Spiked Hogrider,19
+MAGE,Streetwise Investigator,19
+PALADIN,Bloodsail Raider,19
+PRIEST,Forbidden Flame,19
+WARRIOR,Corrupted Seer,19
+PRIEST,Mad Bomber,19
+PRIEST,Murloc Warleader,19
+ROGUE,Lotus Assassin,19
+PRIEST,Slime,19
+DRUID,Lance Carrier,19
+PRIEST,Kobold Geomancer,19
+MAGE,Prince Malchezaar,19
+WARRIOR,Crazed Worshipper,19
+PALADIN,Grimestreet Protector,19
+PALADIN,Murloc Tidehunter,19
+WARRIOR,Coldlight Oracle,19
+PRIEST,Bane of Doom,19
+ROGUE,Bloodsail Raider,19
+PALADIN,Coldlight Seer,19
+WARLOCK,Felguard,19
+WARRIOR,Murloc Tinyfin,19
+WARLOCK,Greater Arcane Missiles,19
+WARRIOR,Argent Commander,19
+WARRIOR,Arathi Weaponsmith,19
+ROGUE,Chillmaw,19
+MAGE,Usher of Souls,19
+PALADIN,Holy Wrath,19
+PALADIN,Murloc Scout,19
+PRIEST,Laughing Sister,19
+WARLOCK,Dread Infernal,19
+MAGE,Twilight Elder,19
+HUNTER,"Finja, the Flying Star",18
+ROGUE,Violet Apprentice,18
+MAGE,Bloodsail Raider,18
+ROGUE,The Mistcaller,18
+PALADIN,Silver Hand Murloc,18
+WARRIOR,Emperor Thaurissan,18
+SHAMAN,Doppelgangster,18
+WARRIOR,Barnes,18
+WARLOCK,Dread Corsair,18
+PALADIN,Eadric the Pure,18
+ROGUE,Dragonfire Potion,18
+PRIEST,Hooded Acolyte,18
+PALADIN,Ysera Awakens,18
+PRIEST,Demonfire,18
+PRIEST,Cone of Cold,18
+PALADIN,Beckoner of Evil,18
+MAGE,Tuskarr Jouster,18
+DRUID,Astral Communion,18
+MAGE,Darkspeaker,18
+WARLOCK,Twin Emperor Vek'nilash,18
+PALADIN,Doppelgangster,18
+HUNTER,Patches the Pirate,18
+WARLOCK,Ravaging Ghoul,18
+ROGUE,Burgly Bully,18
+DRUID,Cenarius,17
+PRIEST,C'Thun's Chosen,17
+MAGE,Cryomancer,17
+MAGE,Spiteful Smith,17
+PALADIN,Book Wyrm,17
+MAGE,Shadowcaster,17
+WARLOCK,Bloodsail Raider,17
+WARLOCK,Cyclopian Horror,17
+MAGE,Baron Geddon,17
+HUNTER,Mistress of Mixtures,17
+MAGE,Dragon Consort,17
+ROGUE,Bloodsail Cultist,17
+MAGE,Elemental Destruction,17
+MAGE,Shado-Pan Rider,17
+MAGE,Captain Greenskin,17
+MAGE,Kabal Demon,17
+PRIEST,Cairne Bloodhoof,17
+HUNTER,Southsea Deckhand,17
+ROGUE,Kor'kron Elite,17
+ROGUE,Lava Burst,17
+ROGUE,Slime,17
+MAGE,Kor'kron Elite,17
+MAGE,Booty Bay Bodyguard,17
+SHAMAN,Flame Juggler,17
+MAGE,Frothing Berserker,17
+MAGE,Fen Creeper,17
+PRIEST,Tomb Pillager,17
+SHAMAN,Twilight Drake,17
+SHAMAN,Lightning Jolt,17
+WARLOCK,Frothing Berserker,17
+WARLOCK,Kor'kron Elite,17
+PRIEST,Forgotten Torch,17
+WARLOCK,Abomination,17
+MAGE,Djinni of Zephyrs,17
+ROGUE,Warsong Commander,17
+PRIEST,Slam,17
+PRIEST,Auctionmaster Beardo,16
+PRIEST,Wisp,16
+DRUID,Ancient of Blossoms,16
+WARLOCK,Barnes,16
+MAGE,Silver Hand Knight,16
+WARLOCK,Stampeding Kodo,16
+MAGE,Raza the Chained,16
+WARRIOR,Twilight Drake,16
+MAGE,Ravaging Ghoul,16
+MAGE,Starving Buzzard,16
+ROGUE,Master of Evolution,16
+PALADIN,Elven Archer,16
+WARLOCK,Dreadsteed,16
+PALADIN,Reno Jackson,16
+WARRIOR,Loot Hoarder,16
+ROGUE,Eternal Sentinel,16
+PRIEST,Elemental Destruction,16
+ROGUE,Grimestreet Pawnbroker,16
+MAGE,Netherspite Historian,16
+WARLOCK,Big Game Hunter,16
+MAGE,Leeroy Jenkins,16
+PRIEST,Baron Geddon,16
+PALADIN,Coldlight Oracle,16
+WARLOCK,Twilight Flamecaller,16
+ROGUE,Wild Pyromancer,16
+MAGE,Bomb Squad,16
+SHAMAN,Bilefin Tidehunter,16
+MAGE,Spellbreaker,16
+WARLOCK,Toxic Sewer Ooze,16
+ROGUE,Hobart Grapplehammer,16
+ROGUE,Blackwing Corruptor,16
+SHAMAN,Ysera Awakens,16
+PALADIN,Sunwalker,16
+MAGE,Faceless Manipulator,16
+WARLOCK,Arcane Anomaly,16
+WARLOCK,Corrupted Seer,16
+HUNTER,Timber Wolf,15
+MAGE,Hallazeal the Ascended,15
+MAGE,Onyx Bishop,15
+PRIEST,Sergeant Sally,15
+WARLOCK,Sir Finley Mrrgglton,15
+SHAMAN,Cairne Bloodhoof,15
+ROGUE,Malygos,15
+WARLOCK,Thing from Below,15
+WARLOCK,Fireblast,15
+PALADIN,Ancient of Blossoms,15
+WARRIOR,Pawn,15
+DRUID,Ysera,15
+WARRIOR,Avenging Wrath,15
+ROGUE,Beckoner of Evil,15
+MAGE,Nightblade,15
+SHAMAN,Book Wyrm,15
+PALADIN,Runic Egg,15
+WARLOCK,Bloodsail Cultist,15
+PRIEST,Nexus-Champion Saraad,15
+HUNTER,Blackwing Corruptor,15
+WARRIOR,Prince Malchezaar,15
+MAGE,Bloodsail Cultist,15
+DRUID,Flame Lance,15
+MAGE,Venture Co. Mercenary,15
+WARLOCK,Chillmaw,15
+MAGE,Lotus Agents,15
+WARRIOR,Malkorok,15
+SHAMAN,Wild Pyromancer,15
+WARLOCK,Mad Bomber,15
+DRUID,Explosive Shot,15
+MAGE,Dark Iron Skulker,14
+MAGE,Nexus-Champion Saraad,14
+PALADIN,Black Whelp,14
+MAGE,Tunnel Trogg,14
+PALADIN,Harrison Jones,14
+ROGUE,Excavated Evil,14
+PRIEST,Kabal Demon,14
+MAGE,Servant of Yogg-Saron,14
+ROGUE,Windspeaker,14
+PRIEST,Bash,14
+WARRIOR,Explosive Trap,14
+MAGE,Doppelgangster,14
+DRUID,Madam Goya,14
+PALADIN,Novice Engineer,14
+MAGE,Felguard,14
+PRIEST,Hobart Grapplehammer,14
+WARLOCK,Edwin VanCleef,14
+SHAMAN,Bloodsail Raider,14
+WARRIOR,Baine Bloodhoof,14
+WARRIOR,Dragonfire Potion,14
+HUNTER,Knuckles,14
+WARRIOR,Excavated Evil,14
+MAGE,Cult Apothecary,14
+ROGUE,Demonwrath,14
+MAGE,Grimestreet Enforcer,14
+WARLOCK,Arcane Missiles,14
+PALADIN,Huge Toad,14
+WARRIOR,Mistress of Mixtures,14
+PRIEST,Sen'jin Shieldmasta,14
+HUNTER,Dreadscale,14
+SHAMAN,Doppelgangster,14
+PALADIN,Baron Geddon,14
+WARLOCK,Southsea Captain,14
+PALADIN,Refreshment Vendor,14
+PALADIN,Grimscale Oracle,14
+WARLOCK,Elise Starseeker,14
+DRUID,Cairne Bloodhoof,13
+MAGE,Wild Pyromancer,13
+MAGE,Kvaldir Raider,13
+ROGUE,Dread Corsair,13
+PALADIN,Tuskarr Jouster,13
+WARLOCK,Psych-o-Tron,13
+MAGE,Stranglethorn Tiger,13
+PALADIN,Stonetusk Boar,13
+PRIEST,Bloodsail Cultist,13
+MAGE,Tentacle of N'Zoth,13
+ROGUE,Grimy Gadgeteer,13
+PALADIN,Twilight Drake,13
+PALADIN,Sunfury Protector,13
+PRIEST,Twin Emperor Vek'lor,13
+DRUID,Avenging Wrath,13
+WARLOCK,Blowgill Sniper,13
+MAGE,Lotus Assassin,13
+PRIEST,Earthen Ring Farseer,13
+PRIEST,Ravaging Ghoul,13
+HUNTER,Whelp,13
+ROGUE,Twilight Guardian,13
+WARRIOR,Wisp,13
+SHAMAN,Infested Tauren,13
+MAGE,Blackwing Technician,13
+PALADIN,Dread Corsair,13
+WARLOCK,SI:7 Agent,13
+PRIEST,Volcanic Drake,13
+WARRIOR,Lightning Storm,13
+WARLOCK,Murloc Raider,13
+PRIEST,Emerald Drake,13
+ROGUE,Draenei Totemcarver,13
+PRIEST,Mortal Strike,13
+MAGE,Priest of the Feast,13
+DRUID,Silver Hand Recruit,12
+ROGUE,Orgrimmar Aspirant,12
+DRUID,Mind Control Tech,12
+SHAMAN,Wobbling Runts,12
+DRUID,Powershot,12
+WARLOCK,Small-Time Buccaneer,12
+DRUID,Hammer of Wrath,12
+MAGE,Southsea Deckhand,12
+HUNTER,Murloc Warleader,12
+WARLOCK,Mind Spike,12
+PALADIN,Sergeant Sally,12
+WARLOCK,Doomsayer,12
+PRIEST,Argent Squire,12
+WARLOCK,Jade Golem,12
+PRIEST,Fireblast,12
+MAGE,Kabal Demon,12
+ROGUE,"N'Zoth, the Corruptor",12
+PALADIN,Fight Promoter,12
+WARLOCK,Black Whelp,12
+WARRIOR,Consecration,12
+WARRIOR,Abomination,12
+ROGUE,Twilight Elder,12
+DRUID,Pantry Spider,12
+DRUID,Sea Reaver,12
+WARLOCK,Sea Giant,12
+MAGE,Ram Wrangler,12
+PALADIN,Elise Starseeker,12
+MAGE,Thunder Bluff Valiant,12
+WARRIOR,Arcane Shot,12
+MAGE,Imp Gang Boss,12
+DRUID,Wobbling Runts,12
+ROGUE,Dirty Rat,12
+MAGE,White Eyes,12
+WARRIOR,Amani Berserker,12
+ROGUE,Shadow Rager,12
+DRUID,Acolyte of Pain,12
+SHAMAN,Knife Juggler,12
+DRUID,Holy Smite,12
+DRUID,Sunfury Protector,12
+SHAMAN,Felfire Potion,12
+MAGE,Youthful Brewmaster,12
+MAGE,Mukla's Champion,12
+ROGUE,Arcanosmith,12
+SHAMAN,Abomination,12
+MAGE,Dread Corsair,12
+MAGE,Book Wyrm,12
+PRIEST,"Medivh, the Guardian",12
+MAGE,Demented Frostcaller,12
+MAGE,Consecration,12
+DRUID,Jade Shuriken,11
+MAGE,Pit Fighter,11
+DRUID,"Y'Shaarj, Rage Unbound",11
+PALADIN,Bloodsail Corsair,11
+ROGUE,Armorsmith,11
+WARLOCK,Murloc Tinyfin,11
+HUNTER,Worgen Infiltrator,11
+WARLOCK,Ysera Awakens,11
+MAGE,Kabal Songstealer,11
+DRUID,Arcane Explosion,11
+ROGUE,Argent Commander,11
+PRIEST,Arcane Missiles,11
+MAGE,Jade Spirit,11
+WARLOCK,Gadgetzan Auctioneer,11
+SHAMAN,Kazakus Potion,11
+WARLOCK,Cone of Cold,11
+DRUID,Icehowl,11
+DRUID,Jade Golem,11
+DRUID,Maelstrom Portal,11
+WARRIOR,Sen'jin Shieldmasta,11
+PALADIN,Cairne Bloodhoof,11
+HUNTER,Sylvanas Windrunner,11
+PRIEST,Stormwind Knight,11
+MAGE,Murloc Warleader,11
+SHAMAN,Defender of Argus,11
+SHAMAN,Kazakus Potion,11
+ROGUE,Silent Knight,11
+DRUID,Cellar Spider,11
+WARLOCK,Lowly Squire,11
+MAGE,Druid of the Claw,11
+MAGE,Naga Sea Witch,11
+MAGE,Princess Huhuran,11
+PRIEST,Grommash Hellscream,11
+PALADIN,Dragon Egg,11
+ROGUE,C'Thun's Chosen,11
+ROGUE,Cairne Bloodhoof,11
+WARLOCK,Alexstrasza,11
+WARRIOR,Skycap'n Kragg,11
+MAGE,Jeweled Scarab,11
+PALADIN,Abomination,11
+PALADIN,Murloc Tinyfin,11
+PRIEST,Jade Golem,11
+SHAMAN,Jade Golem,11
+PRIEST,Selfless Hero,11
+ROGUE,Grimestreet Informant,11
+HUNTER,Stranglethorn Tiger,10
+ROGUE,Grommash Hellscream,10
+SHAMAN,Naga Corsair,10
+PRIEST,War Kodo,10
+MAGE,Fireblast Rank 2,10
+SHAMAN,Burgly Bully,10
+PRIEST,Southsea Captain,10
+WARRIOR,Bloodsail Corsair,10
+WARLOCK,Injured Kvaldir,10
+DRUID,Dragon's Breath,10
+SHAMAN,Coldlight Seer,10
+MAGE,Dread Infernal,10
+WARLOCK,Flamewaker,10
+PRIEST,Malygos,10
+PRIEST,Prophet Velen,10
+PRIEST,Gnomish Inventor,10
+DRUID,Lava Shock,10
+WARRIOR,Mind Control Tech,10
+DRUID,Mind Spike,10
+PRIEST,Crazed Worshipper,10
+MAGE,Virmen Sensei,10
+PRIEST,Heal,10
+MAGE,Corrupted Healbot,10
+MAGE,SI:7 Agent,10
+PALADIN,Emperor Thaurissan,10
+ROGUE,Sir Finley Mrrgglton,10
+HUNTER,Brann Bronzebeard,10
+MAGE,Stormpike Commando,10
+MAGE,Jade Golem,10
+DRUID,Jade Lightning,10
+WARLOCK,Lightwarden,10
+DRUID,Youthful Brewmaster,10
+DRUID,Snipe,10
+WARLOCK,"Finja, the Flying Star",10
+ROGUE,Blood To Ichor,10
+WARLOCK,Infested Tauren,10
+SHAMAN,Baine Bloodhoof,10
+MAGE,Infested Tauren,10
+ROGUE,Sparring Partner,10
+PALADIN,Secretkeeper,10
+WARRIOR,Hammer of Wrath,10
+WARRIOR,Explosive Shot,10
+PRIEST,Shadowfiend,10
+HUNTER,Twilight Guardian,10
+MAGE,Holy Fire,10
+HUNTER,Grimestreet Informant,9
+MAGE,Faerie Dragon,9
+ROGUE,Mind Control Tech,9
+PRIEST,Injured Kvaldir,9
+PALADIN,Ravaging Ghoul,9
+PRIEST,Mana Wyrm,9
+PRIEST,Mortal Coil,9
+DRUID,Abyssal Enforcer,9
+PRIEST,Arcane Explosion,9
+DRUID,Arcane Shot,9
+PRIEST,Crazed Alchemist,9
+HUNTER,Harvest Golem,9
+ROGUE,Hellfire,9
+PRIEST,Consecration,9
+ROGUE,Harvest Golem,9
+PRIEST,Greater Arcane Missiles,9
+MAGE,Kobold Geomancer,9
+SHAMAN,Silent Knight,9
+PALADIN,Slam,9
+ROGUE,Faerie Dragon,9
+PALADIN,Explosive Trap,9
+MAGE,Soggoth the Slitherer,9
+PRIEST,Nerubian,9
+MAGE,The Curator,9
+ROGUE,Abyssal Enforcer,9
+ROGUE,Mortal Strike,9
+WARRIOR,Holy Nova,9
+DRUID,Frostbolt,9
+WARLOCK,Zealous Initiate,9
+ROGUE,Jade Chieftain,9
+MAGE,Auctionmaster Beardo,9
+SHAMAN,Leeroy Jenkins,9
+PALADIN,Dire Wolf Alpha,9
+WARLOCK,Alexstrasza's Champion,9
+WARLOCK,Prince Malchezaar,9
+DRUID,Menagerie Magician,9
+PRIEST,Mind Shatter,9
+PRIEST,Twin Emperor Vek'nilash,9
+PALADIN,Arcane Shot,9
+WARRIOR,Kazakus Potion,9
+DRUID,Huge Toad,9
+DRUID,Blackwing Technician,9
+WARLOCK,Murloc Warleader,9
+DRUID,Fire Elemental,9
+WARRIOR,Shadowflame,9
+WARLOCK,Jade Golem,9
+WARRIOR,Dispatch Kodo,9
+WARLOCK,Fierce Monkey,9
+MAGE,Flamewreathed Faceless,9
+MAGE,Harvest Golem,9
+DRUID,Cone of Cold,9
+PRIEST,Flamewaker,9
+PRIEST,Flash Heal,9
+MAGE,Animated Armor,9
+MAGE,Tomb Pillager,9
+WARRIOR,Demonwrath,9
+DRUID,Worgen Infiltrator,8
+DRUID,Bane of Doom,8
+MAGE,Southsea Captain,8
+MAGE,Dreadsteed,8
+MAGE,Kabal Talonpriest,8
+MAGE,Menagerie Magician,8
+MAGE,Twilight Darkmender,8
+MAGE,Rhonin,8
+PRIEST,Onyxia,8
+MAGE,Jinyu Waterspeaker,8
+WARRIOR,Grim Patron,8
+WARLOCK,Sunwalker,8
+ROGUE,N'Zoth's First Mate,8
+DRUID,Lord of the Arena,8
+WARLOCK,Lesser Heal,8
+WARLOCK,Coldlight Seer,8
+PALADIN,Mad Bomber,8
+WARLOCK,Void Terror,8
+PRIEST,Toxic Sewer Ooze,8
+DRUID,Sideshow Spelleater,8
+ROGUE,Corrupted Seer,8
+WARLOCK,Elemental Destruction,8
+MAGE,Validated Doomsayer,8
+WARLOCK,Jade Golem,8
+PRIEST,Murloc Tinyfin,8
+WARLOCK,Hungry Crab,8
+SHAMAN,Ancient of Blossoms,8
+MAGE,Anubisath Sentinel,8
+WARLOCK,Kabal Demon,8
+MAGE,Fierce Monkey,8
+HUNTER,Corrupted Seer,8
+WARRIOR,Sparring Partner,8
+MAGE,Corrupted Seer,8
+PRIEST,Wobbling Runts,8
+DRUID,Stonetusk Boar,8
+WARLOCK,Faerie Dragon,8
+PRIEST,Kabal Lackey,8
+WARLOCK,Violet Illusionist,8
+PRIEST,Murloc Raider,8
+WARRIOR,Don Han'Cho,8
+DRUID,Chromaggus,8
+PALADIN,Blood Knight,8
+HUNTER,Dirty Rat,8
+PRIEST,Bomb Squad,8
+MAGE,Big Game Hunter,8
+SHAMAN,Harvest Golem,8
+ROGUE,Cutpurse,8
+DRUID,Wind-up Burglebot,8
+ROGUE,Tuskarr Totemic,8
+PRIEST,Lightspawn,8
+ROGUE,Master of Disguise,8
+WARLOCK,Murloc Tidecaller,8
+WARLOCK,Questing Adventurer,8
+WARLOCK,Water Elemental,8
+WARRIOR,Mad Bomber,8
+PRIEST,Shadow Strike,8
+PRIEST,Flame Juggler,8
+MAGE,Jade Lightning,8
+SHAMAN,Crazed Alchemist,8
+HUNTER,Dart Trap,8
+MAGE,Dalaran Aspirant,8
+PRIEST,Lava Shock,8
+PRIEST,Bladed Cultist,8
+HUNTER,Refreshment Vendor,8
+DRUID,Kill Command,8
+SHAMAN,Jade Behemoth,8
+DRUID,Arcane Blast,8
+DRUID,Twilight Summoner,7
+DRUID,Dread Infernal,7
+HUNTER,Deathwing,7
+PRIEST,Stonetusk Boar,7
+ROGUE,Kobold Geomancer,7
+WARLOCK,Kabal Songstealer,7
+SHAMAN,Master Jouster,7
+WARRIOR,Faceless Destroyer,7
+WARLOCK,Soggoth the Slitherer,7
+DRUID,Drain Life,7
+WARLOCK,Huge Toad,7
+DRUID,Wisp,7
+WARLOCK,Jade Spirit,7
+ROGUE,Pit Snake,7
+ROGUE,Dust Devil,7
+SHAMAN,Sergeant Sally,7
+SHAMAN,Archmage,7
+PRIEST,Lightwell,7
+DRUID,Forgotten Torch,7
+HUNTER,Small-Time Buccaneer,7
+WARLOCK,Jade Golem,7
+ROGUE,Crazed Worshipper,7
+PALADIN,Revenge,7
+DRUID,Volcanic Lumberer,7
+ROGUE,Sea Reaver,7
+DRUID,Kidnapper,7
+SHAMAN,Beckoner of Evil,7
+HUNTER,Defender of Argus,7
+WARRIOR,Sunwalker,7
+PALADIN,Wolfrider,7
+ROGUE,Kidnapper,7
+ROGUE,Red Mana Wyrm,7
+WARRIOR,Volcanic Potion,7
+WARLOCK,Ysera,7
+SHAMAN,Lord of the Arena,7
+DRUID,Elise Starseeker,7
+ROGUE,Consecration,7
+HUNTER,Mastiff,7
+HUNTER,Wolfrider,7
+MAGE,Twilight Whelp,7
+PRIEST,Felguard,7
+PALADIN,Powershot,7
+ROGUE,Kazakus Potion,7
+PRIEST,Squirming Tentacle,7
+DRUID,Virmen Sensei,7
+ROGUE,Pawn,7
+MAGE,Dark Peddler,7
+SHAMAN,Frigid Snobold,7
+MAGE,Fallen Hero,7
+WARLOCK,Tomb Pillager,7
+PRIEST,Bloodhoof Brave,7
+WARLOCK,Arcane Explosion,7
+PRIEST,Anomalus,7
+PRIEST,Soulfire,7
+DRUID,Argent Commander,7
+WARLOCK,Fearsome Doomguard,7
+PRIEST,Jade Chieftain,7
+DRUID,Stormcrack,7
+PRIEST,Dragon's Breath,7
+HUNTER,Acolyte of Pain,7
+PRIEST,Fire Elemental,7
+MAGE,Alexstrasza's Champion,7
+WARRIOR,Searing Totem,7
+PALADIN,Damaged Golem,7
+ROGUE,Don Han'Cho,7
+PALADIN,Stormwind Knight,7
+WARRIOR,Forked Lightning,7
+SHAMAN,Wrathion,7
+WARRIOR,"Genzo, the Shark",7
+MAGE,Recruiter,7
+DRUID,Skeram Cultist,7
+PALADIN,C'Thun,7
+PRIEST,Cruel Taskmaster,7
+DRUID,Shadow Strike,7
+HUNTER,Second-Rate Bruiser,7
+DRUID,Faceless Destroyer,6
+MAGE,Explosive Trap,6
+HUNTER,Ram Wrangler,6
+SHAMAN,Imp Gang Boss,6
+MAGE,Aya Blackpaw,6
+WARLOCK,Slime,6
+PALADIN,Lorewalker Cho,6
+WARLOCK,Searing Totem,6
+PRIEST,Corrupted Healbot,6
+DRUID,Ravaging Ghoul,6
+DRUID,Ivory Knight,6
+DRUID,Wolfrider,6
+HUNTER,Cult Master,6
+HUNTER,Tomb Spider,6
+PRIEST,Kabal Demon,6
+PALADIN,Soggoth the Slitherer,6
+PRIEST,Mountain Giant,6
+PALADIN,Mysterious Challenger,6
+ROGUE,Arcane Shot,6
+DRUID,Addled Grizzly,6
+WARRIOR,Ironbeak Owl,6
+PRIEST,Jeweled Scarab,6
+MAGE,Questing Adventurer,6
+WARLOCK,Priest of the Feast,6
+PRIEST,Crystal,6
+PRIEST,Menagerie Magician,6
+PRIEST,Voodoo Doctor,6
+ROGUE,Shado-Pan Rider,6
+SHAMAN,Reno Jackson,6
+WARLOCK,Wisp,6
+SHAMAN,Mind Control Tech,6
+PRIEST,Spellbreaker,6
+DRUID,Faceless Summoner,6
+WARLOCK,Ancient Watcher,6
+MAGE,Slime,6
+WARRIOR,Totem Golem,6
+SHAMAN,Refreshment Vendor,6
+PRIEST,Dalaran Aspirant,6
+ROGUE,Wisp,6
+SHAMAN,C'Thun,6
+ROGUE,Sen'jin Shieldmasta,6
+WARLOCK,Drakonid Crusher,6
+WARLOCK,Whirlwind,6
+ROGUE,Jade Golem,6
+MAGE,Razorfen Hunter,6
+SHAMAN,Eternal Sentinel,6
+MAGE,Jade Golem,6
+PALADIN,Multi-Shot,6
+PRIEST,Twilight Darkmender,6
+DRUID,Fan of Knives,6
+DRUID,Demonfire,6
+WARRIOR,Emerald Drake,6
+PALADIN,Baine Bloodhoof,6
+MAGE,Lightning Storm,6
+PALADIN,Twilight Elder,6
+DRUID,Dire Wolf Alpha,6
+WARLOCK,Loot Hoarder,6
+MAGE,Murloc Tinyfin,6
+PRIEST,Frog,6
+PRIEST,Prince Malchezaar,6
+PRIEST,Explosive Trap,6
+PRIEST,Water Elemental,6
+WARRIOR,Blade Flurry,6
+SHAMAN,Light's Champion,6
+DRUID,Flame of Azzinoth,6
+WARRIOR,Violet Illusionist,6
+HUNTER,Stampeding Kodo,6
+MAGE,Sir Finley Mrrgglton,6
+MAGE,Stormcrack,6
+MAGE,Maelstrom Portal,6
+MAGE,Gnomish Inventor,6
+ROGUE,Argent Watchman,6
+PRIEST,Enchanted Raven,6
+ROGUE,Blackwing Technician,6
+ROGUE,Murloc Tinyfin,6
+ROGUE,Silithid Swarmer,6
+WARRIOR,Knife Juggler,6
+SHAMAN,Mad Bomber,6
+PALADIN,Wisp,6
+WARLOCK,Bloodmage Thalnos,6
+PALADIN,Crazed Worshipper,6
+WARLOCK,Usher of Souls,6
+PRIEST,Firebloom Toxin,6
+ROGUE,Public Defender,6
+PRIEST,Tournament Medic,6
+DRUID,Eviscerate,6
+DRUID,Tournament Attendee,6
+SHAMAN,Cellar Spider,6
+MAGE,Mad Bomber,6
+WARLOCK,Jinyu Waterspeaker,6
+ROGUE,Blade of C'Thun,6
+DRUID,Gnomish Inventor,6
+SHAMAN,Volcanic Drake,6
+PALADIN,Don Han'Cho,6
+WARRIOR,Alexstrasza,6
+MAGE,Cabal Shadow Priest,6
+ROGUE,Twin Emperor Vek'lor,6
+DRUID,Book Wyrm,6
+WARRIOR,Multi-Shot,6
+DRUID,Al'Akir the Windlord,6
+WARRIOR,Soulfire,6
+DRUID,Spirit Wolf,6
+WARRIOR,Defender of Argus,6
+SHAMAN,Living Roots,6
+DRUID,Nefarian,6
+PRIEST,Shiv,6
+DRUID,Reckless Rocketeer,6
+WARLOCK,Baron Geddon,6
+DRUID,Doomguard,6
+DRUID,Whelp,6
+ROGUE,Fireblast,6
+DRUID,Arcane Missiles,6
+WARLOCK,Frog,6
+DRUID,Fist of Jaraxxus,6
+PRIEST,Bog Creeper,6
+WARRIOR,Abyssal Enforcer,6
+MAGE,Arcane Giant,6
+DRUID,Ancient Harbinger,5
+DRUID,Injured Kvaldir,5
+MAGE,N'Zoth's First Mate,5
+DRUID,Tunnel Trogg,5
+MAGE,Unbound Elemental,5
+MAGE,Sheep,5
+MAGE,Shadowfiend,5
+PRIEST,Pit Snake,5
+WARLOCK,Tinkmaster Overspark,5
+WARRIOR,Orgrimmar Aspirant,5
+WARRIOR,Timepiece of Horror,5
+PRIEST,Faceless Destroyer,5
+MAGE,Jade Golem,5
+ROGUE,Jade Golem,5
+PRIEST,Polluted Hoarder,5
+SHAMAN,Cruel Taskmaster,5
+MAGE,Wyrmrest Agent,5
+SHAMAN,Coldlight Oracle,5
+MAGE,The Storm Guardian,5
+SHAMAN,Pompous Thespian,5
+PRIEST,Earth Shock,5
+HUNTER,Faerie Dragon,5
+PRIEST,Dire Wolf Alpha,5
+HUNTER,Doppelgangster,5
+SHAMAN,Warhorse Trainer,5
+ROGUE,Huge Toad,5
+SHAMAN,Dire Wolf Alpha,5
+WARRIOR,Lightwarden,5
+WARRIOR,Refreshment Vendor,5
+DRUID,Scaled Nightmare,5
+ROGUE,Keeper of the Grove,5
+DRUID,Small-Time Buccaneer,5
+SHAMAN,Jade Shuriken,5
+MAGE,Toxic Sewer Ooze,5
+WARLOCK,Lightning Storm,5
+SHAMAN,Ancient Harbinger,5
+ROGUE,Holy Nova,5
+WARLOCK,Eater of Secrets,5
+SHAMAN,Kazakus Potion,5
+WARRIOR,Sergeant Sally,5
+SHAMAN,Murloc Tidehunter,5
+WARRIOR,Nefarian,5
+PALADIN,Doomsayer,5
+DRUID,Vilefin Inquisitor,5
+PALADIN,Cleave,5
+MAGE,Ironfur Grizzly,5
+SHAMAN,Flamewaker,5
+PRIEST,Coldlight Oracle,5
+SHAMAN,Drakonid Operative,5
+WARRIOR,Kazakus Potion,5
+WARLOCK,Cairne Bloodhoof,5
+DRUID,Coldarra Drake,5
+ROGUE,Netherspite Historian,5
+WARLOCK,Blackwing Technician,5
+PRIEST,Brave Archer,5
+SHAMAN,Rumbling Elemental,5
+DRUID,Bolf Ramshield,5
+DRUID,Stampeding Kodo,5
+MAGE,C'Thun's Chosen,5
+WARLOCK,Goldshire Footman,5
+PALADIN,Jeweled Scarab,5
+PRIEST,Kodorider,5
+ROGUE,Bane of Doom,5
+WARLOCK,Lance Carrier,5
+DRUID,Whirlwind,5
+DRUID,Holy Wrath,5
+DRUID,Dark Iron Skulker,5
+HUNTER,Emperor Thaurissan,5
+HUNTER,Don Han'Cho,5
+PALADIN,Spellbreaker,5
+MAGE,Starfall,5
+SHAMAN,Violet Illusionist,5
+PALADIN,Guardian of Kings,5
+SHAMAN,Ironfur Grizzly,5
+PRIEST,Lowly Squire,5
+WARLOCK,Medivh's Valet,5
+PRIEST,"Deathwing, Dragonlord",5
+DRUID,Wrathion,5
+SHAMAN,Madam Goya,5
+DRUID,Novice Engineer,5
+SHAMAN,Felguard,5
+PRIEST,Grimscale Chum,5
+WARLOCK,The Curator,5
+SHAMAN,Baron Geddon,5
+DRUID,Hyena,5
+SHAMAN,Lotus Illusionist,5
+DRUID,Murloc Tinyfin,5
+WARRIOR,Lightning Bolt,5
+DRUID,Mysterious Challenger,5
+DRUID,Daring Reporter,5
+MAGE,Sheep,5
+MAGE,Shadow Bolt,5
+MAGE,Lightspawn,5
+PRIEST,Amani Berserker,5
+PRIEST,Voidwalker,5
+DRUID,War Kodo,5
+ROGUE,Twilight Elemental,5
+DRUID,Grimscale Chum,5
+ROGUE,Faceless Destroyer,5
+PRIEST,Cleave,5
+ROGUE,Sunfury Protector,5
+WARRIOR,Bog Creeper,5
+SHAMAN,Tinkmaster Overspark,5
+DRUID,Thing from Below,5
+SHAMAN,Kabal Trafficker,5
+MAGE,"Yogg-Saron, Hope's End",5
+SHAMAN,Tauren Warrior,5
+ROGUE,Dispatch Kodo,5
+DRUID,Leatherclad Hogleader,5
+PRIEST,Naga Corsair,5
+PRIEST,Lotus Assassin,5
+ROGUE,Bloodsail Corsair,5
+WARLOCK,Stormcrack,5
+PRIEST,Soggoth the Slitherer,5
+WARLOCK,Aya Blackpaw,5
+ROGUE,Explosive Shot,5
+DRUID,Naga Sea Witch,5
+PALADIN,"N'Zoth, the Corruptor",5
+HUNTER,Avian Watcher,5
+DRUID,Lightning Bolt,5
+MAGE,Fearsome Doomguard,5
+DRUID,Fen Creeper,5
+PALADIN,Naga Corsair,5
+SHAMAN,Shattered Sun Cleric,5
+PALADIN,Alexstrasza,5
+MAGE,Eviscerate,5
+ROGUE,Swipe,5
+DRUID,Firelands Portal,5
+WARRIOR,Blackwater Pirate,5
+MAGE,Edwin VanCleef,5
+SHAMAN,Gadgetzan Auctioneer,5
+DRUID,Onyxia,5
+MAGE,Kabal Trafficker,5
+PALADIN,Wrathion,5
+SHAMAN,Draenei Totemcarver,5
+PRIEST,"N'Zoth, the Corruptor",5
+SHAMAN,Ysera,5
+PALADIN,C'Thun's Chosen,5
+WARRIOR,"Nat, the Darkfisher",5
+MAGE,Arcane Shot,5
+SHAMAN,Pantry Spider,5
+DRUID,Soulfire,5
+MAGE,Revenge,5
+DRUID,Hogger,4
+DRUID,Wildwalker,4
+PRIEST,Tinkmaster Overspark,4
+DRUID,Red Mana Wyrm,4
+ROGUE,Tournament Attendee,4
+MAGE,Forked Lightning,4
+SHAMAN,Faerie Dragon,4
+MAGE,Inner Rage,4
+WARLOCK,Teapot,4
+MAGE,Wisp,4
+WARRIOR,Hound,4
+ROGUE,Ysera Awakens,4
+MAGE,Unearthed Raptor,4
+SHAMAN,Spellslinger,4
+MAGE,Tanaris Hogchopper,4
+WARRIOR,Jinyu Waterspeaker,4
+MAGE,Argent Squire,4
+PALADIN,Friendly Bartender,4
+PRIEST,Coliseum Manager,4
+PALADIN,Prince Malchezaar,4
+ROGUE,Twilight Summoner,4
+PRIEST,Heal,4
+ROGUE,Baine Bloodhoof,4
+ROGUE,Worgen Infiltrator,4
+SHAMAN,Silverware Golem,4
+SHAMAN,Defias Cleaner,4
+WARLOCK,Undercity Huckster,4
+DRUID,Faceless Shambler,4
+WARRIOR,Axe Flinger,4
+DRUID,Netherspite Historian,4
+WARRIOR,Wrathion,4
+ROGUE,Sunwalker,4
+DRUID,Steward,4
+WARRIOR,Gnomish Inventor,4
+MAGE,Pyroblast,4
+MAGE,Ancient of Blossoms,4
+MAGE,Worgen Infiltrator,4
+PRIEST,Silent Knight,4
+MAGE,Flame Imp,4
+PRIEST,Cult Apothecary,4
+PRIEST,Unearthed Raptor,4
+SHAMAN,Tundra Rhino,4
+PRIEST,Friendly Bartender,4
+WARLOCK,Onyx Bishop,4
+WARRIOR,Laughing Sister,4
+WARRIOR,The Black Knight,4
+WARRIOR,Dire Wolf Alpha,4
+MAGE,Master of Ceremonies,4
+DRUID,Justicar Trueheart,4
+WARLOCK,Gormok the Impaler,4
+MAGE,Shifting Shade,4
+MAGE,Evolved Kobold,4
+MAGE,Searing Totem,4
+PRIEST,Ethereal Conjurer,4
+PRIEST,Manic Soulcaster,4
+PRIEST,Stampeding Kodo,4
+ROGUE,The Storm Guardian,4
+SHAMAN,Knuckles,4
+WARLOCK,Lord Jaraxxus,4
+DRUID,Ironfur Grizzly,4
+DRUID,Arch-Thief Rafaam,4
+DRUID,Wilfred Fizzlebang,4
+ROGUE,Luckydo Buccaneer,4
+SHAMAN,Ironbeak Owl,4
+SHAMAN,Demolisher,4
+DRUID,Explosive Trap,4
+WARLOCK,Scarlet Crusader,4
+PRIEST,Fist of Jaraxxus,4
+HUNTER,Harrison Jones,4
+WARLOCK,Jade Golem,4
+PRIEST,Frostbolt,4
+WARLOCK,Candle,4
+ROGUE,Frostbolt,4
+DRUID,Frog,4
+WARLOCK,Bog Creeper,4
+ROGUE,Flame Juggler,4
+DRUID,Totem Golem,4
+PRIEST,Sunwalker,4
+MAGE,Squire,4
+PRIEST,Gruul,4
+ROGUE,Frog,4
+WARRIOR,Ironfur Grizzly,4
+DRUID,Tomb Spider,4
+WARRIOR,Elemental Destruction,4
+PALADIN,Goldshire Footman,4
+ROGUE,Psych-o-Tron,4
+PALADIN,Faceless Destroyer,4
+WARRIOR,Spellbreaker,4
+WARLOCK,Jade Golem,4
+MAGE,King Mukla,4
+WARLOCK,Dark Iron Skulker,4
+PRIEST,Shadow Bolt,4
+MAGE,Silent Knight,4
+SHAMAN,"Nat, the Darkfisher",4
+WARLOCK,Cabal Shadow Priest,4
+HUNTER,Disciple of C'Thun,4
+MAGE,Krul the Unshackled,4
+HUNTER,Forlorn Stalker,4
+WARRIOR,Harvest Golem,4
+MAGE,Hired Gun,4
+DRUID,Arcane Anomaly,4
+SHAMAN,Scarlet Crusader,4
+SHAMAN,Revenge,4
+PALADIN,Hound,4
+SHAMAN,Circle of Healing,4
+PALADIN,Fireblast Rank 2,4
+DRUID,Hozen Healer,4
+SHAMAN,Rat Pack,4
+DRUID,Harvest Golem,4
+WARLOCK,Fen Creeper,4
+DRUID,Frost Elemental,4
+DRUID,Sabertooth Tiger,4
+PRIEST,Al'Akir the Windlord,4
+DRUID,Kabal Trafficker,4
+PRIEST,Worgen Infiltrator,4
+HUNTER,Chillmaw,4
+PRIEST,Wrath of Air Totem,4
+MAGE,Amani Berserker,4
+ROGUE,Novice Engineer,4
+MAGE,Stormwind Knight,4
+ROGUE,Twin Emperor Vek'nilash,4
+MAGE,Frigid Snobold,4
+SHAMAN,Jade Golem,4
+PRIEST,Blood To Ichor,4
+SHAMAN,Netherspite Historian,4
+PRIEST,Flametongue Totem,4
+WARRIOR,Crazed Alchemist,4
+SHAMAN,Bloodsail Cultist,4
+DRUID,Gadgetzan Jouster,4
+WARLOCK,Damaged Golem,4
+WARLOCK,Unbound Elemental,4
+HUNTER,Cleave,4
+WARRIOR,Doomcaller,4
+PRIEST,Eydis Darkbane,4
+DRUID,Forbidden Ancient,4
+PRIEST,Mana Tide Totem,4
+MAGE,"Shaku, the Collector",4
+ROGUE,Wolfrider,4
+MAGE,Rat Pack,4
+SHAMAN,Sideshow Spelleater,4
+MAGE,Dreadscale,4
+SHAMAN,Alexstrasza's Champion,4
+MAGE,Lord Jaraxxus,4
+WARRIOR,Argent Protector,4
+PALADIN,Leeroy Jenkins,4
+PRIEST,Argent Commander,4
+PALADIN,Mogu'shan Warden,4
+SHAMAN,"Mukla, Tyrant of the Vale",4
+PRIEST,White Eyes,4
+WARLOCK,Skeram Cultist,4
+PRIEST,Dragon Egg,4
+MAGE,Whirlwind,4
+ROGUE,Elise Starseeker,4
+SHAMAN,Raging Worgen,4
+SHAMAN,Fight Promoter,4
+SHAMAN,"""Little Friend""",4
+WARLOCK,Illidan Stormrage,4
+DRUID,Refreshment Vendor,4
+DRUID,Kabal Crystal Runner,4
+DRUID,Secretkeeper,4
+HUNTER,Backstab,4
+SHAMAN,Windfury Harpy,4
+MAGE,Sunfury Protector,4
+DRUID,Bilefin Tidehunter,4
+WARLOCK,Krul the Unshackled,4
+SHAMAN,Wind-up Burglebot,4
+WARRIOR,Stampeding Kodo,4
+ROGUE,Sergeant Sally,4
+MAGE,Bloodhoof Brave,4
+WARLOCK,Alley Armorsmith,4
+MAGE,Succubus,4
+SHAMAN,Sunwalker,4
+PALADIN,Quick Shot,4
+SHAMAN,Elise Starseeker,4
+MAGE,Thing from Below,4
+WARLOCK,Consecration,4
+DRUID,Wrath of Air Totem,4
+WARRIOR,Quick Shot,4
+SHAMAN,Sheep,4
+WARLOCK,Wolfrider,4
+WARLOCK,Jade Chieftain,4
+DRUID,Leokk,4
+DRUID,Earthen Ring Farseer,4
+MAGE,Flame Juggler,4
+PRIEST,Alleycat,4
+SHAMAN,Bog Creeper,4
+SHAMAN,Mukla's Champion,4
+MAGE,Knife Juggler,4
+MAGE,Wolfrider,4
+SHAMAN,Twin Emperor Vek'lor,4
+PRIEST,Young Priestess,4
+SHAMAN,Coldarra Drake,4
+SHAMAN,Swipe,4
+WARLOCK,Weasel Tunneler,4
+WARLOCK,Runic Egg,4
+DRUID,Hound,4
+MAGE,Ironforge Rifleman,4
+PALADIN,Bloodmage Thalnos,4
+PRIEST,Elven Archer,4
+ROGUE,Cyclopian Horror,4
+SHAMAN,Slime,4
+PRIEST,Ironbeak Owl,4
+PRIEST,Imp Gang Boss,4
+ROGUE,Searing Totem,4
+DRUID,Tinkmaster Overspark,3
+DRUID,Silver Hand Knight,3
+MAGE,Hozen Healer,3
+DRUID,Grumbly Runt,3
+MAGE,Sunwalker,3
+DRUID,Gnoll,3
+PRIEST,Blackwater Pirate,3
+SHAMAN,Argent Commander,3
+PRIEST,Arathi Weaponsmith,3
+SHAMAN,Earthen Ring Farseer,3
+ROGUE,Mana Wraith,3
+SHAMAN,The Mistcaller,3
+SHAMAN,Wickerflame Burnbristle,3
+SHAMAN,King's Elekk,3
+SHAMAN,Hired Gun,3
+WARLOCK,Baine Bloodhoof,3
+DRUID,Priestess of Elune,3
+WARRIOR,Whelp,3
+HUNTER,Leper Gnome,3
+DRUID,Void Crusher,3
+HUNTER,Stonetusk Boar,3
+DRUID,Jungle Moonkin,3
+MAGE,Spawn of Shadows,3
+HUNTER,Baron Geddon,3
+MAGE,Demolisher,3
+MAGE,Tiny Knight of Evil,3
+PALADIN,Nefarian,3
+PRIEST,Thrallmar Farseer,3
+PALADIN,Murloc Raider,3
+ROGUE,Harrison Jones,3
+PRIEST,Leper Gnome,3
+ROGUE,Ironfur Grizzly,3
+PRIEST,Demented Frostcaller,3
+SHAMAN,Violet Teacher,3
+SHAMAN,Ivory Knight,3
+SHAMAN,Doomcaller,3
+SHAMAN,Darkspeaker,3
+SHAMAN,Coliseum Manager,3
+WARRIOR,Hired Gun,3
+SHAMAN,Rend Blackhand,3
+WARRIOR,Arcane Anomaly,3
+WARRIOR,Earthen Ring Farseer,3
+PALADIN,Eydis Darkbane,3
+DRUID,Mana Wyrm,3
+PRIEST,Moroes,3
+DRUID,Possessed Villager,3
+PRIEST,Rumbling Elemental,3
+MAGE,Ysera,3
+PRIEST,Twilight Summoner,3
+MAGE,Wrathguard,3
+SHAMAN,Gnomish Inventor,3
+PRIEST,Damaged Golem,3
+SHAMAN,Priest of the Feast,3
+DRUID,Bloodsail Raider,3
+WARRIOR,Tirion Fordring,3
+ROGUE,Hyena,3
+WARRIOR,Tauren Warrior,3
+ROGUE,Eater of Secrets,3
+DRUID,Tauren Warrior,3
+ROGUE,Pompous Thespian,3
+DRUID,King Mukla,3
+HUNTER,Princess Huhuran,3
+DRUID,Demolisher,3
+PALADIN,Tentacle of N'Zoth,3
+MAGE,Argent Commander,3
+PRIEST,Wolfrider,3
+MAGE,Imp,3
+SHAMAN,Nexus-Champion Saraad,3
+PRIEST,Lightwarden,3
+SHAMAN,Stranglethorn Tiger,3
+ROGUE,Imp Gang Boss,3
+SHAMAN,Skycap'n Kragg,3
+SHAMAN,Mana Wraith,3
+WARRIOR,Worgen Infiltrator,3
+SHAMAN,Squirming Tentacle,3
+PALADIN,Ooze,3
+DRUID,Lowly Squire,3
+ROGUE,Flame Lance,3
+MAGE,Spawn of N'Zoth,3
+WARRIOR,Holy Wrath,3
+PRIEST,Scarlet Crusader,3
+WARRIOR,Scaled Nightmare,3
+PRIEST,Unlicensed Apothecary,3
+ROGUE,Frostwolf Grunt,3
+SHAMAN,Soulfire,3
+DRUID,Corrupted Healbot,3
+SHAMAN,Desert Camel,3
+PALADIN,Mountain Giant,3
+WARRIOR,Jade Golem,3
+PRIEST,Stormpike Commando,3
+HUNTER,Oasis Snapjaw,3
+ROGUE,Pantry Spider,3
+SHAMAN,Grommash Hellscream,3
+WARLOCK,Ironbeak Owl,3
+WARRIOR,Frostbolt,3
+WARRIOR,Bilefin Tidehunter,3
+MAGE,"Mukla, Tyrant of the Vale",3
+WARRIOR,Fel Orc Soulfiend,3
+PALADIN,Ironfur Grizzly,3
+DRUID,Toxic Sewer Ooze,3
+SHAMAN,Steward of Darkshire,3
+DRUID,Pyroblast,3
+SHAMAN,Ram Wrangler,3
+HUNTER,Bloodsail Raider,3
+DRUID,Murloc Tidecaller,3
+PRIEST,Darnassus Aspirant,3
+DRUID,Frigid Snobold,3
+PRIEST,Pompous Thespian,3
+MAGE,Buccaneer,3
+PRIEST,Fjola Lightbane,3
+SHAMAN,Astral Communion,3
+SHAMAN,Dark Iron Dwarf,3
+SHAMAN,Garrison Commander,3
+HUNTER,Netherspite Historian,3
+SHAMAN,Auctionmaster Beardo,3
+MAGE,Arcane Anomaly,3
+SHAMAN,Grimestreet Smuggler,3
+PRIEST,Blood Imp,3
+WARRIOR,Huge Toad,3
+WARRIOR,Tunnel Trogg,3
+MAGE,Fire Elemental,3
+MAGE,Thrallmar Farseer,3
+MAGE,Spellbender,3
+ROGUE,Darnassus Aspirant,3
+PRIEST,Cutpurse,3
+ROGUE,Doomguard,3
+ROGUE,Mana Tide Totem,3
+DRUID,Hungry Crab,3
+SHAMAN,Streetwise Investigator,3
+MAGE,Eater of Secrets,3
+SHAMAN,Menagerie Magician,3
+PRIEST,"Xaril, Poisoned Mind",3
+WARLOCK,Pompous Thespian,3
+ROGUE,Coliseum Manager,3
+WARRIOR,Obsidian Destroyer,3
+SHAMAN,Razorfen Hunter,3
+PRIEST,Dark Peddler,3
+DRUID,Boar,3
+PRIEST,Blood Knight,3
+PRIEST,Icky Tentacle,3
+ROGUE,Evolved Kobold,3
+SHAMAN,Void Crusher,3
+WARLOCK,Darkshire Alchemist,3
+SHAMAN,Wolfrider,3
+DRUID,Pit Fighter,3
+MAGE,Unlicensed Apothecary,3
+MAGE,Warhorse Trainer,3
+SHAMAN,Gnoll,3
+SHAMAN,"Shaku, the Collector",3
+MAGE,Ice Rager,3
+SHAMAN,Dark Arakkoa,3
+WARLOCK,Squirming Tentacle,3
+DRUID,Validated Doomsayer,3
+SHAMAN,Eviscerate,3
+WARRIOR,Alleycat,3
+WARLOCK,Boar,3
+PALADIN,Shieldbearer,3
+DRUID,Chillwind Yeti,3
+SHAMAN,Dragonling Mechanic,3
+MAGE,Hammer of Wrath,3
+SHAMAN,Anubisath Sentinel,3
+DRUID,Holy Fire,3
+MAGE,Secretkeeper,3
+HUNTER,Mad Bomber,3
+PALADIN,Armorsmith,3
+ROGUE,Arcane Giant,3
+SHAMAN,Argent Watchman,3
+DRUID,Jungle Panther,3
+DRUID,Malchezaar's Imp,3
+MAGE,Lightning Bolt,3
+PRIEST,Icehowl,3
+MAGE,Shattered Sun Cleric,3
+SHAMAN,Mana Geode,3
+PALADIN,Skycap'n Kragg,3
+SHAMAN,Gadgetzan Socialite,3
+PALADIN,Garrison Commander,3
+DRUID,Nightblade,3
+SHAMAN,Shifting Shade,3
+DRUID,Abusive Sergeant,3
+SHAMAN,Silver Hand Knight,3
+DRUID,Boulderfist Ogre,3
+SHAMAN,Blackwing Technician,3
+HUNTER,Sunfury Protector,3
+WARRIOR,Flame Imp,3
+MAGE,Scarlet Crusader,3
+WARRIOR,Darnassus Aspirant,3
+MAGE,Bog Creeper,3
+WARRIOR,Cyclopian Horror,3
+PALADIN,Twin Emperor Vek'lor,3
+DRUID,Inner Rage,3
+PRIEST,Baine Bloodhoof,3
+MAGE,Malygos,3
+PRIEST,Nozdormu,3
+ROGUE,Obsidian Destroyer,3
+PRIEST,Eadric the Pure,3
+SHAMAN,Mogor's Champion,3
+ROGUE,Reckless Rocketeer,3
+SHAMAN,Zoobot,3
+SHAMAN,Captain Greenskin,3
+WARLOCK,Trogg Beastrager,3
+SHAMAN,Amani Berserker,3
+WARRIOR,Raging Worgen,3
+WARLOCK,Blood Knight,3
+DRUID,Defias Cleaner,3
+WARRIOR,Toxic Sewer Ooze,3
+MAGE,Pompous Thespian,3
+WARRIOR,Hungry Dragon,3
+PRIEST,Raging Worgen,3
+DRUID,Auctionmaster Beardo,3
+WARLOCK,Healing Totem,3
+DRUID,Fiery Bat,3
+WARLOCK,"Xaril, Poisoned Mind",3
+MAGE,Enchanted Raven,3
+WARRIOR,Ancient Mage,3
+MAGE,Bloodsail Corsair,3
+DRUID,Herald Volazj,3
+MAGE,Mountain Giant,3
+MAGE,Cairne Bloodhoof,3
+PRIEST,Arcane Anomaly,3
+PRIEST,Flame of Azzinoth,3
+ROGUE,Crazed Alchemist,3
+PRIEST,Revenge,3
+SHAMAN,Frost Shock,3
+SHAMAN,Acolyte of Pain,3
+WARRIOR,Stormcrack,3
+SHAMAN,Grimestreet Protector,3
+DRUID,Morgl the Oracle,3
+WARLOCK,Bloodhoof Brave,3
+DRUID,Celestial Dreamer,3
+WARLOCK,Flame of Azzinoth,3
+HUNTER,Ravaging Ghoul,3
+DRUID,Silent Knight,3
+MAGE,Northshire Cleric,3
+DRUID,Bloodsail Cultist,3
+MAGE,Lord Jaraxxus,3
+MAGE,Young Priestess,3
+ROGUE,Shifting Shade,3
+PRIEST,Coldlight Seer,3
+ROGUE,Millhouse Manastorm,3
+WARRIOR,Defias Ringleader,3
+ROGUE,Hooded Acolyte,3
+WARRIOR,Flame Lance,3
+WARRIOR,Stormpike Commando,3
+WARRIOR,Stormwind Knight,3
+WARRIOR,"Medivh, the Guardian",3
+DRUID,Clockwork Knight,3
+WARRIOR,Meanstreet Marshal,3
+DRUID,Spellslinger,3
+DRUID,Savannah Highmane,3
+DRUID,Nexus-Champion Saraad,3
+MAGE,Weasel Tunneler,3
+ROGUE,Kabal Songstealer,3
+PALADIN,Southsea Captain,3
+ROGUE,King Mukla,3
+PRIEST,Abusive Sergeant,3
+SHAMAN,Kidnapper,3
+ROGUE,Argent Protector,3
+SHAMAN,Grimy Gadgeteer,3
+ROGUE,Wrathguard,3
+WARRIOR,"Shaku, the Collector",3
+HUNTER,River Crocolisk,3
+MAGE,Jade Chieftain,3
+SHAMAN,Sea Reaver,3
+WARLOCK,Dragon Egg,3
+SHAMAN,"N'Zoth, the Corruptor",3
+DRUID,Weasel Tunneler,3
+SHAMAN,Skeram Cultist,3
+MAGE,Faceless Shambler,3
+WARLOCK,Void Crusher,3
+MAGE,Swipe,3
+WARLOCK,Razorfen Hunter,3
+PRIEST,Jade Golem,3
+WARLOCK,Anomalus,3
+PRIEST,King Mukla,3
+HUNTER,Abusive Sergeant,3
+PRIEST,Goldshire Footman,3
+MAGE,Undercity Huckster,3
+SHAMAN,Argent Protector,3
+PRIEST,The Beast,3
+WARLOCK,Selfless Hero,3
+PRIEST,Gadgetzan Auctioneer,3
+DRUID,Moat Lurker,3
+ROGUE,Twilight Drake,3
+HUNTER,Earthen Ring Farseer,3
+SHAMAN,Darnassus Aspirant,3
+ROGUE,Shield Slam,3
+SHAMAN,Southsea Captain,3
+SHAMAN,Dispatch Kodo,3
+WARLOCK,Blood To Ichor,3
+ROGUE,Spawn of N'Zoth,3
+WARLOCK,Animated Armor,3
+ROGUE,Wrath of Air Totem,3
+WARRIOR,Greater Arcane Missiles,3
+ROGUE,Fen Creeper,3
+DRUID,Cabal Shadow Priest,3
+DRUID,Flame Juggler,3
+PRIEST,Wickerflame Burnbristle,3
+PRIEST,Bloodfen Raptor,3
+SHAMAN,Toxic Sewer Ooze,3
+SHAMAN,Ooze,3
+SHAMAN,Bolf Ramshield,3
+SHAMAN,Ironbark Protector,3
+DRUID,Friendly Bartender,3
+WARRIOR,Patient Assassin,3
+MAGE,Warsong Commander,3
+DRUID,Darkspeaker,3
+SHAMAN,River Crocolisk,3
+WARLOCK,Gorillabot A-3,3
+SHAMAN,Cult Apothecary,3
+ROGUE,Succubus,3
+WARRIOR,Flamewreathed Faceless,3
+ROGUE,Gnomish Inventor,3
+PRIEST,Hogger,3
+DRUID,Knife Juggler,3
+WARLOCK,Murloc Scout,3
+PALADIN,Astral Communion,3
+WARRIOR,Warsong Commander,3
+HUNTER,Burgly Bully,3
+WARRIOR,Mayor Noggenfogger,3
+WARRIOR,Holy Smite,3
+WARRIOR,Pompous Thespian,3
+PRIEST,Powershot,3
+PRIEST,Ethereal Peddler,3
+SHAMAN,Arcane Explosion,3
+SHAMAN,Sunfury Protector,3
+WARLOCK,Defias Ringleader,3
+PALADIN,Youthful Brewmaster,3
+WARLOCK,Enchanted Raven,3
+WARLOCK,Wickerflame Burnbristle,3
+WARRIOR,Thrallmar Farseer,3
+SHAMAN,Onyx Bishop,3
+SHAMAN,Menagerie Warden,3
+MAGE,Jade Golem,3
+MAGE,Rumbling Elemental,3
+ROGUE,Mana Geode,3
+SHAMAN,Illidan Stormrage,3
+PRIEST,Zealous Initiate,3
+SHAMAN,Priestess of Elune,3
+WARLOCK,"Y'Shaarj, Rage Unbound",3
+ROGUE,Drakonid Operative,3
+WARRIOR,Auctionmaster Beardo,3
+WARRIOR,Holy Fire,3
+MAGE,Medivh,3
+DRUID,Hired Gun,3
+SHAMAN,Inkmaster Solia,3
+DRUID,Amani Berserker,3
+DRUID,Luckydo Buccaneer,2
+DRUID,The Beast,2
+DRUID,Archmage,2
+DRUID,Perdition's Blade,2
+PALADIN,Arcane Anomaly,2
+MAGE,Hooded Acolyte,2
+PALADIN,Alexstrasza's Champion,2
+MAGE,Majordomo Executus,2
+PRIEST,Doomsayer,2
+PALADIN,Fallen Hero,2
+PRIEST,Psych-o-Tron,2
+PALADIN,Whirlwind,2
+ROGUE,Blackwater Pirate,2
+PALADIN,Fen Creeper,2
+ROGUE,Ogre Magi,2
+PRIEST,Jade Swarmer,2
+SHAMAN,Jungle Panther,2
+PRIEST,Arcane Golem,2
+SHAMAN,Nat Pagle,2
+ROGUE,Arathi Weaponsmith,2
+WARLOCK,Faceless Manipulator,2
+SHAMAN,Inner Rage,2
+WARLOCK,Wyrmrest Agent,2
+SHAMAN,Dread Infernal,2
+WARRIOR,Silverware Golem,2
+SHAMAN,Youthful Brewmaster,2
+DRUID,Doppelgangster,2
+SHAMAN,Hungry Dragon,2
+HUNTER,King Mukla,2
+SHAMAN,Dread Corsair,2
+PALADIN,Lowly Squire,2
+SHAMAN,The Black Knight,2
+ROGUE,Cult Apothecary,2
+WARLOCK,Corrupted Healbot,2
+ROGUE,Malkorok,2
+WARRIOR,Shieldbearer,2
+SHAMAN,Anomalus,2
+DRUID,Frostwolf Grunt,2
+SHAMAN,Clockwork Knight,2
+DRUID,Jeweled Scarab,2
+SHAMAN,Herald Volazj,2
+DRUID,Druid of the Flame,2
+WARLOCK,Recruiter,2
+HUNTER,Ironbeak Owl,2
+WARLOCK,Pit Lord,2
+MAGE,Ancient of Lore,2
+WARLOCK,Wrath of Air Totem,2
+MAGE,Cult Master,2
+WARLOCK,Kill Command,2
+PALADIN,Argent Watchman,2
+WARRIOR,Infested Wolf,2
+PALADIN,Master Jouster,2
+DRUID,Voodoo Doctor,2
+PALADIN,Gnomish Inventor,2
+MAGE,Illidan Stormrage,2
+PRIEST,Gadgetzan Socialite,2
+PRIEST,Kidnapper,2
+PRIEST,Defender,2
+PRIEST,Succubus,2
+PRIEST,Twilight Geomancer,2
+ROGUE,Felfire Potion,2
+SHAMAN,Worgen Greaser,2
+ROGUE,Tundra Rhino,2
+SHAMAN,Stormpike Commando,2
+SHAMAN,Steward,2
+SHAMAN,Demented Frostcaller,2
+SHAMAN,Imp Master,2
+WARLOCK,Frostwolf Warlord,2
+SHAMAN,Drakonid Crusher,2
+WARLOCK,Lotus Agents,2
+WARLOCK,Streetwise Investigator,2
+WARLOCK,Webspinner,2
+WARLOCK,Reliquary Seeker,2
+WARLOCK,Ooze,2
+DRUID,Shieldbearer,2
+WARLOCK,Sorcerer's Apprentice,2
+DRUID,Lotus Assassin,2
+WARRIOR,The Mistcaller,2
+DRUID,Usher of Souls,2
+WARRIOR,Mind Spike,2
+DRUID,Shifter Zerus,2
+MAGE,Squirming Tentacle,2
+DRUID,Tanaris Hogchopper,2
+MAGE,Possessed Villager,2
+MAGE,Grimestreet Smuggler,2
+PALADIN,Kor'kron Elite,2
+PRIEST,Hired Gun,2
+ROGUE,Knife Juggler,2
+PRIEST,Starfall,2
+ROGUE,Stampeding Kodo,2
+SHAMAN,Rat,2
+SHAMAN,Prince Malchezaar,2
+WARRIOR,Big Game Hunter,2
+WARLOCK,Desert Camel,2
+DRUID,Dart Trap,2
+WARLOCK,Lava Shock,2
+DRUID,Mortal Strike,2
+WARRIOR,Undercity Valiant,2
+HUNTER,Bash,2
+DRUID,Recruiter,2
+HUNTER,Piranha,2
+DRUID,"Shaku, the Collector",2
+MAGE,Baine Bloodhoof,2
+DRUID,Druid of the Claw,2
+MAGE,Holy Champion,2
+HUNTER,Baine Bloodhoof,2
+MAGE,Defender of Argus,2
+SHAMAN,Fandral Staghelm,2
+MAGE,Druid of the Flame,2
+SHAMAN,Confessor Paletress,2
+SHAMAN,Avian Watcher,2
+SHAMAN,Stablemaster,2
+SHAMAN,Carrion Grub,2
+SHAMAN,Malygos,2
+SHAMAN,"Y'Shaarj, Rage Unbound",2
+WARLOCK,Twilight Whelp,2
+WARRIOR,Garrison Commander,2
+WARLOCK,Buccaneer,2
+DRUID,Darkshire Councilman,2
+WARRIOR,Mana Wyrm,2
+MAGE,Confessor Paletress,2
+WARRIOR,Gnoll,2
+MAGE,Black Whelp,2
+DRUID,Murloc Razorgill,2
+PRIEST,Worgen Greaser,2
+DRUID,Darkshire Alchemist,2
+SHAMAN,Darkshire Alchemist,2
+DRUID,Ancient Brewmaster,2
+SHAMAN,Shadow Bolt,2
+HUNTER,Bloodfen Raptor,2
+SHAMAN,Ancient Brewmaster,2
+MAGE,Cleave,2
+WARRIOR,Oasis Snapjaw,2
+PALADIN,Bash,2
+WARRIOR,Void Terror,2
+PRIEST,Lord Jaraxxus,2
+DRUID,Silvermoon Guardian,2
+SHAMAN,Giant Sand Worm,2
+MAGE,Mysterious Challenger,2
+SHAMAN,Sen'jin Shieldmasta,2
+WARRIOR,Twilight Summoner,2
+SHAMAN,Grotesque Dragonhawk,2
+DRUID,Earth Elemental,2
+WARLOCK,Axe Flinger,2
+DRUID,Avian Watcher,2
+WARLOCK,Holy Champion,2
+DRUID,Windfury Harpy,2
+WARLOCK,Lotus Assassin,2
+PRIEST,Gadgetzan Jouster,2
+WARLOCK,Gadgetzan Socialite,2
+PRIEST,Emperor Cobra,2
+WARLOCK,Venture Co. Mercenary,2
+PRIEST,Spawn of Shadows,2
+DRUID,Succubus,2
+ROGUE,Runic Egg,2
+DRUID,Gadgetzan Socialite,2
+SHAMAN,"Genzo, the Shark",2
+MAGE,Garrison Commander,2
+SHAMAN,Mortal Strike,2
+MAGE,Blood Knight,2
+SHAMAN,Sparring Partner,2
+PRIEST,Flame Imp,2
+SHAMAN,Moat Lurker,2
+WARLOCK,Dragon's Breath,2
+WARLOCK,Grimscale Chum,2
+WARRIOR,Circle of Healing,2
+WARLOCK,Zoobot,2
+HUNTER,Squirming Tentacle,2
+WARLOCK,Jade Golem,2
+PRIEST,Spawn of N'Zoth,2
+WARRIOR,Questing Adventurer,2
+PRIEST,Crowd Favorite,2
+WARRIOR,Master Jouster,2
+ROGUE,Streetwise Investigator,2
+DRUID,Warhorse Trainer,2
+ROGUE,Infested Wolf,2
+DRUID,Boneguard Lieutenant,2
+SHAMAN,Frostwolf Grunt,2
+DRUID,"Nat, the Darkfisher",2
+SHAMAN,Aldor Peacekeeper,2
+HUNTER,Whirlwind,2
+SHAMAN,Windspeaker,2
+MAGE,Void Terror,2
+DRUID,Fjola Lightbane,2
+MAGE,Gadgetzan Ferryman,2
+PRIEST,Shieldbearer,2
+MAGE,Knight of the Wild,2
+PRIEST,Gnoll,2
+ROGUE,Meanstreet Marshal,2
+SHAMAN,Cryomancer,2
+SHAMAN,Deadly Fork,2
+SHAMAN,Bloodfen Raptor,2
+WARLOCK,Grimestreet Smuggler,2
+WARLOCK,"Genzo, the Shark",2
+WARLOCK,Malygos,2
+WARLOCK,Mana Wyrm,2
+WARRIOR,Tuskarr Jouster,2
+WARLOCK,Jade Shuriken,2
+DRUID,Psych-o-Tron,2
+PALADIN,Twin Emperor Vek'nilash,2
+MAGE,Arcane Golem,2
+WARLOCK,Shifting Shade,2
+ROGUE,"Nat, the Darkfisher",2
+DRUID,SI:7 Agent,2
+ROGUE,Gadgetzan Socialite,2
+DRUID,Evil Heckler,2
+SHAMAN,Fen Creeper,2
+DRUID,Grand Crusader,2
+SHAMAN,Scaled Nightmare,2
+DRUID,Arcanosmith,2
+WARLOCK,Ironfur Grizzly,2
+PALADIN,Mortal Strike,2
+DRUID,White Eyes,2
+PRIEST,Cyclopian Horror,2
+MAGE,Daring Reporter,2
+ROGUE,Raza the Chained,2
+MAGE,Fireblast Rank 2,2
+WARRIOR,Lava Burst,2
+PALADIN,Warhorse Trainer,2
+WARRIOR,Snipe,2
+SHAMAN,Firebloom Toxin,2
+MAGE,Voodoo Doctor,2
+SHAMAN,Frostwolf Warlord,2
+MAGE,Millhouse Manastorm,2
+WARLOCK,Silent Knight,2
+MAGE,Coldlight Seer,2
+PRIEST,Boneguard Lieutenant,2
+MAGE,Wickerflame Burnbristle,2
+ROGUE,Fallen Hero,2
+ROGUE,Injured Kvaldir,2
+ROGUE,Stormwind Knight,2
+ROGUE,Injured Blademaster,2
+SHAMAN,Dreadsteed,2
+SHAMAN,Thrallmar Farseer,2
+SHAMAN,Pint-Sized Summoner,2
+SHAMAN,Boar,2
+HUNTER,Doppelgangster,2
+WARLOCK,Dreadscale,2
+ROGUE,Flamestrike,2
+DRUID,Earth Shock,2
+PRIEST,Darkshire Librarian,2
+MAGE,Lava Burst,2
+ROGUE,Grimestreet Protector,2
+PRIEST,Perdition's Blade,2
+SHAMAN,Captured Jormungar,2
+ROGUE,Medivh's Valet,2
+WARLOCK,Naga Corsair,2
+ROGUE,Stonetusk Boar,2
+WARRIOR,Varian Wrynn,2
+SHAMAN,Nightblade,2
+PRIEST,Jade Golem,2
+DRUID,Cyclopian Horror,2
+PRIEST,Hammer of Wrath,2
+MAGE,Voidwalker,2
+WARLOCK,Ironforge Rifleman,2
+WARLOCK,Explosive Trap,2
+WARLOCK,Astral Communion,2
+MAGE,Sleep with the Fishes,2
+WARRIOR,Doppelgangster,2
+PRIEST,Eater of Secrets,2
+DRUID,"Medivh, the Guardian",2
+PRIEST,Steward of Darkshire,2
+DRUID,Elven Archer,2
+PRIEST,Leeroy Jenkins,2
+MAGE,Murloc Raider,2
+ROGUE,Ancient of War,2
+MAGE,Eadric the Pure,2
+DRUID,Ancient of Lore,2
+MAGE,Twin Emperor Vek'nilash,2
+SHAMAN,Stormwind Knight,2
+PRIEST,Frigid Snobold,2
+SHAMAN,Dreadscale,2
+ROGUE,Youthful Brewmaster,2
+WARRIOR,Master of Evolution,2
+WARLOCK,Manic Soulcaster,2
+MAGE,Master Jouster,2
+WARLOCK,Shadowfiend,2
+PRIEST,Tomb Spider,2
+WARRIOR,Gruul,2
+WARRIOR,Anomalus,2
+DRUID,Jade Golem,2
+WARRIOR,Mogu'shan Warden,2
+DRUID,Silver Hand Regent,2
+HUNTER,Stormpike Commando,2
+HUNTER,Auctionmaster Beardo,2
+PRIEST,Shadowcaster,2
+MAGE,Defias Ringleader,2
+SHAMAN,Cloaked Huntress,2
+PRIEST,Sparring Partner,2
+WARLOCK,Fandral Staghelm,2
+ROGUE,Cryomancer,2
+WARRIOR,Injured Kvaldir,2
+SHAMAN,Rhonin,2
+WARRIOR,Fiery Bat,2
+SHAMAN,Servant of Yogg-Saron,2
+DRUID,Zealous Initiate,2
+WARRIOR,Eviscerate,2
+HUNTER,Hammer of Wrath,2
+WARRIOR,Raza the Chained,2
+MAGE,Shady Dealer,2
+PRIEST,Southsea Squidface,2
+ROGUE,Houndmaster,2
+SHAMAN,Psych-o-Tron,2
+WARLOCK,Cleave,2
+SHAMAN,Grand Crusader,2
+DRUID,Kvaldir Raider,2
+WARRIOR,"Deathwing, Dragonlord",2
+MAGE,Rend Blackhand,2
+WARRIOR,Blizzard,2
+WARLOCK,Virmen Sensei,2
+MAGE,Tauren Warrior,2
+WARRIOR,Elven Archer,2
+ROGUE,Mortal Coil,2
+MAGE,Steward,2
+WARLOCK,Fencing Coach,2
+ROGUE,Scarlet Crusader,2
+PRIEST,Grim Patron,2
+SHAMAN,Druid of the Saber,2
+DRUID,Lava Burst,2
+WARRIOR,Jade Golem,2
+PRIEST,Fiery Bat,2
+MAGE,Bash,2
+ROGUE,Arcane Missiles,2
+PRIEST,Swipe,2
+ROGUE,Ironforge Rifleman,2
+PRIEST,Reliquary Seeker,2
+SHAMAN,Gadgetzan Ferryman,2
+PALADIN,Ancient Watcher,2
+WARRIOR,Fencing Coach,2
+PRIEST,Hungry Crab,2
+WARRIOR,Piranha,2
+SHAMAN,Whirlwind,2
+SHAMAN,Fan of Knives,2
+HUNTER,Blood To Ichor,2
+HUNTER,Ysera Awakens,2
+SHAMAN,Novice Engineer,2
+PALADIN,Nexus-Champion Saraad,2
+MAGE,Lava Shock,2
+PRIEST,"Nat, the Darkfisher",2
+DRUID,Drakonid Operative,2
+ROGUE,Bilefin Tidehunter,2
+DRUID,Summoning Stone,2
+DRUID,Rat Pack,2
+MAGE,Keeper of the Grove,2
+ROGUE,Friendly Bartender,2
+MAGE,Malkorok,2
+WARLOCK,Starfire,2
+MAGE,Swashburglar,2
+WARRIOR,Kill Command,2
+MAGE,Shaky Zipgunner,2
+WARRIOR,Twilight Flamecaller,2
+PALADIN,Volcanic Potion,2
+WARRIOR,Young Dragonhawk,2
+ROGUE,Auchenai Soulpriest,2
+DRUID,Jade Golem,2
+ROGUE,Museum Curator,2
+DRUID,Fight Promoter,2
+SHAMAN,Silithid Swarmer,2
+DRUID,Meanstreet Marshal,2
+SHAMAN,Dragon Consort,2
+MAGE,Injured Kvaldir,2
+WARRIOR,King Mukla,2
+MAGE,Slime,2
+DRUID,Fencing Coach,2
+MAGE,Gormok the Impaler,2
+DRUID,Doomcaller,2
+PRIEST,Medivh's Valet,2
+MAGE,Explosive Shot,2
+PRIEST,Fossilized Devilsaur,2
+PRIEST,Oasis Snapjaw,2
+PRIEST,Millhouse Manastorm,2
+ROGUE,Boneguard Lieutenant,2
+PRIEST,Razorfen Hunter,2
+ROGUE,Mogu'shan Warden,2
+PRIEST,Jade Golem,2
+SHAMAN,Saboteur,2
+PRIEST,Anubisath Sentinel,2
+WARLOCK,Cloaked Huntress,2
+PRIEST,Ancient Shade,2
+WARLOCK,Kobold Geomancer,2
+ROGUE,Darkshire Alchemist,2
+WARLOCK,Murloc Knight,2
+SHAMAN,Dragonkin Sorcerer,2
+WARLOCK,"Nat, the Darkfisher",2
+WARLOCK,Shadow Strike,2
+WARRIOR,Nexus-Champion Saraad,2
+WARLOCK,Malkorok,2
+DRUID,Hallazeal the Ascended,2
+DRUID,Mummy Zombie,2
+HUNTER,Frothing Berserker,2
+HUNTER,Zoobot,2
+MAGE,Nozdormu,2
+PALADIN,Hired Gun,2
+PALADIN,Djinni of Zephyrs,2
+PRIEST,Rend Blackhand,2
+PALADIN,Big Bad Wolf,2
+PRIEST,Tanaris Hogchopper,2
+PRIEST,Sorcerer's Apprentice,2
+SHAMAN,Hogger,2
+ROGUE,Daring Reporter,2
+SHAMAN,C'Thun's Chosen,2
+SHAMAN,Fierce Monkey,2
+WARLOCK,Burgly Bully,2
+WARLOCK,Al'Akir the Windlord,2
+WARLOCK,Seadevil Stinger,2
+WARLOCK,King Mukla,2
+WARLOCK,Eydis Darkbane,2
+DRUID,Big Game Hunter,2
+WARRIOR,Frigid Snobold,2
+PRIEST,Grimy Gadgeteer,2
+WARRIOR,Evil Heckler,2
+SHAMAN,Cult Sorcerer,2
+DRUID,"Genzo, the Shark",2
+WARLOCK,Earth Shock,2
+PRIEST,Flesheating Ghoul,2
+HUNTER,Keeper of Uldaman,2
+PRIEST,Magnataur Alpha,2
+MAGE,Snipe,2
+ROGUE,Sorcerer's Apprentice,2
+PRIEST,Master of Ceremonies,2
+ROGUE,Kabal Courier,2
+ROGUE,Dark Peddler,2
+SHAMAN,Kirin Tor Mage,2
+SHAMAN,Twisted Worgen,2
+SHAMAN,Manic Soulcaster,2
+SHAMAN,Lotus Assassin,2
+SHAMAN,Eater of Secrets,2
+WARLOCK,Wicked Witchdoctor,2
+SHAMAN,Scavenging Hyena,2
+WARLOCK,Gnoll,2
+WARLOCK,Carrion Grub,2
+WARRIOR,Magnataur Alpha,2
+WARLOCK,Jade Golem,2
+WARRIOR,Pit Lord,2
+WARRIOR,Flamewaker,2
+WARRIOR,Millhouse Manastorm,2
+DRUID,Knuckles,2
+HUNTER,Cruel Taskmaster,2
+PALADIN,Tundra Rhino,2
+MAGE,Mortal Strike,2
+PRIEST,Shaky Zipgunner,2
+MAGE,Pit Lord,2
+PRIEST,Starving Buzzard,2
+PRIEST,Stranglethorn Tiger,2
+SHAMAN,Ethereal Conjurer,2
+WARLOCK,Stormpike Commando,2
+SHAMAN,Injured Blademaster,2
+PALADIN,Flame Imp,2
+SHAMAN,SI:7 Agent,2
+PRIEST,Patient Assassin,2
+WARRIOR,Firelands Portal,2
+DRUID,"Mukla, Tyrant of the Vale",2
+WARRIOR,Selfless Hero,2
+DRUID,Eydis Darkbane,2
+WARRIOR,Kazakus Potion,2
+MAGE,Museum Curator,2
+DRUID,Jade Chieftain,2
+MAGE,Sparring Partner,2
+DRUID,Buccaneer,2
+PALADIN,Bog Creeper,2
+ROGUE,Avenging Wrath,2
+WARLOCK,Celestial Dreamer,2
+ROGUE,Wobbling Runts,2
+WARLOCK,Alleycat,2
+SHAMAN,Justicar Trueheart,2
+WARLOCK,The Black Knight,2
+WARLOCK,Argent Commander,2
+WARRIOR,Scarlet Crusader,2
+WARLOCK,Doomcaller,2
+WARRIOR,Mana Geode,2
+WARLOCK,Bladed Cultist,2
+DRUID,Thunder Bluff Valiant,2
+WARLOCK,Imp,2
+DRUID,Mortal Coil,2
+HUNTER,Mind Control Tech,2
+MAGE,Wrath,2
+MAGE,Dust Devil,2
+MAGE,Fireguard Destroyer,2
+PALADIN,Ysera,2
+SHAMAN,Undercity Huckster,2
+PRIEST,Stablemaster,2
+WARLOCK,Addled Grizzly,2
+WARRIOR,Dalaran Aspirant,2
+WARRIOR,Zoobot,2
+WARLOCK,Violet Teacher,2
+HUNTER,Alexstrasza's Champion,2
+DRUID,Demented Frostcaller,2
+HUNTER,Book Wyrm,2
+MAGE,Laughing Sister,2
+MAGE,Gnoll,2
+ROGUE,Shadowflame,2
+MAGE,The Black Knight,2
+SHAMAN,Leatherclad Hogleader,2
+PALADIN,Water Elemental,2
+SHAMAN,Cabal Shadow Priest,2
+PRIEST,Violet Teacher,2
+SHAMAN,Kooky Chemist,2
+SHAMAN,Arathi Weaponsmith,2
+SHAMAN,Druid of the Flame,2
+WARLOCK,Holy Fire,2
+WARLOCK,Drakonid Operative,2
+WARLOCK,Street Trickster,2
+DRUID,Mad Bomber,2
+WARLOCK,Grotesque Dragonhawk,2
+PALADIN,Crazed Alchemist,2
+WARLOCK,Blubber Baron,2
+PRIEST,Animated Armor,2
+DRUID,Wrathguard,2
+PRIEST,Argent Watchman,2
+MAGE,Twin Emperor Vek'lor,2
+WARLOCK,Bolf Ramshield,2
+ROGUE,Wrath,2
+WARRIOR,Chromaggus,2
+SHAMAN,Djinni of Zephyrs,2
+WARRIOR,Tomb Spider,2
+SHAMAN,Unlicensed Apothecary,2
+WARRIOR,Arcane Giant,2
+SHAMAN,Mana Addict,2
+DRUID,Nerubian Prophet,2
+WARLOCK,Shield Slam,2
+DRUID,Jinyu Waterspeaker,2
+WARLOCK,Netherspite Historian,2
+MAGE,Temple Enforcer,2
+WARRIOR,"Yogg-Saron, Hope's End",2
+PALADIN,Frothing Berserker,2
+DRUID,Maiden of the Lake,2
+PRIEST,Backstreet Leper,2
+DRUID,"Hogger, Doom of Elwynn",2
+SHAMAN,Crowd Favorite,2
+PALADIN,Zoobot,2
+WARRIOR,Nozdormu,2
+PRIEST,Possessed Villager,2
+WARRIOR,Fen Creeper,2
+SHAMAN,Celestial Dreamer,2
+MAGE,Silverware Golem,2
+SHAMAN,The Skeleton Knight,2
+PRIEST,Cult Sorcerer,2
+SHAMAN,Kabal Crystal Runner,2
+WARLOCK,Fan of Knives,2
+WARLOCK,Powershot,2
+WARLOCK,Thunder Bluff Valiant,2
+PALADIN,Spirit Wolf,2
+WARRIOR,The Boogeymonster,2
+WARLOCK,Fiery Bat,2
+DRUID,Injured Blademaster,2
+WARLOCK,Angry Chicken,2
+DRUID,Backstreet Leper,2
+WARRIOR,Mana Addict,2
+MAGE,Flame of Azzinoth,2
+WARRIOR,Onyxia,2
+PALADIN,Seadevil Stinger,2
+DRUID,The Skeleton Knight,2
+PRIEST,Desert Camel,2
+MAGE,Shiv,2
+PRIEST,Defias Ringleader,2
+MAGE,Fan of Knives,2
+PRIEST,Houndmaster,2
+MAGE,Carrion Grub,2
+PRIEST,Weasel Tunneler,2
+PALADIN,Fan of Knives,2
+WARLOCK,Stranglethorn Tiger,2
+SHAMAN,Gurubashi Berserker,2
+WARLOCK,Lightspawn,2
+SHAMAN,Kvaldir Raider,2
+DRUID,Ethereal Peddler,2
+SHAMAN,Ethereal Arcanist,2
+HUNTER,SI:7 Agent,2
+WARLOCK,Inkmaster Solia,2
+MAGE,Jungle Panther,2
+DRUID,Bladed Cultist,2
+PRIEST,Moat Lurker,2
+MAGE,Vilefin Inquisitor,2
+PRIEST,King's Elekk,2
+PRIEST,Broom,2
+SHAMAN,Naga Sea Witch,2
+ROGUE,Starfall,2
+WARRIOR,Forgotten Torch,2
+SHAMAN,Reckless Rocketeer,2
+DRUID,The Black Knight,2
+WARLOCK,Kabal Talonpriest,2
+PALADIN,Dreadscale,2
+DRUID,Young Dragonhawk,2
+DRUID,Southsea Captain,2
+DRUID,Northshire Cleric,2
+DRUID,Murloc Scout,2
+PRIEST,Imp,2
+DRUID,Twilight Drake,2
+ROGUE,Dark Iron Dwarf,2
+SHAMAN,Tiny Knight of Evil,2
+SHAMAN,Slam,2
+SHAMAN,Tuskarr Jouster,2
+DRUID,Questing Adventurer,2
+SHAMAN,Doomguard,2
+DRUID,Timepiece of Horror,2
+WARLOCK,Bloodfen Raptor,2
+PRIEST,Forked Lightning,2
+WARRIOR,Steward,2
+SHAMAN,Mortal Coil,2
+MAGE,Master of Disguise,2
+SHAMAN,Luckydo Buccaneer,2
+WARLOCK,Mounted Raptor,2
+DRUID,Starving Buzzard,2
+WARLOCK,Coliseum Manager,2
+PRIEST,Master of Disguise,2
+WARLOCK,Silver Hand Recruit,2
+PRIEST,Doomcaller,2
+WARRIOR,Twilight Whelp,2
+ROGUE,Thrallmar Farseer,2
+MAGE,Grimy Gadgeteer,2
+ROGUE,Ancient Shieldbearer,2
+MAGE,Tuskarr Totemic,2
+ROGUE,Hungry Dragon,2
+SHAMAN,Ice Rager,2
+WARLOCK,Mortal Strike,2
+SHAMAN,Chillwind Yeti,2
+WARLOCK,Multi-Shot,2
+WARLOCK,Rumbling Elemental,2
+PALADIN,Violet Teacher,2
+WARRIOR,Wildwalker,2
+HUNTER,Abomination,2
+WARRIOR,Friendly Bartender,2
+MAGE,Silver Hand Regent,2
+DRUID,Alley Armorsmith,2
+MAGE,Living Roots,2
+DRUID,Ironforge Rifleman,2
+PALADIN,Lance Carrier,2
+PALADIN,Snipe,2
+SHAMAN,Infested Wolf,2
+SHAMAN,Wrathguard,2
+SHAMAN,Eydis Darkbane,2
+WARLOCK,Fireblast Rank 2,2
+SHAMAN,Acidmaw,2
+WARRIOR,"N'Zoth, the Corruptor",2
+WARLOCK,Vilefin Inquisitor,2
+MAGE,Avenging Wrath,2
+WARLOCK,Flame Lance,2
+PALADIN,Blubber Baron,2
+WARLOCK,Keeper of the Grove,2
+ROGUE,Violet Illusionist,2
+WARRIOR,On the Hunt,2
+SHAMAN,Defias Ringleader,2
+WARRIOR,Gadgetzan Auctioneer,2
+WARLOCK,Imp Master,2
+HUNTER,Garrosh Hellscream,2
+WARRIOR,Manic Soulcaster,2
+PALADIN,Lightning Bolt,2
+WARRIOR,Shadow Strike,2
+SHAMAN,Red Mana Wyrm,2
+DRUID,Priest of the Feast,2
+WARLOCK,Wild Pyromancer,2
+WARRIOR,Murloc Knight,2
+WARRIOR,The Skeleton Knight,2
+DRUID,Squirming Tentacle,2
+MAGE,Sergeant Sally,2
+SHAMAN,Spiked Hogrider,2
+SHAMAN,Arcane Missiles,2
+WARRIOR,Leokk,2
+WARLOCK,Argent Watchman,2
+HUNTER,Gormok the Impaler,2
+MAGE,Archmage,2
+DRUID,Mukla's Champion,2
+PRIEST,Rhonin,2
+ROGUE,Voidwalker,2
+MAGE,Fjola Lightbane,2
+WARLOCK,Living Roots,2
+ROGUE,Forbidden Flame,2
+WARLOCK,Fire Elemental,2
+MAGE,Flesheating Ghoul,1
+DRUID,Lightwarden,1
+PALADIN,Burgly Bully,1
+DRUID,Dreadscale,1
+ROGUE,Wrathion,1
+MAGE,Coldarra Drake,1
+SHAMAN,Don Han'Cho,1
+MAGE,Fel Orc Soulfiend,1
+WARLOCK,Slime,1
+PRIEST,Tundra Rhino,1
+WARRIOR,Unlicensed Apothecary,1
+ROGUE,Silverware Golem,1
+WARRIOR,Tinkmaster Overspark,1
+ROGUE,Celestial Dreamer,1
+WARRIOR,Twisted Worgen,1
+WARLOCK,Swashburglar,1
+DRUID,Unbound Elemental,1
+WARLOCK,Cho'gall,1
+DRUID,Rend Blackhand,1
+DRUID,Timber Wolf,1
+DRUID,Ethereal Arcanist,1
+DRUID,Armored Warhorse,1
+HUNTER,Flametongue Totem,1
+DRUID,Venture Co. Mercenary,1
+MAGE,Hobart Grapplehammer,1
+MAGE,Ancient Harbinger,1
+PRIEST,Pint-Sized Summoner,1
+MAGE,Murloc Knight,1
+ROGUE,Hogger,1
+MAGE,Cruel Taskmaster,1
+SHAMAN,Nerubian,1
+PALADIN,Maiden of the Lake,1
+WARLOCK,Ethereal Peddler,1
+PALADIN,Ram Wrangler,1
+WARLOCK,Amani Berserker,1
+PRIEST,Zoobot,1
+WARRIOR,Faceless Shambler,1
+SHAMAN,Flesheating Ghoul,1
+MAGE,Blowgill Sniper,1
+SHAMAN,Stormwind Champion,1
+MAGE,Flametongue Totem,1
+WARLOCK,Warsong Commander,1
+ROGUE,Tirion Fordring,1
+WARRIOR,Frostwolf Grunt,1
+ROGUE,Dire Wolf Alpha,1
+WARRIOR,Succubus,1
+SHAMAN,Nightbane Templar,1
+WARRIOR,Kobold Geomancer,1
+SHAMAN,Kabal Courier,1
+DRUID,Dreadsteed,1
+SHAMAN,Tournament Medic,1
+DRUID,Ancient Shade,1
+DRUID,Raging Worgen,1
+HUNTER,Hungry Crab,1
+DRUID,Dalaran Mage,1
+HUNTER,Venture Co. Mercenary,1
+DRUID,Oasis Snapjaw,1
+MAGE,Eternal Sentinel,1
+DRUID,Frothing Berserker,1
+MAGE,Klaxxi Amber-Weaver,1
+HUNTER,Midnight Drake,1
+PRIEST,"Y'Shaarj, Rage Unbound",1
+PALADIN,Oasis Snapjaw,1
+PRIEST,Scavenging Hyena,1
+PALADIN,Gadgetzan Jouster,1
+SHAMAN,Museum Curator,1
+PALADIN,Bloodfen Raptor,1
+WARRIOR,Eater of Secrets,1
+PRIEST,Savage Combatant,1
+WARRIOR,Wickerflame Burnbristle,1
+PRIEST,Tuskarr Totemic,1
+DRUID,Dragonling Mechanic,1
+SHAMAN,Orgrimmar Aspirant,1
+DRUID,Silverback Patriarch,1
+SHAMAN,Fel Orc Soulfiend,1
+HUNTER,Frog,1
+SHAMAN,Fallen Hero,1
+HUNTER,Sunwalker,1
+WARLOCK,Pantry Spider,1
+HUNTER,Valeera Sanguinar,1
+WARRIOR,Demolisher,1
+PALADIN,Bloodsail Cultist,1
+WARRIOR,Evolved Kobold,1
+PALADIN,Blackwater Pirate,1
+WARRIOR,Youthful Brewmaster,1
+PRIEST,Archmage,1
+WARRIOR,Crystalweaver,1
+ROGUE,Armored Warhorse,1
+DRUID,Garrosh Hellscream,1
+ROGUE,Anomalus,1
+HUNTER,King Krush,1
+SHAMAN,Lorewalker Cho,1
+HUNTER,Lord of the Arena,1
+SHAMAN,War Golem,1
+PALADIN,Corrupted Healbot,1
+WARRIOR,Injured Blademaster,1
+PRIEST,Fearsome Doomguard,1
+WARRIOR,Malygos,1
+HUNTER,Silver Hand Recruit,1
+WARRIOR,Gurubashi Berserker,1
+HUNTER,Mana Tide Totem,1
+DRUID,Polluted Hoarder,1
+HUNTER,Totem Golem,1
+MAGE,Powershot,1
+HUNTER,Tentacle of N'Zoth,1
+PALADIN,Faceless Shambler,1
+PALADIN,Hungry Dragon,1
+PALADIN,Drakonid Crusher,1
+ROGUE,Selfless Hero,1
+ROGUE,Tanaris Hogchopper,1
+ROGUE,Hired Gun,1
+WARLOCK,Cult Sorcerer,1
+WARLOCK,Shadow Rager,1
+DRUID,Leeroy Jenkins,1
+WARLOCK,Jade Golem,1
+HUNTER,Injured Blademaster,1
+WARLOCK,Hired Gun,1
+HUNTER,Hallazeal the Ascended,1
+SHAMAN,Faceless Manipulator,1
+PALADIN,Kabal Lackey,1
+SHAMAN,Darkscale Healer,1
+PALADIN,Sea Giant,1
+DRUID,Dragon Consort,1
+PRIEST,Pawn,1
+HUNTER,"Genzo, the Shark",1
+PRIEST,Luckydo Buccaneer,1
+PRIEST,Inner Rage,1
+PRIEST,Master Jouster,1
+PRIEST,Kabal Trafficker,1
+PRIEST,Hound,1
+ROGUE,Aldor Peacekeeper,1
+ROGUE,Pint-Sized Summoner,1
+ROGUE,Cloaked Huntress,1
+SHAMAN,Oasis Snapjaw,1
+SHAMAN,Magnataur Alpha,1
+SHAMAN,Shadow Sensei,1
+SHAMAN,Questing Adventurer,1
+WARLOCK,Midnight Drake,1
+WARRIOR,Moroes,1
+PALADIN,Fearsome Doomguard,1
+WARRIOR,Fallen Hero,1
+PRIEST,Fight Promoter,1
+DRUID,Searing Totem,1
+DRUID,Razorfen Hunter,1
+HUNTER,Argent Commander,1
+DRUID,Argent Protector,1
+MAGE,Druid of the Saber,1
+HUNTER,Reckless Rocketeer,1
+MAGE,Crystalweaver,1
+MAGE,Violet Teacher,1
+PRIEST,Blade of C'Thun,1
+MAGE,Raging Worgen,1
+SHAMAN,Seadevil Stinger,1
+PRIEST,Darkspeaker,1
+SHAMAN,Frost Elemental,1
+PRIEST,Evolved Kobold,1
+SHAMAN,Sabertooth Lion,1
+DRUID,Argent Watchman,1
+WARLOCK,Pit Snake,1
+HUNTER,Daring Reporter,1
+WARLOCK,N'Zoth's First Mate,1
+HUNTER,Brave Archer,1
+WARLOCK,Thrallmar Farseer,1
+MAGE,Prophet Velen,1
+WARLOCK,Kodorider,1
+MAGE,Void Crusher,1
+WARLOCK,Shattered Sun Cleric,1
+PRIEST,Babbling Book,1
+WARRIOR,Darkspeaker,1
+PRIEST,Knuckles,1
+WARRIOR,Grimestreet Protector,1
+PRIEST,Dreadsteed,1
+DRUID,Cult Apothecary,1
+ROGUE,King's Elekk,1
+DRUID,Mogor's Champion,1
+SHAMAN,Magma Rager,1
+DRUID,Servant of Yogg-Saron,1
+WARRIOR,Hogger,1
+HUNTER,Crazed Worshipper,1
+WARRIOR,Stonetusk Boar,1
+HUNTER,Mountain Giant,1
+WARRIOR,Druid of the Claw,1
+HUNTER,Jade Spirit,1
+WARRIOR,Ancient of Lore,1
+MAGE,Pint-Sized Summoner,1
+WARRIOR,Priestess of Elune,1
+MAGE,Infernal,1
+WARRIOR,Nightblade,1
+PRIEST,Infested Wolf,1
+DRUID,Illidan Stormrage,1
+PRIEST,Fireguard Destroyer,1
+HUNTER,Starving Buzzard,1
+ROGUE,Fjola Lightbane,1
+PRIEST,Orgrimmar Aspirant,1
+SHAMAN,Sheep,1
+PRIEST,Ancient Mage,1
+SHAMAN,The Boogeymonster,1
+ROGUE,Gormok the Impaler,1
+WARLOCK,Aldor Peacekeeper,1
+ROGUE,Servant of Yogg-Saron,1
+DRUID,King's Elekk,1
+ROGUE,Ancient Harbinger,1
+DRUID,Gruul,1
+SHAMAN,Shadowcaster,1
+DRUID,Flame Imp,1
+SHAMAN,Mire Keeper,1
+HUNTER,Lady Liadrin,1
+WARLOCK,Spawn of N'Zoth,1
+MAGE,Ironbeak Owl,1
+WARRIOR,Sideshow Spelleater,1
+MAGE,Undercity Valiant,1
+WARRIOR,Damaged Golem,1
+PALADIN,Hungry Crab,1
+WARRIOR,Ivory Knight,1
+PRIEST,Young Dragonhawk,1
+DRUID,Evolved Kobold,1
+PRIEST,Unbound Elemental,1
+HUNTER,Doppelgangster,1
+ROGUE,Summoning Portal,1
+MAGE,Ravenholdt Assassin,1
+ROGUE,Chillwind Yeti,1
+PRIEST,Sheep,1
+SHAMAN,Whelp,1
+PRIEST,Keeper of the Grove,1
+SHAMAN,Twilight Elder,1
+ROGUE,Angry Chicken,1
+WARLOCK,Wrathion,1
+SHAMAN,Golden Monkey,1
+WARRIOR,Bomb Squad,1
+SHAMAN,Auchenai Soulpriest,1
+DRUID,Coldlight Seer,1
+WARLOCK,Violet Apprentice,1
+DRUID,Spiked Hogrider,1
+WARLOCK,Ancient Brewmaster,1
+MAGE,Faceless Destroyer,1
+WARRIOR,Squirming Tentacle,1
+MAGE,Auchenai Soulpriest,1
+WARRIOR,Maelstrom Portal,1
+PALADIN,Tournament Medic,1
+DRUID,Reliquary Seeker,1
+PRIEST,Thunder Bluff Valiant,1
+DRUID,Healing Totem,1
+PRIEST,Secretkeeper,1
+DRUID,Grotesque Dragonhawk,1
+PRIEST,Void Crusher,1
+HUNTER,Tauren Warrior,1
+ROGUE,Pit Lord,1
+HUNTER,"Nat, the Darkfisher",1
+SHAMAN,Ancient Mage,1
+MAGE,Lord of the Arena,1
+WARLOCK,Obsidian Destroyer,1
+WARRIOR,Thing from Below,1
+WARLOCK,Scaled Nightmare,1
+WARRIOR,Arch-Thief Rafaam,1
+WARRIOR,Icehowl,1
+DRUID,Teapot,1
+DRUID,Eternal Sentinel,1
+DRUID,Dark Peddler,1
+PALADIN,Frost Elemental,1
+MAGE,Whelp,1
+PALADIN,Servant of Yogg-Saron,1
+MAGE,Eydis Darkbane,1
+ROGUE,Amani Berserker,1
+MAGE,Murloc Tidecaller,1
+SHAMAN,Crazed Worshipper,1
+PRIEST,Argent Protector,1
+SHAMAN,Cyclopian Horror,1
+WARLOCK,Firelands Portal,1
+PALADIN,Dispatch Kodo,1
+MAGE,King's Elekk,1
+PRIEST,Mogor's Champion,1
+WARLOCK,Guardian of Kings,1
+PRIEST,Blowgill Sniper,1
+WARRIOR,Grand Crusader,1
+WARLOCK,River Crocolisk,1
+DRUID,Druid of the Saber,1
+WARRIOR,Frog,1
+DRUID,Stormwind Knight,1
+DRUID,Imp,1
+MAGE,Grimestreet Pawnbroker,1
+DRUID,Djinni of Zephyrs,1
+PALADIN,Whelp,1
+HUNTER,Anubisath Sentinel,1
+PALADIN,Injured Kvaldir,1
+MAGE,Candle,1
+ROGUE,Void Terror,1
+PRIEST,Maiden of the Lake,1
+SHAMAN,Jade Swarmer,1
+PRIEST,Big Bad Wolf,1
+SHAMAN,Scarab,1
+ROGUE,Imp Master,1
+WARLOCK,Archmage Antonidas,1
+ROGUE,Murloc Tidecaller,1
+WARRIOR,Twilight Geomancer,1
+SHAMAN,Unearthed Raptor,1
+DRUID,Shadowcaster,1
+SHAMAN,Boulderfist Ogre,1
+MAGE,Doomcaller,1
+SHAMAN,Void Terror,1
+MAGE,Darkshire Councilman,1
+WARLOCK,Emperor Cobra,1
+PRIEST,Ethereal Arcanist,1
+WARLOCK,Forked Lightning,1
+PRIEST,Dark Arakkoa,1
+WARLOCK,Hungry Dragon,1
+ROGUE,Jungle Moonkin,1
+WARRIOR,Scavenging Hyena,1
+ROGUE,Drakonid Crusher,1
+WARRIOR,Streetwise Investigator,1
+ROGUE,Tournament Medic,1
+DRUID,Magnataur Alpha,1
+ROGUE,Big Game Hunter,1
+HUNTER,Warhorse Trainer,1
+SHAMAN,Huffer,1
+MAGE,Wicked Witchdoctor,1
+WARLOCK,Ancient of Blossoms,1
+PRIEST,Murloc Knight,1
+DRUID,Sheep,1
+ROGUE,Giant Sand Worm,1
+HUNTER,Hellfire,1
+SHAMAN,Master of Ceremonies,1
+HUNTER,Core Rager,1
+WARLOCK,Grim Patron,1
+MAGE,Grimscale Oracle,1
+WARRIOR,Dreadsteed,1
+PALADIN,River Crocolisk,1
+WARRIOR,Spiteful Smith,1
+PALADIN,Ancient of War,1
+WARRIOR,Sunfury Protector,1
+PALADIN,Saboteur,1
+HUNTER,Earth Elemental,1
+PALADIN,Icehowl,1
+HUNTER,Kodorider,1
+PALADIN,Medivh's Valet,1
+MAGE,Coliseum Manager,1
+PALADIN,Questing Adventurer,1
+MAGE,Frost Elemental,1
+PRIEST,Big Game Hunter,1
+PALADIN,Snake,1
+PRIEST,Ironfur Grizzly,1
+PALADIN,Young Priestess,1
+PRIEST,Grimscale Oracle,1
+PALADIN,Twisted Worgen,1
+PRIEST,Darkscale Healer,1
+PRIEST,Herald Volazj,1
+ROGUE,Brave Archer,1
+PRIEST,Tournament Attendee,1
+SHAMAN,Venture Co. Mercenary,1
+PRIEST,Master of Evolution,1
+SHAMAN,Maiden of the Lake,1
+ROGUE,Boar,1
+WARLOCK,Eternal Sentinel,1
+SHAMAN,Southsea Squidface,1
+WARLOCK,Faceless Destroyer,1
+WARLOCK,Flametongue Totem,1
+WARRIOR,Shadowfiend,1
+WARRIOR,Volcanic Drake,1
+HUNTER,Darkspeaker,1
+DRUID,Midnight Drake,1
+MAGE,Kun the Forgotten King,1
+HUNTER,Violet Teacher,1
+MAGE,Light's Champion,1
+MAGE,Celestial Dreamer,1
+PALADIN,Frog,1
+MAGE,Rascally Runt,1
+PRIEST,Backroom Bouncer,1
+PALADIN,Jade Golem,1
+ROGUE,Temple Enforcer,1
+PALADIN,Priest of the Feast,1
+SHAMAN,Savannah Highmane,1
+PALADIN,Tanaris Hogchopper,1
+WARLOCK,Am'gam Rager,1
+PRIEST,Axe Flinger,1
+WARLOCK,Secretkeeper,1
+PRIEST,Jungle Panther,1
+WARRIOR,Naga Sea Witch,1
+WARLOCK,Knight of the Wild,1
+HUNTER,Spellslinger,1
+WARRIOR,Armored Warhorse,1
+HUNTER,Coldlight Oracle,1
+DRUID,Fierce Monkey,1
+PALADIN,Patient Assassin,1
+DRUID,Streetwise Investigator,1
+PALADIN,Tournament Attendee,1
+DRUID,Lord Jaraxxus,1
+PALADIN,Mayor Noggenfogger,1
+MAGE,Core Hound,1
+PRIEST,Armored Warhorse,1
+PALADIN,Tinkmaster Overspark,1
+SHAMAN,Mogu'shan Warden,1
+PRIEST,Ancient of Blossoms,1
+SHAMAN,Shadowfiend,1
+ROGUE,Malchezaar's Imp,1
+WARLOCK,Arathi Weaponsmith,1
+WARLOCK,Windspeaker,1
+WARLOCK,Southsea Squidface,1
+SHAMAN,Fencing Coach,1
+WARRIOR,Angry Chicken,1
+DRUID,Raza the Chained,1
+WARRIOR,Ancient Shade,1
+MAGE,Perdition's Blade,1
+WARRIOR,Imp Master,1
+MAGE,Backstreet Leper,1
+DRUID,Tuskarr Jouster,1
+MAGE,Worthless Imp,1
+DRUID,Druid of the Flame,1
+ROGUE,Book Wyrm,1
+MAGE,Cat in a Hat,1
+SHAMAN,Medivh's Valet,1
+PALADIN,Scavenging Hyena,1
+SHAMAN,Animated Armor,1
+PALADIN,Grotesque Dragonhawk,1
+WARLOCK,Dragonhawk Rider,1
+PALADIN,Jade Golem,1
+WARRIOR,Treant,1
+SHAMAN,"Ragnaros, Lightlord",1
+WARRIOR,Northshire Cleric,1
+SHAMAN,Faceless Shambler,1
+PALADIN,War Golem,1
+SHAMAN,Pit Fighter,1
+PRIEST,Bloodsail Corsair,1
+WARLOCK,Kvaldir Raider,1
+ROGUE,Keeper of Uldaman,1
+WARLOCK,Jungle Moonkin,1
+WARLOCK,Jade Golem,1
+WARLOCK,Fireguard Destroyer,1
+WARLOCK,Warhorse Trainer,1
+DRUID,Shaky Zipgunner,1
+WARLOCK,Druid of the Claw,1
+DRUID,War Golem,1
+WARLOCK,Undercity Valiant,1
+DRUID,"Deathwing, Dragonlord",1
+WARLOCK,Gnomish Inventor,1
+MAGE,Midnight Drake,1
+DRUID,Cult Sorcerer,1
+PALADIN,Duskboar,1
+DRUID,Lightspawn,1
+PALADIN,Millhouse Manastorm,1
+HUNTER,Webspinner,1
+PALADIN,Hyena,1
+MAGE,Doomsayer,1
+PALADIN,Ironbeak Owl,1
+PALADIN,Rat Pack,1
+PRIEST,Wrathguard,1
+SHAMAN,Millhouse Manastorm,1
+SHAMAN,Recruiter,1
+WARLOCK,Revenge,1
+WARLOCK,Grimy Gadgeteer,1
+WARLOCK,Backstreet Leper,1
+WARLOCK,Nozdormu,1
+WARRIOR,Silithid Swarmer,1
+DRUID,Crazed Alchemist,1
+WARRIOR,Silent Knight,1
+DRUID,Kobold Geomancer,1
+DRUID,Fel Orc Soulfiend,1
+DRUID,Mountain Giant,1
+DRUID,Violet Illusionist,1
+PALADIN,Inner Rage,1
+DRUID,Ethereal Conjurer,1
+PRIEST,Webspinner,1
+HUNTER,Volcanic Lumberer,1
+PRIEST,Stoneclaw Totem,1
+ROGUE,Tiny Knight of Evil,1
+ROGUE,Kabal Talonpriest,1
+ROGUE,Bloodfen Raptor,1
+ROGUE,Murloc Knight,1
+ROGUE,Validated Doomsayer,1
+ROGUE,Possessed Villager,1
+ROGUE,Grimestreet Outfitter,1
+SHAMAN,Faceless Summoner,1
+ROGUE,Flametongue Totem,1
+SHAMAN,Darkshire Librarian,1
+ROGUE,Nat Pagle,1
+WARLOCK,Master of Ceremonies,1
+WARLOCK,Grimestreet Enforcer,1
+WARRIOR,Mire Keeper,1
+WARLOCK,Hooded Acolyte,1
+WARRIOR,Defender,1
+DRUID,Kabal Talonpriest,1
+WARRIOR,Princess Huhuran,1
+DRUID,Baine Bloodhoof,1
+DRUID,Orgrimmar Aspirant,1
+HUNTER,Young Dragonhawk,1
+DRUID,Ancient Mage,1
+HUNTER,Steward,1
+DRUID,Onyx Bishop,1
+MAGE,"Xaril, Poisoned Mind",1
+DRUID,Aldor Peacekeeper,1
+MAGE,Cho'gall,1
+DRUID,Spiteful Smith,1
+PRIEST,Temple Enforcer,1
+MAGE,War Golem,1
+PRIEST,Demolisher,1
+MAGE,Jade Golem,1
+ROGUE,Murloc Tidehunter,1
+MAGE,Drakonid Crusher,1
+SHAMAN,Armorsmith,1
+PRIEST,Shady Dealer,1
+WARLOCK,Frigid Snobold,1
+PRIEST,Bilefin Tidehunter,1
+WARRIOR,Menagerie Magician,1
+PRIEST,Pit Fighter,1
+WARRIOR,Argent Watchman,1
+PRIEST,Krul the Unshackled,1
+WARRIOR,Raid Leader,1
+PRIEST,Tuskarr Jouster,1
+DRUID,Twilight Darkmender,1
+ROGUE,Voodoo Doctor,1
+HUNTER,Bilefin Tidehunter,1
+ROGUE,Grand Crusader,1
+PALADIN,Avian Watcher,1
+ROGUE,Spellbender,1
+PRIEST,Spellslinger,1
+SHAMAN,Druid of the Claw,1
+PRIEST,Arcane Giant,1
+SHAMAN,"Hogger, Doom of Elwynn",1
+ROGUE,Felguard,1
+WARLOCK,Steward,1
+ROGUE,Steward,1
+WARRIOR,SI:7 Agent,1
+WARRIOR,Murloc Raider,1
+DRUID,Darkscale Healer,1
+WARRIOR,Kabal Talonpriest,1
+PRIEST,Fandral Staghelm,1
+WARRIOR,Duskboar,1
+SHAMAN,Friendly Bartender,1
+PRIEST,Grumbly Runt,1
+SHAMAN,Validated Doomsayer,1
+PRIEST,Knife Juggler,1
+SHAMAN,Moroes,1
+DRUID,Ooze,1
+WARRIOR,Aberrant Berserker,1
+PRIEST,Golden Monkey,1
+WARRIOR,Spirit Wolf,1
+PRIEST,Mukla's Champion,1
+WARRIOR,Ancient of Blossoms,1
+PRIEST,Kooky Chemist,1
+WARRIOR,Chillwind Yeti,1
+PRIEST,Rat Pack,1
+DRUID,Squirrel,1
+SHAMAN,Murloc Knight,1
+DRUID,Murloc Raider,1
+SHAMAN,Princess Huhuran,1
+HUNTER,Saboteur,1
+SHAMAN,Stampeding Kodo,1
+PALADIN,Sleep with the Fishes,1
+WARRIOR,Virmen Sensei,1
+PALADIN,Daring Reporter,1
+WARRIOR,"Mukla, Tyrant of the Vale",1
+PRIEST,Jade Golem,1
+DRUID,Armorsmith,1
+ROGUE,Starving Buzzard,1
+DRUID,Grim Patron,1
+ROGUE,Midnight Drake,1
+DRUID,Pompous Thespian,1
+SHAMAN,Grook Fu Master,1
+HUNTER,Gnoll,1
+SHAMAN,Dragonhawk Rider,1
+PALADIN,Squirrel,1
+WARLOCK,Dalaran Aspirant,1
+PRIEST,Ancient Shieldbearer,1
+WARLOCK,Infested Wolf,1
+PRIEST,Gadgetzan Ferryman,1
+DRUID,The Boogeymonster,1
+ROGUE,Prince Malchezaar,1
+DRUID,Medivh's Valet,1
+ROGUE,Demolisher,1
+HUNTER,Cyclopian Horror,1
+SHAMAN,Doomsayer,1
+MAGE,Violet Illusionist,1
+WARLOCK,Grommash Hellscream,1
+ROGUE,Clockwork Knight,1
+WARLOCK,Raid Leader,1
+ROGUE,Lord of the Arena,1
+WARRIOR,Sheep,1
+SHAMAN,Anub'arak,1
+DRUID,Temple Enforcer,1
+WARLOCK,Murloc Razorgill,1
+MAGE,Runic Egg,1
+DRUID,Unlicensed Apothecary,1
+MAGE,Hungry Crab,1
+DRUID,Alleycat,1
+PALADIN,Voodoo Doctor,1
+MAGE,Mirror Image,1
+PRIEST,Lance Carrier,1
+PALADIN,Tauren Warrior,1
+ROGUE,Cabal Shadow Priest,1
+PALADIN,Orgrimmar Aspirant,1
+ROGUE,Drain Life,1
+PALADIN,Dark Arakkoa,1
+ROGUE,Onyx Bishop,1
+PRIEST,Evil Heckler,1
+ROGUE,Dreadscale,1
+PRIEST,Dragon Consort,1
+ROGUE,Teapot,1
+ROGUE,Mana Wyrm,1
+SHAMAN,Dalaran Aspirant,1
+SHAMAN,Mysterious Challenger,1
+WARLOCK,Duskboar,1
+SHAMAN,Kabal Chemist,1
+WARLOCK,Summoning Portal,1
+HUNTER,Argent Watchman,1
+DRUID,Young Priestess,1
+PRIEST,Angry Chicken,1
+MAGE,Friendly Bartender,1
+ROGUE,Secretkeeper,1
+ROGUE,Fandral Staghelm,1
+ROGUE,Northshire Cleric,1
+ROGUE,Mayor Noggenfogger,1
+ROGUE,Skycap'n Kragg,1
+SHAMAN,Shadow Strike,1
+ROGUE,Mountain Giant,1
+DRUID,Backroom Bouncer,1
+SHAMAN,Grimestreet Pawnbroker,1
+HUNTER,Sen'jin Shieldmasta,1
+WARLOCK,"Shaku, the Collector",1
+MAGE,Fist of Jaraxxus,1
+WARRIOR,River Crocolisk,1
+MAGE,Frostwolf Grunt,1
+WARRIOR,Unearthed Raptor,1
+PRIEST,The Mistcaller,1
+DRUID,Southsea Deckhand,1
+ROGUE,Kabal Chemist,1
+DRUID,Kazakus,1
+ROGUE,Hammer of Wrath,1
+MAGE,Houndmaster,1
+SHAMAN,Arcanosmith,1
+MAGE,Ivory Knight,1
+WARLOCK,Jeweled Scarab,1
+MAGE,Arch-Thief Rafaam,1
+WARRIOR,Edwin VanCleef,1
+PRIEST,"Ragnaros, Lightlord",1
+WARRIOR,Confessor Paletress,1
+ROGUE,Jade Behemoth,1
+PALADIN,Pompous Thespian,1
+SHAMAN,Silver Hand Regent,1
+PRIEST,Undercity Valiant,1
+SHAMAN,Lance Carrier,1
+PRIEST,Virmen Sensei,1
+WARLOCK,Brave Archer,1
+WARLOCK,Patient Assassin,1
+WARLOCK,Faceless Summoner,1
+WARRIOR,Kindly Grandmother,1
+WARLOCK,Ancient Harbinger,1
+MAGE,Crowd Favorite,1
+WARRIOR,Cloaked Huntress,1
+ROGUE,Mana Addict,1
+WARRIOR,Boneguard Lieutenant,1
+PALADIN,Shattered Sun Cleric,1
+DRUID,Angry Chicken,1
+PALADIN,Bloodhoof Brave,1
+DRUID,Eater of Secrets,1
+PRIEST,Pit Lord,1
+MAGE,Magma Rager,1
+ROGUE,Soggoth the Slitherer,1
+PALADIN,Gnoll,1
+SHAMAN,Gormok the Impaler,1
+PALADIN,Nerubian Prophet,1
+WARRIOR,Hallazeal the Ascended,1
+PRIEST,Murloc Razorgill,1
+DRUID,Draenei Totemcarver,1
+ROGUE,Sheep,1
+MAGE,Dragonhawk Rider,1
+ROGUE,Demented Frostcaller,1
+MAGE,Gadgetzan Socialite,1
+WARLOCK,Broom,1
+PALADIN,Master Swordsmith,1
+WARLOCK,Argent Protector,1
+PALADIN,Fiery Bat,1
+WARRIOR,Emperor Cobra,1
+PALADIN,Undercity Valiant,1
+WARRIOR,Kazakus,1
+PRIEST,Gnoll,1
+WARRIOR,Menagerie Warden,1
+PRIEST,Shifter Zerus,1
+DRUID,Jade Golem,1
+ROGUE,Dragonhawk Rider,1
+HUNTER,Jeweled Scarab,1
+WARLOCK,Cutpurse,1
+HUNTER,Malygos,1
+WARLOCK,Northshire Cleric,1
+HUNTER,Twilight Elder,1
+WARRIOR,Eydis Darkbane,1
+MAGE,Zoobot,1
+DRUID,Thrallmar Farseer,1
+MAGE,Draenei Totemcarver,1
+DRUID,Laughing Sister,1
+MAGE,Twisted Worgen,1
+MAGE,Dispatch Kodo,1
+PALADIN,Spawn of N'Zoth,1
+MAGE,Sea Reaver,1
+PRIEST,Arcanosmith,1
+PALADIN,Spider,1
+SHAMAN,Addled Grizzly,1
+PRIEST,Shattered Sun Cleric,1
+WARLOCK,Eviscerate,1
+PRIEST,Grimestreet Pawnbroker,1
+WARLOCK,Ethereal Conjurer,1
+SHAMAN,Malkorok,1
+MAGE,Jade Golem,1
+WARLOCK,Shado-Pan Rider,1
+PALADIN,Dragonkin Sorcerer,1
+WARLOCK,Twilight Summoner,1
+PALADIN,Swashburglar,1
+WARRIOR,Arcane Missiles,1
+ROGUE,Dreadsteed,1
+DRUID,Am'gam Rager,1
+ROGUE,Garrosh Hellscream,1
+DRUID,Doomsayer,1
+ROGUE,Ethereal Arcanist,1
+MAGE,Don Han'Cho,1
+SHAMAN,Mayor Noggenfogger,1
+PALADIN,King Mukla,1
+WARRIOR,Dragonhawk Rider,1
+SHAMAN,Fossilized Devilsaur,1
+WARRIOR,Am'gam Rager,1
+SHAMAN,Emperor Cobra,1
+SHAMAN,Gnoll,1
+WARRIOR,Cenarius,1
+WARRIOR,Mounted Raptor,1
+HUNTER,Morgl the Oracle,1
+DRUID,Crowd Favorite,1
+MAGE,Wrathion,1
+DRUID,River Crocolisk,1
+MAGE,Cyclopian Horror,1
+HUNTER,Fallen Hero,1
+PALADIN,Auctionmaster Beardo,1
+PALADIN,Dark Iron Dwarf,1
+ROGUE,Kazakus,1
+PRIEST,Tirion Fordring,1
+ROGUE,Eadric the Pure,1
+ROGUE,Kabal Lackey,1
+ROGUE,Hungry Crab,1
+SHAMAN,Cho'gall,1
+WARLOCK,Shifter Zerus,1
+WARLOCK,Boneguard Lieutenant,1
+WARLOCK,Hallazeal the Ascended,1
+WARRIOR,Wrathguard,1
+WARRIOR,Dragon Consort,1
+WARRIOR,Cho'gall,1
+WARRIOR,Ancient Harbinger,1
+HUNTER,Kor'kron Elite,1
+DRUID,Broom,1
+HUNTER,Beckoner of Evil,1
+DRUID,Goldshire Footman,1
+HUNTER,Silver Hand Regent,1
+MAGE,Malchezaar's Imp,1
+PRIEST,Lord Jaraxxus,1
+MAGE,Bilefin Tidehunter,1
+PRIEST,Faceless Manipulator,1
+SHAMAN,Silvermoon Guardian,1
+PRIEST,Squire,1
+WARLOCK,Murloc Tidehunter,1
+PRIEST,Grimestreet Smuggler,1
+MAGE,"N'Zoth, the Corruptor",1
+PRIEST,Frostwolf Grunt,1
+PRIEST,Silver Hand Regent,1
+ROGUE,"Deathwing, Dragonlord",1
+WARRIOR,Mana Wraith,1
+SHAMAN,Lightspawn,1
+DRUID,Tournament Medic,1
+SHAMAN,Arcane Giant,1
+DRUID,Icky Tentacle,1
+WARLOCK,Rat Pack,1
+DRUID,Light's Champion,1
+WARLOCK,Nightbane Templar,1
+HUNTER,Tirion Fordring,1
+WARLOCK,Spiked Hogrider,1
+MAGE,Priestess of Elune,1
+WARRIOR,Stranglethorn Tiger,1
+PRIEST,Meanstreet Marshal,1
+WARRIOR,Boar,1
+PRIEST,Jade Golem,1
+WARRIOR,Gadgetzan Ferryman,1
+SHAMAN,Starving Buzzard,1
+DRUID,Ironbeak Owl,1
+SHAMAN,"Deathwing, Dragonlord",1
+DRUID,Misha,1
+WARRIOR,Kirin Tor Mage,1
+MAGE,Hound,1
+DRUID,Dispatch Kodo,1
+MAGE,Fencing Coach,1
+DRUID,"Xaril, Poisoned Mind",1
+MAGE,Leokk,1
+DRUID,Kodorider,1
+PALADIN,Laughing Sister,1
+HUNTER,Celestial Dreamer,1
+PALADIN,Cult Apothecary,1
+MAGE,Arcanosmith,1
+PRIEST,Aviana,1
+MAGE,Grimestreet Protector,1
+ROGUE,Light's Champion,1
+PRIEST,River Crocolisk,1
+WARLOCK,Mana Geode,1
+PRIEST,Steward,1
+WARRIOR,King's Elekk,1
+ROGUE,Knuckles,1
+DRUID,Swashburglar,1
+WARLOCK,Mire Keeper,1
+DRUID,Emperor Cobra,1
+WARLOCK,Maiden of the Lake,1
+MAGE,Armorsmith,1
+WARLOCK,Ram Wrangler,1
+MAGE,Nightbane Templar,1
+DRUID,Kor'kron Elite,1
+PALADIN,Wyrmrest Agent,1
+MAGE,Captured Jormungar,1
+PALADIN,Obsidian Destroyer,1
+PRIEST,Sapling,1
+PRIEST,Eldritch Horror,1
+SHAMAN,Kodorider,1
+PRIEST,Princess Huhuran,1
+WARLOCK,Draenei Totemcarver,1
+SHAMAN,Alley Armorsmith,1
+WARLOCK,Leper Gnome,1
+SHAMAN,Master Swordsmith,1
+WARLOCK,Raza the Chained,1
+SHAMAN,Keeper of the Grove,1
+WARLOCK,Anubisath Sentinel,1
+SHAMAN,Ancient Shieldbearer,1
+WARRIOR,Savage Combatant,1
+WARLOCK,Acolyte of Pain,1
+DRUID,Ice Rager,1
+WARRIOR,Enchanted Raven,1
+HUNTER,Blackwing Technician,1
+WARRIOR,Cult Master,1
+MAGE,Khadgar,1
+WARRIOR,Nightbane Templar,1
+PRIEST,Shadow Rager,1
+WARRIOR,Gormok the Impaler,1
+WARLOCK,Daring Reporter,1
+DRUID,Shifting Shade,1
+WARLOCK,Museum Curator,1
+HUNTER,Gnomish Inventor,1
+WARRIOR,Sheep,1
+MAGE,Ancient Shade,1
+WARRIOR,Prophet Velen,1
+MAGE,Arathi Weaponsmith,1
+WARRIOR,Arcane Golem,1
+MAGE,Silver Hand Recruit,1
+WARRIOR,Mummy Zombie,1
+PALADIN,Demolisher,1
+DRUID,Imp Master,1
+PRIEST,Gorillabot A-3,1
+DRUID,Imp Gang Boss,1
+ROGUE,Moat Lurker,1
+DRUID,Shattered Sun Cleric,1
+ROGUE,Acidmaw,1
+HUNTER,Southsea Captain,1
+SHAMAN,Usher of Souls,1
+HUNTER,Slime,1
+SHAMAN,The Beast,1
+MAGE,Skeram Cultist,1
+SHAMAN,Spawn of Shadows,1
+PALADIN,Kidnapper,1
+SHAMAN,Succubus,1
+PRIEST,Grimestreet Outfitter,1
+WARLOCK,Master of Disguise,1
+ROGUE,Polluted Hoarder,1
+DRUID,Mastiff,1
+SHAMAN,Axe Flinger,1
+PALADIN,Jinyu Waterspeaker,1
+SHAMAN,Savage Combatant,1
+PRIEST,Dragonhawk Rider,1
+WARLOCK,Tuskarr Totemic,1
+ROGUE,Alexstrasza,1
+WARRIOR,Desert Camel,1
+SHAMAN,Big-Time Racketeer,1
+DRUID,Auchenai Soulpriest,1
+HUNTER,Zealous Initiate,1
+HUNTER,Elise Starseeker,1
+DRUID,Grimy Gadgeteer,1
+PRIEST,Aldor Peacekeeper,1
+DRUID,N'Zoth's First Mate,1
+SHAMAN,Guardian of Kings,1
+HUNTER,Grim Patron,1
+SHAMAN,King Mukla,1
+MAGE,Stablemaster,1
+WARLOCK,Spellslinger,1
+MAGE,Brave Archer,1
+WARLOCK,Leatherclad Hogleader,1
+PRIEST,Dreadscale,1
+DRUID,Spawn of Shadows,1
+SHAMAN,Wilfred Fizzlebang,1
+DRUID,Hungry Dragon,1
+SHAMAN,Soggoth the Slitherer,1
+DRUID,Spellbender,1
+WARLOCK,Gruul,1
+MAGE,Mana Addict,1
+DRUID,Raid Leader,1
+PRIEST,Boar,1
+DRUID,Knight of the Wild,1
+ROGUE,Desert Camel,1
+HUNTER,Captain Greenskin,1
+WARLOCK,Polluted Hoarder,1
+MAGE,Axe Flinger,1
+WARLOCK,Luckydo Buccaneer,1
+MAGE,Argent Protector,1
+WARRIOR,Rend Blackhand,1
+MAGE,Leper Gnome,1
+WARRIOR,Eadric the Pure,1
+PALADIN,"Genzo, the Shark",1
+MAGE,Shadow Sensei,1
+PRIEST,Finkle Einhorn,1
+MAGE,Cloaked Huntress,1
+PRIEST,Black Whelp,1
+MAGE,Grimscale Chum,1
+ROGUE,Baron Geddon,1
+PRIEST,Firelands Portal,1
+SHAMAN,Twilight Elemental,1
+PRIEST,Duskboar,1
+WARLOCK,Servant of Yogg-Saron,1
+PRIEST,Darkshire Councilman,1
+WARLOCK,Magnataur Alpha,1
+ROGUE,Tomb Spider,1
+WARRIOR,Al'Akir the Windlord,1
+WARLOCK,Hogger,1
+WARRIOR,Hozen Healer,1
+WARRIOR,Kabal Courier,1
+DRUID,Cloaked Huntress,1
+WARRIOR,Doppelgangster,1
+DRUID,Worthless Imp,1
+WARRIOR,Cutpurse,1
+MAGE,Defias Cleaner,1
+WARRIOR,Guardian of Kings,1
+MAGE,Wisp,1
+HUNTER,Dread Corsair,1
+PRIEST,Daring Reporter,1
+MAGE,Ogre Magi,1
+PRIEST,Trogg Beastrager,1
+MAGE,Hogger,1
+ROGUE,Klaxxi Amber-Weaver,1
+MAGE,Crazed Alchemist,1
+ROGUE,"Genzo, the Shark",1
+MAGE,Onyxia,1
+SHAMAN,Edwin VanCleef,1
+PALADIN,Scaled Nightmare,1
+SHAMAN,Shaky Zipgunner,1
+PRIEST,Ogre Magi,1
+SHAMAN,Ancient of Lore,1
+ROGUE,Aberrant Berserker,1
+WARLOCK,Frostwolf Grunt,1
+SHAMAN,Undercity Valiant,1
+WARLOCK,Priestess of Elune,1
+WARLOCK,Confessor Paletress,1
+HUNTER,Spiked Hogrider,1
+WARLOCK,Kirin Tor Mage,1
+MAGE,Nerubian Prophet,1
+WARRIOR,Jade Golem,1
+MAGE,Luckydo Buccaneer,1
+DRUID,Master of Disguise,1
+PALADIN,Explosive Shot,1
+HUNTER,Alley Armorsmith,1
+PALADIN,Public Defender,1
+HUNTER,Damaged Golem,1
+ROGUE,Treant,1
+HUNTER,Wisp,1
+SHAMAN,Blackwater Pirate,1
+HUNTER,"N'Zoth, the Corruptor",1
+SHAMAN,Grimestreet Enforcer,1
+MAGE,"Nat, the Darkfisher",1
+WARLOCK,Earth Elemental,1
+PALADIN,Violet Illusionist,1
+WARLOCK,Armorsmith,1
+PALADIN,Tomb Spider,1
+DRUID,Wickerflame Burnbristle,1
+ROGUE,Murloc Raider,1
+DRUID,Slime,1
+SHAMAN,Shiv,1
+DRUID,Wyrmrest Agent,1
+SHAMAN,Bomb Squad,1
+DRUID,Squire,1
+WARLOCK,Grimestreet Informant,1
+MAGE,Rat,1
+WARLOCK,Twisted Worgen,1
+MAGE,Skycap'n Kragg,1
+WARRIOR,Reliquary Seeker,1
+MAGE,Mana Wraith,1
+WARRIOR,Lord Jaraxxus,1
+ROGUE,Master Jouster,1
+DRUID,Tundra Rhino,1
+SHAMAN,Twilight Darkmender,1
+HUNTER,Bloodmage Thalnos,1
+WARLOCK,Bash,1
+HUNTER,Thrall,1
+WARLOCK,Kabal Lackey,1
+MAGE,Mayor Noggenfogger,1
+WARLOCK,Shady Dealer,1
+PALADIN,Steward,1
+WARLOCK,Doppelgangster,1
+PRIEST,Earth Elemental,1
+WARLOCK,Saboteur,1
+PRIEST,Mogu'shan Warden,1
+WARRIOR,Possessed Villager,1
+ROGUE,The Skeleton Knight,1
+WARRIOR,Psych-o-Tron,1
+ROGUE,Crowd Favorite,1
+DRUID,Grimestreet Smuggler,1
+SHAMAN,Raza the Chained,1
+HUNTER,Polluted Hoarder,1
+WARRIOR,Pint-Sized Summoner,1
+PRIEST,Murloc Tidecaller,1
+WARRIOR,Ethereal Arcanist,1
+WARRIOR,Violet Teacher,1
+WARRIOR,Scarab,1
+MAGE,Saboteur,1
+DRUID,Gadgetzan Ferryman,1
+PALADIN,Weasel Tunneler,1
+DRUID,Dark Iron Dwarf,1
+WARRIOR,Imp Gang Boss,1
+HUNTER,Cairne Bloodhoof,1
+DRUID,Dragonhawk Rider,1
+MAGE,Teapot,1
+DRUID,Prince Malchezaar,1
+MAGE,Wilfred Fizzlebang,1
+DRUID,Ogre Magi,1
+PALADIN,Deadly Fork,1
+DRUID,Stormpike Commando,1
+WARLOCK,Moroes,1
+PALADIN,Twilight Whelp,1
+WARLOCK,Knuckles,1
+WARLOCK,Reckless Rocketeer,1
+WARLOCK,Mana Addict,1
+WARRIOR,Jungle Panther,1
+HUNTER,Jungle Panther,1
+DRUID,Sergeant Sally,1
+DRUID,Mayor Noggenfogger,1
+DRUID,Spider,1
+DRUID,Defender,1
+MAGE,Tinkmaster Overspark,1
+PALADIN,Eater of Secrets,1
+PALADIN,Toxic Sewer Ooze,1
+PRIEST,Novice Engineer,1
+PRIEST,Anub'arak,1
+ROGUE,Arcane Golem,1
+SHAMAN,Dark Peddler,1
+WARLOCK,"Medivh, the Guardian",1
+WARRIOR,Dragon Egg,1
+WARRIOR,Ogre Magi,1
+WARRIOR,Lance Carrier,1
+DRUID,Malkorok,1
+HUNTER,Evil Heckler,1
+HUNTER,Sea Giant,1
+MAGE,Scavenging Hyena,1
+MAGE,Jade Swarmer,1
+MAGE,Hyena,1
+PRIEST,Windspeaker,1
+PRIEST,Gurubashi Berserker,1
+ROGUE,Steward of Darkshire,1
+SHAMAN,Trogg Beastrager,1
+SHAMAN,Shadow Rager,1
+WARLOCK,Babbling Book,1
+WARRIOR,Brave Archer,1
+WARRIOR,Swashburglar,1
+WARRIOR,Ancient of War,1
+DRUID,Twilight Geomancer,1
+MAGE,Jade Golem,1
+PRIEST,Don Han'Cho,1
+SHAMAN,Hobart Grapplehammer,1
+WARLOCK,Starving Buzzard,1
+WARLOCK,Sheep,1
+WARRIOR,Water Elemental,1
+DRUID,Grimestreet Protector,1
+DRUID,Rumbling Elemental,1
+MAGE,Ancient Mage,1
+PALADIN,Kobold Geomancer,1
+PALADIN,Frostwolf Grunt,1
+PRIEST,Crystalweaver,1
+ROGUE,Acolyte of Pain,1
+ROGUE,Eydis Darkbane,1
+SHAMAN,Kor'kron Elite,1
+SHAMAN,Street Trickster,1
+SHAMAN,Am'gam Rager,1
+WARRIOR,Master Swordsmith,1
+WARRIOR,Undercity Huckster,1
+WARRIOR,Usher of Souls,1
+WARRIOR,Shady Dealer,1
+DRUID,The Mistcaller,1
+HUNTER,Novice Engineer,1
+MAGE,Maiden of the Lake,1
+PALADIN,Ancient Mage,1
+PRIEST,Devilsaur,1
+SHAMAN,Temple Enforcer,1
+WARLOCK,Hyena,1
+WARLOCK,Coldlight Oracle,1
+WARRIOR,Black Whelp,1
+PALADIN,Savannah Highmane,1
+PALADIN,Gnoll,1
+ROGUE,Pit Fighter,1
+ROGUE,The Black Knight,1
+WARRIOR,Warhorse Trainer,1

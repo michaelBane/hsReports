@@ -1,0 +1,130 @@
+---
+title: "Pacing the Meta: Un'Goro vs. Gadgetzan"
+output:
+  html_document: default
+  html_notebook: default
+---
+
+```{r setup, include=FALSE}
+library(dplyr)
+library(ggplot2)
+library(scales)
+library(tidyr)
+
+hsColors <- c('#FF7D0A', '#ABD473', '#69CCF0', '#F58CBA',
+              '#000000', '#FFF569', '#0070DE', '#9482C9', '#C79C6E')
+
+pnMSGTurnData <- read.csv('rawData/UNG vs MSG Turn & Board Analysis - Turns Feb 7th - 21st.csv')
+pnMSGBoardData <- read.csv('rawData/UNG vs MSG Turn & Board Analysis - Board April 7th - 21st.csv')
+msgTurnData <- read.csv('rawData/UNG vs MSG Turn & Board Analysis - Turns Mar 7th - 21st.csv')
+msgBoardData <- read.csv('rawData/UNG vs MSG Turn & Board Analysis - Board Mar 7th - 21st.csv')
+ungTurnData <- read.csv('rawData/UNG vs MSG Turn & Board Analysis - Turns April 7th - 21st.csv')
+ungBoardData <- read.csv('rawData/UNG vs MSG Turn & Board Analysis - Board April 7th - 21st.csv')
+```
+
+The year of the Kraken will undoubtedly be remembered for being a year dominated by aggressive strategies. Cards like [Tunnel Trogg](https://www.youtube.com/watch?v=vUtjt13k9m4), Flamewreather Faceless, Flame Imp and Small-Time Buccaneer were all meta defining at one point or another, and consistently a common sight on ladder. In fact, its fair to say its been a _very_ long time since Hearthstone wasn't dominated by aggro, with decks like Face Hunter and Zoo Warlock having impact long before Standard was announced.
+
+With the [obliteration from orbit](https://hsreplay.net/articles/5/shaking-meta-patch-71-numbers) of Aggro Shaman in patch 7.1, the rotation of three sets from Standard and the release of Journey to Un'Goro (JUG), many have speculated on the pace of the meta. Many have suggested it _feels_ slower.
+
+So have Blizzard, really delivered the fabled "Control Meta"? To answer this question, we compared X replays played in February (patch 7.0, MSoG pre-nerf), March (patch 7.1, MSoG post-nerf) and April (patch 8.0, JUG) of 2017, to identify whether the turn at which the game ends (concede or defeat) has really changed between patches/expansions. 
+
+If your one of the people (like me) that thought the meta had slowed, the results may shock you!
+
+### Mid-Range Everything
+
+Figure 1: Percentage of games by final turn, class and patch. Solid lines represent the average turn the game finished. Only games that finish by turn 20 are displayed.
+
+```{r, echo=FALSE, warning=FALSE, fig.height=8}
+# Turn game ends by class
+msgTurnData %>%
+  full_join(ungTurnData, by = c('num_turns', 'player_class')) %>%
+  full_join(pnMSGTurnData, by = c('num_turns', 'player_class')) %>%
+  select(`7.0 (MSG)` = n_games,
+         `7.1 (MSG)` = n_games.x,
+         `8.0 (UNG)` = n_games.y,
+         num_turns,
+         player_class) %>%
+  filter(player_class != 'NEUTRAL',
+         num_turns <= 50) %>%
+  mutate(num_turns = ceiling(num_turns / 2)) %>%
+  gather(Patch, games, -num_turns, -player_class) %>%
+  group_by(Patch, num_turns, player_class) %>%
+  summarise(games = sum(games)) %>%
+  group_by(Patch, player_class) %>%
+  mutate(norm_games = games / sum(games),
+         avgTurns = weighted.mean(num_turns, norm_games)) %>%
+  ggplot(aes(x = num_turns,
+             y = norm_games,
+             fill = Patch)) +
+  geom_bar(stat = 'identity', 
+           position = 'dodge',
+           alpha = 2/10) +
+  geom_vline(aes(xintercept = avgTurns,
+                 color = Patch),
+             size = 1.3) +
+  scale_y_continuous(labels = scales::percent) +
+  facet_wrap(~ player_class, 
+             scales = 'free_y', 
+             ncol = 1, 
+             strip.position = "right") +
+  xlim(0, 20.5) +
+  ylab('Games (%)') +
+  xlab('Turn Game Finished')
+
+```
+
+Any discussion of the pace of the meta should start with Warrior, given the effectiveness of [Pirate Warrior](https://hsreplay.net/decks/#playerClasses=WARRIOR&rankRange=LEGEND_THROUGH_TEN&includedCards=40465) in all three patches considered. The data suggests that Warrior was fastest in patch 7.1, when Control Warrior was least viable (thanks to Jade decks) and Pirate Warriors counter, Aggro Shaman, had felt the full force of Blizzards nerfs. JUG introduced a competitive new warrior archetype, [Quest (Taunt) Warrior](https://hsreplay.net/decks/#playerClasses=WARRIOR&includedCards=41427&rankRange=LEGEND_THROUGH_TEN), which slowed the class almost two full turns on average!
+
+Despite its recent decline, Shaman has also been incredibly relevant in Hearthstone's meta in 2017. Patch 7.1 saw a swing away from the aggro archetype (although mid-range was also extremely viable in 7.0), which lead to a slow down of almost a turn on average. JUG has actually lead to a small increase in the pace of games (likely attributed to its [murloc based quest decks](https://hsreplay.net/decks/#playerClasses=SHAMAN&rankRange=LEGEND_THROUGH_TEN&includedCards=41499)), a theme which appears consistent across all classes except the aforementioned Warrior.
+
+All other classes have actually got faster with every patch. JUG saw a rise in popularity of [token archetypes](https://hsreplay.net/decks/#playerClasses=DRUID&rankRange=LEGEND_THROUGH_TEN&includedCards=40397%2C41094) over [jade](https://hsreplay.net/decks/#playerClasses=DRUID&rankRange=LEGEND_THROUGH_TEN&includedCards=40372) in Druid. Mid-Range Hunter just got _alot_ better, presumably leading to quicker games. Mage moved away from super defensive Reno archetypes, which often reached fatigue, to Tempo and now [secret](https://hsreplay.net/decks/#playerClasses=MAGE&rankRange=LEGEND_THROUGH_TEN&includedCards=41153) and [aggro](https://hsreplay.net/decks/#playerClasses=MAGE&rankRange=LEGEND_THROUGH_TEN&includedCards=41885) builds. Mid-Range and Aggro Paladin (with a murloc core) have both become [tier one](https://tempostorm.com/hearthstone/meta-snapshot/standard/2017-04-23), where previously players preferred combo based Anyfin Can Happen builds. Priest got some decent [early-game minions](https://hsreplay.net/cards/41176/radiant-elemental/#tab=recommended-decks) and mid-range decks have appeared. Rogue has been fast for a while now, and [Quest Rogue](https://hsreplay.net/decks/#playerClasses=ROGUE&includedCards=648%2C41222) has become a popular new deck for those that like to play aggro. Patch 7.1 saw a [massive increase in popularity of Zoo](https://hsreplay.net/articles/5/shaking-meta-patch-71-numbers) in Warlock], and the Year of the Mammoth rotation sealed the fate of the much slower Reno-lock.
+
+### So Long Fatigue
+
+The figure below shows the pace of the meta when taken as a whole. Amazingly, matches are ending earlier with every patch, and games are currently almost a full turn shorter on average compared to February of this year!
+
+Figure 2: Percentage of games by final turn and patch. Solid lines represent the average turn the game finished. Only games that finish by turn 20 are displayed.
+
+```{r turns, echo=FALSE, message=FALSE, warning=FALSE, fig.height=3}
+# Turn game ends
+msgTurnData %>%
+  full_join(ungTurnData, by = c('num_turns', 'player_class')) %>%
+  full_join(pnMSGTurnData, by = c('num_turns', 'player_class')) %>%
+  select(`7.0 (MSG)` = n_games,
+         `7.1 (MSG)` = n_games.x,
+         `8.0 (UNG)` = n_games.y,
+         num_turns,
+         player_class) %>%
+  filter(player_class != 'NEUTRAL',
+         num_turns <= 50) %>%
+  mutate(num_turns = ceiling(num_turns / 2)) %>%
+  gather(Patch, games, -num_turns, -player_class) %>%
+  group_by(Patch, num_turns) %>%
+  summarise(games = sum(games)) %>%
+  group_by(Patch) %>%
+  mutate(norm_games = games / sum(games),
+         avgTurns = weighted.mean(num_turns, games)) %>%
+  ggplot(aes(x = num_turns,
+             y = norm_games,
+             fill = Patch)) +
+  geom_bar(stat = 'identity', 
+           position = 'dodge',
+           alpha = 0.2) +
+  geom_vline(aes(xintercept = avgTurns,
+                 color = Patch),
+             size = 1.5) +
+  scale_y_continuous(labels = scales::percent) +
+  xlim(0, 20.5) +
+  ylab('Games (%)') +
+  xlab('Turn Game Finished')
+```
+
+So why might the pace _feel_ slower or different? A frequently expressed [critisism](https://www.youtube.com/watch?v=70x7OB_Ov0U) of the "Patches vs. Reno" era of hyper-agressive vs. hyper-defensive decks we saw in MSoG was that alot of games were decided by early game draw. Its this exact mechanic that aggro decks are designed to prey on, its why they work (on average). In JUG, no class is as fast as what Warrior was in Patch 7.1, and therefore players probably dont feel quite the same pressure to draw well in the early game.
+
+In JUG, the quicker games are largely driven by the slower classes getting faster, rather than a dominace of aggro. Mechanics like jade and quest actively slow you in the early game but finish it quickly once your investment pays off. Classic attrition style control decks are probably a thing of the past, as Blizzard is actively designing them out of the game ([*](http://au.ign.com/articles/2017/01/13/hearthstone-blizzard-on-designing-jade-testing-red-mana-and-leaving-reno-behind), [*](https://us.battle.net/forums/en/hearthstone/topic/20752595155?page=4#post-63)). They simply cant compete with extreme value cards like Jade Idol, Drakonid Operative, Sulfurus and Nether Portal.
+
+["One of the things that we like in decks is for when you do your thing, the game actually ends."](http://au.ign.com/articles/2017/01/13/hearthstone-blizzard-on-designing-jade-testing-red-mana-and-leaving-reno-behind) - Mike Donais, Senior Designer
+
+["We do prefer when games end before fatigue, and we do think control decks should have a more active endgame than merely having a bunch of removal spells"](https://us.battle.net/forums/en/hearthstone/topic/20752595155?page=4#post-63) - Max McCall, Game Designer
+
+With this in mind, quests feel like a refinement of the jade mechanic. Its interesting to think of Jade Druid and Pirate Warrior as decks that had a similar purpose, to lower the number of games dragging out or reaching fatigue. Both of these decks acheived this, however the community reacted poorly to a meta defined by these two polar opposites. But with quests, Blizzard found a way to tighten the end-game in more diverse ways without players feeling like passengers in the early game. Its probably part of the reason the community has reacted so positively to the set.

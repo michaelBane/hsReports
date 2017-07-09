@@ -1,0 +1,115 @@
+---
+title: "The Best Quests"
+output:
+  html_document: default
+  html_notebook: default
+---
+
+```{r setup, include=FALSE}
+library(dplyr)
+library(ggplot2)
+library(scales)
+library(tidyr)
+
+hsColors <- c('#FF7D0A', '#ABD473', '#69CCF0', '#F58CBA',
+              '#000000', '#FFF569', '#0070DE', '#9482C9', '#C79C6E')
+
+playData  <- read.csv('rawData/Quest Performance Analysis (1.79MM Games) - Card Played Stats.csv') %>%
+  select(-win_rate)
+winRateData <- read.csv('rawData/Quest Performance Analysis (1.79MM Games) - Overall Class Performance.csv')
+gpWinRateData <- winRateData %>%
+  select(starts_with('gp')) %>%
+  mutate(gp_win_rate = gp_win_rate / 100)
+
+playData %>%
+  arrange(desc(times_played))
+```
+
+##  A first look at the new quest meta.
+
+One of the most anticipated features of the newly released Journey to Un'Goro expansion has been the set of new legendary quest. These [1-cost spells that start in your hand](https://youtu.be/qEmnpRSgqQk?t=1m40s) provide each class with specific objectives, with the promise of epic rewards should you satisfy them. Now that we are finally able to play with the cards, its fair to say they have been pretty popular. In fact, in just a couple of days, we have recorded over 170 Million replays where a quest was played!
+
+But are they good? And how are people taking advantage of the mechanics? To find out, we analysed those replays, with a view to uncovering which quests are best, and which cards are best in quest-decks.
+
+## The learning curve
+
+The new quests largely fall between 2 groups, those which push an existing archetype and those that promote styles of play which only previously appealed to a niche player base. For example, Its not much of a stretch to theory-craft for Awaken the Makers, as it primarily bolsters already strong N'Zoth/Death-rattle Priest decks. On the other hand, a card like Open the Way Gate introduces an entirely new mechanic, forcing players to come up with new ideas and strategies.
+
+**Figure 1: Win Rate of decks which include a quest by players class (opaque bars). Win-Rate of general population included for reference (translucent bars).**
+
+```{r quest success, echo=FALSE}
+quests <- c('Jungle Giants', 'The Marsh Queen', 'Open the Waygate', 'The Last Kaleidosaur', 'Awaken the Makers',
+            'The Caverns Below', 'Unite the Murlocs', 'Lakkari Sacrifice', "Fire Plume's Heart")
+
+# Win-Rate by quest
+playData %>%
+  filter(card_name %in% quests,
+         times_played > 1000) %>%
+  mutate(winRate = times_won / times_played) %>%
+  left_join(gpWinRateData, by = c('player_class' = 'gp_player_class')) %>%
+  select(player_class, card_name, winRate, gp_win_rate) %>%
+  gather(key, value, winRate, gp_win_rate) %>%
+  ungroup() %>%
+  mutate(key = ifelse(key == 'winRate', 1, 0.5)) %>%
+  ggplot(aes(x = reorder(card_name, value),
+             y = value,
+             fill = player_class,
+             color = factor(key),
+             alpha = key)) +
+  geom_bar(stat = 'identity', position = 'dodge') +
+  geom_hline(yintercept = 0.5, lty = 2) +
+  scale_colour_manual(values = c('black', 'black')) +
+  scale_fill_manual(values = hsColors) +
+  scale_y_continuous(labels = percent) +
+  guides(alpha = FALSE, color = FALSE, fill = FALSE) +
+  xlab('Quest') + ylab('Win Rate') +
+  coord_flip()
+```
+
+With this in mind, its perhaps not surprising that some quests might see incredibly poor win rates during the first few days of play. In fact, in these data, the win-rate of players playing quests was worse than those not playing quests across all classes. Of particular note are Lakkari Sacrifice and The Marsh Queen, which were [thought to be strong prior to launch](https://www.reddit.com/r/hearthstone/comments/62ttox/til_lifecoach_told_the_hearthstone_developers/), and have not actually had much success (yet).
+
+Caverns Below was probably the quest which required the most amount lateral thinking to leverage. Having said that, very recent feedback coming from the community is that once mastered, its *very* powerful. For example, popular streamer Dog, was able to hit [rank 1 legend](https://www.youtube.com/watch?v=9usPOZXDusE) the day of the release with a deck built around this quest. It will be interesting to see how these metrics evolve as players learn and adapt to this fairly novel style of play.
+
+## Quest Complete!
+
+With these quests come new decks and new play-styles. Lets take a look at the new (and old) cards being most commonly played in quest decks.
+
+**Figure 2: Plays by Card and Players Class. Opacity reflective of win-rate when played. Card must have been played more than 100k times to have been included in the figure.**
+
+```{r cards in deck, fig.height=10, fig.width=12, echo=FALSE}
+playData %>%
+  filter(times_played > 100000,
+         !(player_class %in% c('DRUID', 'PALADIN', 'WARLOCK'))) %>%
+  mutate(playRate = times_played / num_games,
+         `Win Rate` = times_won / times_played) %>%
+  ggplot(aes(x = reorder(card_name, times_played),
+             y = times_played,
+             alpha = `Win Rate`)) +
+  geom_bar(stat = 'identity', position = 'stack', fill = 'darkblue') +
+  scale_y_continuous(labels = comma) +
+  xlab('') + ylab('Plays') +
+  theme(axis.text.x = element_text(angle = 15, hjust = 1)) +
+  facet_wrap(~ player_class, scales = 'free') +
+  coord_flip()
+```
+
+Hunter hasn't really seen a standout card in terms of win-rate, apart from those which are quest-rewards in them self. Seemingly, if you can complete the quest and play at least one of Carnassis Brood your in a decent position to win. Despite Hunters poor win-rate when playing quests, it seems a lot of people are actually playing the class again.
+
+Mage has an excellent win-rate in games where you actually play the quest (and Arcane Giants it seems). Cards like Babbling book and Primordial Glyph which add cards to your hand not from your deck are having a real impact. Sorcerers Apprentice and Molten Reflection are clearly being used as finishers along with Fireball in an Exodia style Mage, given there high win-rate when played.
+
+<img src="https://articles.pvplive.net/article_images/cavernsbelow.png" align="right">
+Priest has seen less quest play than the other classes presented, however the new cards Crystalline Oracle, Tortolan Shell raiser and Mirage Caller are seeing a lot of play in these decks. Shifting Shade, which was particularly popular during WoToG, has also seen somewhat of a comeback.
+
+Rogue is seeing the most individual plays of cards in absolute terms as a result of the mechanics of the quest. Players appear to be bouncing 1-cost cards with draw or charge primarily, specifically Swashburgler, Novice Engineer, Stonetusk Boar and Southsea Deckhand. The expansion seems to have given life to cards considered among the worst in the game, namely Gatgetzan Ferryman and Moroes. The data suggest however that the best way to complete the quest is to use Flame Elementals, which consistently provide four cheap cards of the same name. Mimic Pod is also seeing play as a way to generate identical cards, but Thistle Tea isn't.
+
+Shaman is an interesting case, as the data suggests its been the most successful (at least over the first few days of play), but its not even close to the most played. Alot of the cards that make up the decks are from existing sets, and Murloc Warleader seems to make a massive impact when played (as it often does).
+
+Not too many surprises in Warrior, plenty of the efficient taunts which it has access to. Interestingly, Cornered Sentry sees very little play given its cost (perhaps because acolyte of pain doesn't see much either). As is to be expected, once players are completing the quest, the hero power is devastating.
+
+Paladin, Druid and Warlock aren't seeing enough quest play to warrant inclusion in the analysis at this stage. This is perhaps a reflection of there poor win-rate compared to the baseline.
+
+So there you have it, a first look at quests in Hearthstone. Keep in mind that the meta has nowhere near stabilized and therefore these decks are far from optimized. Watch this space or head to [hsreplay.net](https://hsreplay.net/) to stay up to date with latest trends and analysis.
+
+
+
+

@@ -1,0 +1,480 @@
+games_won,games_played,went_first,card_played,player_class
+852,1334,TRUE,Mistress of Mixtures,MAGE
+252,399,TRUE,Light's Justice,PALADIN
+3,5,TRUE,Murloc Raider,WARRIOR
+6,13,TRUE,Murloc Raider,HUNTER
+32,66,TRUE,Elven Archer,MAGE
+37,62,TRUE,Elven Archer,WARLOCK
+16,34,TRUE,Elven Archer,ROGUE
+154,254,TRUE,Noble Sacrifice,PALADIN
+10,22,TRUE,Leper Gnome,PALADIN
+4,13,TRUE,Leper Gnome,DRUID
+92,147,TRUE,Southsea Deckhand,ROGUE
+332,491,TRUE,Argent Squire,MAGE
+6,15,TRUE,Shieldbearer,MAGE
+294,423,TRUE,Worgen Infiltrator,WARLOCK
+137,192,TRUE,Worgen Infiltrator,SHAMAN
+130,269,TRUE,Mind Vision,PRIEST
+35,58,TRUE,Young Priestess,ROGUE
+102,152,TRUE,Young Priestess,WARLOCK
+13,20,TRUE,Undertaker,HUNTER
+27,39,TRUE,Cogmaster,SHAMAN
+274,441,TRUE,Clockwork Gnome,MAGE
+37,62,TRUE,Clockwork Gnome,DRUID
+136,190,TRUE,Lowly Squire,WARLOCK
+70,109,TRUE,Lowly Squire,SHAMAN
+25,39,TRUE,Tournament Attendee,PRIEST
+45,79,TRUE,Tournament Attendee,MAGE
+36,54,TRUE,Injured Kvaldir,WARLOCK
+58,89,TRUE,Gadgetzan Jouster,HUNTER
+195,329,TRUE,Gadgetzan Jouster,MAGE
+3,10,TRUE,Tentacle of N'Zoth,SHAMAN
+39,70,TRUE,Arcane Anomaly,PRIEST
+733,1104,TRUE,Swashburglar,ROGUE
+414,587,TRUE,Malchezaar's Imp,WARLOCK
+352,575,TRUE,Kabal Lackey,MAGE
+625,953,TRUE,Alleycat,HUNTER
+41,78,TRUE,Small-Time Buccaneer,PALADIN
+18,34,TRUE,Small-Time Buccaneer,WARLOCK
+68,109,TRUE,Small-Time Buccaneer,SHAMAN
+992,1391,TRUE,Mistress of Mixtures,WARLOCK
+478,732,TRUE,Mistress of Mixtures,PALADIN
+4,7,TRUE,Counterspell,MAGE
+1,3,TRUE,Wisp,PRIEST
+4,10,TRUE,Abusive Sergeant,HUNTER
+6,11,TRUE,Elven Archer,WARRIOR
+6,12,TRUE,Young Dragonhawk,PALADIN
+4,10,TRUE,Stonetusk Boar,PRIEST
+0,2,TRUE,Sinister Strike,ROGUE
+1,3,TRUE,Shieldbearer,ROGUE
+17,27,TRUE,Lightwarden,PALADIN
+21,38,TRUE,Dragon Egg,PALADIN
+4,14,TRUE,Dragon Egg,SHAMAN
+6,7,TRUE,Druid of the Flame,DRUID
+44,74,TRUE,Lowly Squire,PRIEST
+22,33,TRUE,Tournament Attendee,HUNTER
+5,8,TRUE,Tournament Attendee,DRUID
+24,36,TRUE,Tournament Attendee,ROGUE
+23,51,TRUE,Sacred Trial,PALADIN
+5,8,TRUE,Mounted Raptor,DRUID
+78,139,TRUE,Bladed Cultist,ROGUE
+8,15,TRUE,Tentacle of N'Zoth,PALADIN
+0,4,TRUE,Tentacle of N'Zoth,HUNTER
+11,17,TRUE,Arcane Anomaly,DRUID
+45,68,TRUE,Arcane Anomaly,ROGUE
+10,19,TRUE,Arcane Anomaly,WARRIOR
+35,51,TRUE,Arcane Anomaly,HUNTER
+8,12,TRUE,Runic Egg,SHAMAN
+7,13,TRUE,Runic Egg,PRIEST
+14,21,TRUE,Runic Egg,PALADIN
+108,185,TRUE,Grimscale Chum,PALADIN
+4,5,TRUE,Weasel Tunneler,PRIEST
+7,13,TRUE,Weasel Tunneler,MAGE
+40,73,TRUE,Small-Time Buccaneer,WARRIOR
+9,15,TRUE,Small-Time Buccaneer,PRIEST
+2,2,TRUE,Wisp,HUNTER
+2,4,TRUE,Vaporize,MAGE
+1,1,TRUE,Youthful Brewmaster,ROGUE
+2,2,TRUE,Hungry Crab,SHAMAN
+2,5,TRUE,Grimscale Oracle,MAGE
+4,13,TRUE,Stonetusk Boar,SHAMAN
+4,14,TRUE,Goldshire Footman,HUNTER
+3,4,TRUE,Sir Finley Mrrgglton,WARRIOR
+2842,6203,FALSE,NULL,DRUID
+4379,8884,FALSE,NULL,HUNTER
+14565,28377,FALSE,NULL,MAGE
+2727,5570,FALSE,NULL,WARRIOR
+0,1,TRUE,Pint-Sized Summoner,ROGUE
+7,9,TRUE,Wisp,WARLOCK
+0,3,TRUE,Murloc Tidecaller,DRUID
+6,9,TRUE,Murloc Tidecaller,ROGUE
+1,7,TRUE,Ice Barrier,MAGE
+2,6,TRUE,Lightwarden,DRUID
+2,2,TRUE,Target Dummy,WARLOCK
+0,1,TRUE,Micro Machine,ROGUE
+2,4,TRUE,Sir Finley Mrrgglton,DRUID
+2,2,TRUE,Forbidden Ritual,WARLOCK
+2,2,TRUE,Abusive Sergeant,DRUID
+1,1,TRUE,Shieldbearer,DRUID
+1,1,TRUE,Undercity Huckster,ROGUE
+2,3,TRUE,Ice Block,MAGE
+1,2,TRUE,Grimscale Oracle,WARRIOR
+1,1,TRUE,Razorfen Hunter,DRUID
+1,1,TRUE,Silent Knight,DRUID
+1,1,TRUE,Evolve,SHAMAN
+1,1,TRUE,Gadgetzan Ferryman,ROGUE
+0,2,TRUE,Soulfire,WARLOCK
+1,2,TRUE,Target Dummy,MAGE
+0,1,TRUE,Weasel Tunneler,WARRIOR
+1,2,TRUE,Jade Swarmer,ROGUE
+0,2,TRUE,Grimscale Oracle,WARLOCK
+0,2,TRUE,Patches the Pirate,SHAMAN
+1,1,TRUE,Friendly Bartender,ROGUE
+954,1359,TRUE,Voidwalker,WARLOCK
+12,20,TRUE,Secretkeeper,HUNTER
+10,22,TRUE,Elven Archer,PRIEST
+9,17,TRUE,Murloc Tidecaller,MAGE
+12,23,TRUE,Upgrade!,WARRIOR
+12,18,TRUE,Stonetusk Boar,PALADIN
+12,19,TRUE,Southsea Deckhand,PRIEST
+100,163,TRUE,Argent Squire,HUNTER
+148,230,TRUE,Argent Squire,ROGUE
+58,96,TRUE,Argent Squire,DRUID
+245,430,TRUE,Worgen Infiltrator,MAGE
+62,101,TRUE,Worgen Infiltrator,WARRIOR
+150,241,TRUE,Worgen Infiltrator,PRIEST
+59,96,TRUE,Worgen Infiltrator,DRUID
+1451,1967,TRUE,Flame Imp,WARLOCK
+9,12,TRUE,Lightwarden,SHAMAN
+683,879,TRUE,Zombie Chow,WARLOCK
+640,935,TRUE,Zombie Chow,MAGE
+286,414,TRUE,Zombie Chow,SHAMAN
+331,459,TRUE,Zombie Chow,ROGUE
+388,634,TRUE,Avenge,PALADIN
+41,52,TRUE,Undertaker,WARLOCK
+21,35,TRUE,Undertaker,PALADIN
+139,200,TRUE,Clockwork Gnome,ROGUE
+62,97,TRUE,Clockwork Gnome,HUNTER
+32,55,TRUE,Dragon Egg,MAGE
+40,55,TRUE,Dragon Egg,WARLOCK
+122,184,TRUE,Lowly Squire,PALADIN
+163,261,TRUE,Lowly Squire,MAGE
+11,19,TRUE,Tournament Attendee,WARRIOR
+54,82,TRUE,Tournament Attendee,WARLOCK
+13,20,TRUE,Injured Kvaldir,ROGUE
+554,831,TRUE,Buccaneer,ROGUE
+48,81,TRUE,Gadgetzan Jouster,DRUID
+176,340,TRUE,Raven Idol,DRUID
+3,7,TRUE,Tentacle of N'Zoth,DRUID
+19,28,TRUE,Tentacle of N'Zoth,WARLOCK
+28,46,TRUE,Zealous Initiate,ROGUE
+252,383,TRUE,N'Zoth's First Mate,WARRIOR
+259,416,TRUE,Enchanted Raven,DRUID
+10,13,TRUE,Jade Blossom,DRUID
+100,154,TRUE,Mistress of Mixtures,HUNTER
+3,8,TRUE,Voodoo Doctor,WARRIOR
+19,29,TRUE,Voodoo Doctor,ROGUE
+7,16,TRUE,Murloc Raider,PRIEST
+20,28,TRUE,Murloc Raider,PALADIN
+7,13,TRUE,Abusive Sergeant,ROGUE
+0,1,TRUE,Hungry Crab,PRIEST
+3,8,TRUE,Murloc Tidecaller,PRIEST
+2,5,TRUE,Young Dragonhawk,WARLOCK
+6,13,TRUE,Stonetusk Boar,WARLOCK
+21,35,TRUE,Southsea Deckhand,WARRIOR
+2,4,TRUE,Shieldbearer,HUNTER
+23,34,TRUE,Goldshire Footman,WARLOCK
+145,220,TRUE,Worgen Infiltrator,ROGUE
+23,38,TRUE,Bloodsail Corsair,MAGE
+4,8,TRUE,Bloodsail Corsair,DRUID
+62,97,TRUE,Young Priestess,MAGE
+12,21,TRUE,Young Priestess,WARRIOR
+16,28,TRUE,Lightwarden,WARLOCK
+20,29,TRUE,Cogmaster,PRIEST
+24,34,TRUE,Cogmaster,ROGUE
+0,1,TRUE,Target Dummy,DRUID
+37,61,TRUE,Tournament Attendee,PALADIN
+23,37,TRUE,Tournament Attendee,SHAMAN
+19,28,TRUE,Injured Kvaldir,MAGE
+89,145,TRUE,Gadgetzan Jouster,ROGUE
+40,70,TRUE,Gadgetzan Jouster,WARRIOR
+6,10,TRUE,Murloc Tinyfin,PALADIN
+10,19,TRUE,Runic Egg,WARLOCK
+10,21,TRUE,Runic Egg,MAGE
+5,10,TRUE,Potion of Polymorph,MAGE
+20,27,TRUE,Counterfeit Coin,ROGUE
+0,2,TRUE,Patches the Pirate,MAGE
+0,1,TRUE,Weasel Tunneler,HUNTER
+2,4,TRUE,Weasel Tunneler,DRUID
+6,11,TRUE,Elven Archer,DRUID
+2,4,TRUE,Eye for an Eye,PALADIN
+7,11,TRUE,Southsea Deckhand,DRUID
+1,5,TRUE,Shieldbearer,PRIEST
+3,7,TRUE,Shieldbearer,PALADIN
+9,12,TRUE,Bloodsail Corsair,ROGUE
+6,12,TRUE,Young Priestess,DRUID
+0,1,TRUE,The Coin,PRIEST
+0,1,TRUE,Divine Strength,PALADIN
+1,1,TRUE,Violet Illusionist,DRUID
+3,4,TRUE,Weasel Tunneler,PALADIN
+2,3,TRUE,Hired Gun,DRUID
+2,5,TRUE,Murloc Tinyfin,SHAMAN
+10033,19476,FALSE,NULL,PALADIN
+8866,16644,FALSE,NULL,PRIEST
+5492,9288,TRUE,NULL,ROGUE
+6410,13321,FALSE,NULL,SHAMAN
+9653,15513,TRUE,NULL,WARLOCK
+14096,25889,FALSE,NULL,WARLOCK
+2,2,TRUE,Hungry Crab,HUNTER
+1,2,TRUE,Target Dummy,ROGUE
+3,5,TRUE,Runic Egg,DRUID
+3,5,TRUE,Weasel Tunneler,SHAMAN
+1,4,TRUE,Secretkeeper,ROGUE
+1,1,TRUE,Cold Blood,ROGUE
+1,2,TRUE,Shieldbearer,WARRIOR
+0,2,TRUE,Ironfur Grizzly,DRUID
+2,4,TRUE,Secretkeeper,DRUID
+1,2,TRUE,Wisp,SHAMAN
+1,1,TRUE,Hungry Crab,DRUID
+1,1,TRUE,Flying Machine,DRUID
+3,3,TRUE,Sir Finley Mrrgglton,PRIEST
+1,1,TRUE,Faerie Dragon,DRUID
+0,1,TRUE,Patches the Pirate,WARLOCK
+1,3,TRUE,Hungry Crab,ROGUE
+1,1,TRUE,Acidic Swamp Ooze,ROGUE
+0,1,TRUE,Acolyte of Pain,DRUID
+2,2,TRUE,Sir Finley Mrrgglton,PALADIN
+12,22,TRUE,Competitive Spirit,PALADIN
+13,21,TRUE,Voodoo Doctor,PALADIN
+68,100,TRUE,Voodoo Doctor,WARLOCK
+64,110,TRUE,Redemption,PALADIN
+14,20,TRUE,Secretkeeper,WARLOCK
+25,38,TRUE,Murloc Raider,WARLOCK
+52,69,TRUE,Innervate,DRUID
+1,3,TRUE,Spellbender,MAGE
+1306,2021,TRUE,Mana Wyrm,MAGE
+1,3,TRUE,Murloc Tidecaller,SHAMAN
+3,7,TRUE,Stonetusk Boar,WARRIOR
+110,192,TRUE,Argent Squire,PRIEST
+143,232,TRUE,Argent Squire,SHAMAN
+63,121,TRUE,Tracking,HUNTER
+73,177,TRUE,Mirror Image,MAGE
+48,88,TRUE,Lightwarden,PRIEST
+391,543,TRUE,Zombie Chow,PALADIN
+368,519,TRUE,Zombie Chow,PRIEST
+423,650,TRUE,Webspinner,HUNTER
+33,54,TRUE,Cogmaster,WARLOCK
+88,137,TRUE,Warbot,WARRIOR
+220,307,TRUE,Clockwork Gnome,WARLOCK
+17,30,TRUE,Injured Kvaldir,PALADIN
+14,20,TRUE,Injured Kvaldir,SHAMAN
+81,135,TRUE,Brave Archer,HUNTER
+172,254,TRUE,Gadgetzan Jouster,WARLOCK
+139,227,TRUE,Gadgetzan Jouster,PALADIN
+649,946,TRUE,Tunnel Trogg,SHAMAN
+2,5,TRUE,Murloc Tinyfin,HUNTER
+45,79,TRUE,On the Hunt,HUNTER
+174,263,TRUE,Journey Below,ROGUE
+11,20,TRUE,Tentacle of N'Zoth,PRIEST
+891,1255,TRUE,Possessed Villager,WARLOCK
+635,933,TRUE,Spirit Claws,SHAMAN
+47,131,TRUE,Jade Idol,DRUID
+351,494,TRUE,Small-Time Buccaneer,ROGUE
+216,421,TRUE,I Know a Guy,WARRIOR
+372,565,TRUE,Mistress of Mixtures,SHAMAN
+21,28,TRUE,Voodoo Doctor,SHAMAN
+29,47,TRUE,Secretkeeper,MAGE
+20,38,TRUE,Secretkeeper,PALADIN
+24,30,TRUE,Murloc Raider,MAGE
+6,11,TRUE,Murloc Raider,DRUID
+11,14,TRUE,Murloc Raider,ROGUE
+14,18,TRUE,Abusive Sergeant,MAGE
+14,22,TRUE,Murloc Tidecaller,WARLOCK
+2,7,TRUE,Grimscale Oracle,PALADIN
+1,4,TRUE,Grimscale Oracle,SHAMAN
+6,13,TRUE,Young Dragonhawk,HUNTER
+2,6,TRUE,Young Dragonhawk,DRUID
+10,17,TRUE,Stonetusk Boar,HUNTER
+29,49,TRUE,Leper Gnome,MAGE
+9,24,TRUE,Leper Gnome,ROGUE
+7,21,TRUE,Leper Gnome,PRIEST
+11,22,TRUE,Leper Gnome,HUNTER
+0,1,TRUE,Harvest Golem,DRUID
+6,15,TRUE,Shieldbearer,WARLOCK
+22,43,TRUE,Goldshire Footman,MAGE
+8,20,TRUE,Goldshire Footman,PALADIN
+18,32,TRUE,Bloodsail Corsair,WARLOCK
+10,16,TRUE,Bloodsail Corsair,PRIEST
+5,6,TRUE,Bloodsail Corsair,SHAMAN
+28,45,TRUE,Young Priestess,SHAMAN
+1,5,TRUE,Lightwarden,HUNTER
+8,15,TRUE,Duplicate,MAGE
+19,32,TRUE,Undertaker,ROGUE
+12,28,TRUE,Undertaker,MAGE
+4,6,TRUE,Undertaker,DRUID
+7,10,TRUE,Spider Tank,DRUID
+93,160,TRUE,Clockwork Gnome,SHAMAN
+4,7,TRUE,Dragon Egg,WARRIOR
+15,22,TRUE,Dragon Egg,PRIEST
+108,160,TRUE,Lowly Squire,ROGUE
+11,23,TRUE,Lowly Squire,WARRIOR
+4,4,TRUE,Silver Hand Regent,DRUID
+5,5,TRUE,Effigy,MAGE
+86,136,TRUE,Gadgetzan Jouster,SHAMAN
+1,1,TRUE,Murloc Tinyfin,ROGUE
+16,35,TRUE,Vilefin Inquisitor,PALADIN
+23,40,TRUE,Tentacle of N'Zoth,MAGE
+2,4,TRUE,Tentacle of N'Zoth,WARRIOR
+24,34,TRUE,Zealous Initiate,PRIEST
+10,22,TRUE,Zealous Initiate,HUNTER
+17,25,TRUE,Zealous Initiate,DRUID
+42,75,TRUE,Zealous Initiate,PALADIN
+6,7,TRUE,Patches the Pirate,ROGUE
+1,2,TRUE,Patches the Pirate,PRIEST
+1,1,TRUE,Loot Hoarder,ROGUE
+2,6,TRUE,Arcane Missiles,MAGE
+12,15,TRUE,Young Dragonhawk,MAGE
+1,6,TRUE,Leper Gnome,WARRIOR
+3,4,TRUE,Jungle Panther,DRUID
+14,20,TRUE,Bloodsail Corsair,PALADIN
+0,2,TRUE,Lightwarden,WARRIOR
+3,5,TRUE,Undertaker,WARRIOR
+2,3,TRUE,Target Dummy,PALADIN
+7,8,TRUE,Weasel Tunneler,WARLOCK
+3,4,TRUE,Weasel Tunneler,ROGUE
+2161,3994,TRUE,NULL,DRUID
+2875,5054,TRUE,NULL,HUNTER
+7446,12588,TRUE,NULL,PALADIN
+7733,15266,FALSE,NULL,ROGUE
+5,9,TRUE,Tentacle of N'Zoth,ROGUE
+3,8,TRUE,Goldshire Footman,DRUID
+1,1,TRUE,Anodized Robo Cub,DRUID
+1,4,TRUE,Forbidden Ancient,DRUID
+2,4,TRUE,Bilefin Tidehunter,ROGUE
+1,2,TRUE,Patches the Pirate,HUNTER
+2,4,TRUE,Wisp,MAGE
+1,1,TRUE,Pompous Thespian,ROGUE
+0,1,TRUE,Young Dragonhawk,ROGUE
+3,3,TRUE,Murloc Tinyfin,PRIEST
+2,2,TRUE,Hungry Crab,WARLOCK
+2,3,TRUE,Runic Egg,WARRIOR
+1,3,TRUE,Sir Finley Mrrgglton,ROGUE
+0,1,TRUE,Sir Finley Mrrgglton,WARLOCK
+1,1,TRUE,Silverback Patriarch,DRUID
+1,1,TRUE,Wisp,WARRIOR
+39,68,TRUE,Voodoo Doctor,MAGE
+4,8,TRUE,Secretkeeper,PRIEST
+11,24,TRUE,Murloc Raider,SHAMAN
+7,13,TRUE,Abusive Sergeant,WARLOCK
+18,26,TRUE,Elven Archer,HUNTER
+249,358,TRUE,Blood Imp,WARLOCK
+4,8,TRUE,Young Dragonhawk,SHAMAN
+42,72,TRUE,Southsea Deckhand,PALADIN
+29,49,TRUE,Southsea Deckhand,SHAMAN
+256,364,TRUE,Argent Squire,WARLOCK
+36,62,TRUE,Argent Squire,WARRIOR
+220,348,TRUE,Argent Squire,PALADIN
+10,16,TRUE,Goldshire Footman,ROGUE
+91,141,TRUE,Worgen Infiltrator,HUNTER
+745,1133,TRUE,Northshire Cleric,PRIEST
+93,142,TRUE,Zombie Chow,WARRIOR
+116,176,TRUE,Zombie Chow,DRUID
+134,194,TRUE,Zombie Chow,HUNTER
+37,57,TRUE,Cogmaster,PALADIN
+121,214,TRUE,Clockwork Gnome,PALADIN
+109,175,TRUE,Clockwork Gnome,PRIEST
+38,67,TRUE,Clockwork Gnome,WARRIOR
+197,302,TRUE,Twilight Whelp,PRIEST
+207,327,TRUE,Living Roots,DRUID
+82,134,TRUE,Gadgetzan Jouster,PRIEST
+211,312,TRUE,Pit Snake,ROGUE
+54,81,TRUE,Zealous Initiate,WARLOCK
+267,438,TRUE,Fiery Bat,HUNTER
+189,291,TRUE,Selfless Hero,PALADIN
+682,1046,TRUE,Babbling Book,MAGE
+101,159,TRUE,Arcane Anomaly,MAGE
+44,68,TRUE,Arcane Anomaly,SHAMAN
+34,61,TRUE,Arcane Anomaly,PALADIN
+901,1363,TRUE,Smuggler's Run,PALADIN
+38,77,TRUE,Getaway Kodo,PALADIN
+5,8,TRUE,Small-Time Buccaneer,MAGE
+35,57,TRUE,Small-Time Buccaneer,HUNTER
+95,157,TRUE,Smuggler's Crate,HUNTER
+434,661,TRUE,Mistress of Mixtures,ROGUE
+425,674,TRUE,Mistress of Mixtures,PRIEST
+100,181,TRUE,Mistress of Mixtures,WARRIOR
+144,217,TRUE,Mistress of Mixtures,DRUID
+6,16,TRUE,Voodoo Doctor,HUNTER
+17,33,TRUE,Voodoo Doctor,PRIEST
+2,4,TRUE,Secretkeeper,WARRIOR
+18,28,TRUE,Mirror Entity,MAGE
+17,23,TRUE,Repentance,PALADIN
+8,15,TRUE,Abusive Sergeant,SHAMAN
+1,3,TRUE,Abusive Sergeant,PRIEST
+3,5,TRUE,Abusive Sergeant,WARRIOR
+19,38,TRUE,Elven Archer,PALADIN
+20,39,TRUE,Elven Archer,SHAMAN
+6,14,TRUE,Murloc Tidecaller,PALADIN
+1,5,TRUE,Grimscale Oracle,ROGUE
+4,7,TRUE,Young Dragonhawk,PRIEST
+7,15,TRUE,Stonetusk Boar,ROGUE
+12,21,TRUE,Stonetusk Boar,MAGE
+4,6,TRUE,Stonetusk Boar,DRUID
+18,31,TRUE,Leper Gnome,WARLOCK
+7,16,TRUE,Leper Gnome,SHAMAN
+19,32,TRUE,Southsea Deckhand,MAGE
+27,37,TRUE,Southsea Deckhand,HUNTER
+19,28,TRUE,Southsea Deckhand,WARLOCK
+4,4,TRUE,Shieldbearer,SHAMAN
+16,23,TRUE,Goldshire Footman,SHAMAN
+2,6,TRUE,Goldshire Footman,WARRIOR
+8,21,TRUE,Goldshire Footman,PRIEST
+197,312,TRUE,Worgen Infiltrator,PALADIN
+1,3,TRUE,Bloodsail Corsair,WARRIOR
+7,10,TRUE,Bloodsail Corsair,HUNTER
+31,44,TRUE,Young Priestess,HUNTER
+45,70,TRUE,Young Priestess,PALADIN
+39,63,TRUE,Young Priestess,PRIEST
+6,13,TRUE,Lightwarden,MAGE
+14,21,TRUE,Undertaker,SHAMAN
+4,10,TRUE,Cogmaster,HUNTER
+68,104,TRUE,Cogmaster,MAGE
+6,12,TRUE,Cogmaster,WARRIOR
+5,7,TRUE,Cogmaster,DRUID
+12,19,TRUE,Dragon Egg,ROGUE
+7,12,TRUE,Dragon Egg,DRUID
+32,55,TRUE,Lowly Squire,HUNTER
+31,46,TRUE,Lowly Squire,DRUID
+16,22,TRUE,Injured Kvaldir,HUNTER
+40,63,TRUE,Injured Kvaldir,PRIEST
+2,8,TRUE,Injured Kvaldir,DRUID
+2,2,TRUE,Dragonhawk Rider,DRUID
+1,3,TRUE,Murloc Tinyfin,DRUID
+7,10,TRUE,Murloc Tinyfin,WARLOCK
+6,13,TRUE,Cursed Blade,WARRIOR
+40,78,TRUE,Zealous Initiate,MAGE
+38,49,TRUE,Zealous Initiate,SHAMAN
+7,13,TRUE,Zealous Initiate,WARRIOR
+60,96,TRUE,Arcane Anomaly,WARLOCK
+6,11,TRUE,Runic Egg,ROGUE
+27,53,TRUE,Finders Keepers,SHAMAN
+19,43,TRUE,Meanstreet Marshal,PALADIN
+4,12,TRUE,Abusive Sergeant,PALADIN
+2,4,TRUE,Shadowstep,ROGUE
+8,19,TRUE,Undertaker,PRIEST
+2,3,TRUE,Target Dummy,WARRIOR
+0,1,TRUE,Tinkertown Technician,DRUID
+3,7,TRUE,Dragon Egg,HUNTER
+2,2,TRUE,Cutpurse,ROGUE
+11192,19285,TRUE,NULL,MAGE
+7344,12271,TRUE,NULL,PRIEST
+5087,8905,TRUE,NULL,SHAMAN
+1909,3533,TRUE,NULL,WARRIOR
+4,5,TRUE,Wisp,ROGUE
+3,4,TRUE,Murloc Tidecaller,HUNTER
+1,1,TRUE,Bloodsail Raider,DRUID
+1,1,TRUE,Sir Finley Mrrgglton,SHAMAN
+3,5,TRUE,Runic Egg,HUNTER
+4,10,TRUE,Voodoo Doctor,DRUID
+5,6,TRUE,Defias Ringleader,ROGUE
+1,5,TRUE,Lightwarden,ROGUE
+1,2,TRUE,Angry Chicken,PRIEST
+4,6,TRUE,Injured Kvaldir,WARRIOR
+2,3,TRUE,Murloc Tinyfin,MAGE
+1,7,TRUE,Small-Time Buccaneer,DRUID
+2,3,TRUE,Secretkeeper,SHAMAN
+1,1,TRUE,Wolfrider,DRUID
+0,1,TRUE,Target Dummy,HUNTER
+0,1,TRUE,Reliquary Seeker,WARLOCK
+0,1,TRUE,Mark of the Lotus,DRUID
+1,1,TRUE,Toxic Sewer Ooze,DRUID
+1,2,TRUE,Wisp,DRUID
+2,2,TRUE,Grimscale Oracle,HUNTER
+1,1,TRUE,Zoobot,DRUID
+0,2,TRUE,Young Dragonhawk,WARRIOR
+1,1,TRUE,Eydis Darkbane,DRUID
+1,1,TRUE,Pompous Thespian,DRUID
+1,1,TRUE,Master Swordsmith,ROGUE
+1,1,TRUE,Angry Chicken,PALADIN
+0,1,TRUE,Angry Chicken,MAGE
+0,1,TRUE,Target Dummy,PRIEST

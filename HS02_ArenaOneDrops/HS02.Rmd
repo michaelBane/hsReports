@@ -1,0 +1,149 @@
+---
+title: "Mulligan Luck in the Arena"
+output:
+  html_notebook: default
+  html_document: default
+---
+
+<img src="https://hydra-media.cursecdn.com/hearthstone.gamepedia.com/thumb/c/c9/The_Coin(141).png/200px-The_Coin(141).png?version=4290b4ae002cebc842b8bca5e7732c07" align="right"> 
+"Good" and "Bad" types of randomness are a hot topic in the hearthstone community, with cards like [Flame-Juggler](https://youtu.be/bdkGNrkJsII) and [Yogg-Saron](http://eu.battle.net/hearthstone/en/blog/20303031/upcoming-balance-changes-update-613-28-09-2016) typically being the focus of discussion. But with the continuing increase in the power level of early game cards (1-drops in particular), its often your early draw luck that decides a game over any individual minion or spell.
+
+The luck of the draw is an inherent part of any CCG, and its what makes every game feel fresh. However some have raised concerns that too much of a games variance is determined by factors decided in the mulligan stage, such as who goes first and whether they curve out. [This Kripp video](https://www.youtube.com/watch?v=eIx_ihRr1eU), probably best describes some the perceived effects and issues associated with early game draw, particularly in arena format.
+
+We're always told that playing one drops makes a big difference in arena, let's use data to try and quantify how much truth there is in that. In the following article, we will use replay data from 280k matches played in from Jan, 2017 to measure the effect on win-rate of what we define as "mulligan luck".
+
+Before we proceed, these are our definitions of a players mulligan luck.
+
+- 2xLucky: You go first and draw a playable 1-cost card on or before turn 1.
+- 1xLucky: You go first, but don't draw a playable 1-cost card on or before turn 1.
+- 0xLucky: You go second.
+
+Technically, mulligan luck is not pure chance, if you go first you can influence whether you are 1x or 2xLucky to some extent.
+
+Its important to note, this analysis is one of the edge case where you get the exact card you want, when you want it. The down-side of 1-drops is they make terrible top-decks in the late game, and we make no consideration of this. So before you get your pitch-forks out, check out the [HSArena teir list](http://www.heartharena.com/tierlist) for a more rounded statistical treatment of the cards presented here.
+
+## Establishing a Baseline.
+
+To ensure we are making apples-apples comparisons, we only considered arena games where a) the players entire deck was known and b) the deck contained at least one 1-cost card. Its important to re-iterate, we are comparing the same players/decks performance conditional on only their luck in a particular match.
+
+Before we can make any estimate of the effect of mulligan luck on win-rate, we need to establish a baseline (average) win-rate for each class in the sample. These are shown below.
+
+```{r, echo=FALSE, message=FALSE}
+library(dplyr)
+library(ggplot2)
+library(scales)
+
+data <- read.csv('rawData/Arena Turn 1 Play Stats - 280k games.csv')
+
+hsColors <- c('#FF7D0A', '#ABD473', '#69CCF0', '#F58CBA',
+              '#000000', '#FFF569', '#0070DE', '#9482C9', '#C79C6E')
+
+#Base win rates
+baseClassWinRate <- data %>%
+  group_by(player_class) %>%
+  summarise(baseRate = sum(games_won) / sum(games_played),
+            n = sum(games_played)) %>%
+  arrange(desc(baseRate))
+```
+
+|Player Class|Base Win-Rate|Games Played|
+|------------|-------------|------------|
+|Warlock|60.1%|51924|
+|Priest|56.9%|33313|
+|Rogue|56.3%|30519|
+|Paladin|56.0%|39033|
+|Mage|55.5%|56989|
+|Hunter|54.5%|17865|
+|Shaman|54.1%|26655|
+|Warrior|52.1%|11015|
+|Druid|51.0%|12557|
+
+We wont go into detail regarding tier scores by class as this is [readily available elsewhere](https://www.reddit.com/r/hearthstone/comments/5g966v/warlock_the_new_king_of_arena_an_msg_arena_class/). Suffice to say, Blizzard appears to have done a good job reigning in Mage from its Karazhan pedestal (but people are still playing it).
+
+You will note a win-rate of >50% consistently across classes. Players who invest in setting up deck trackers (or reading articles like this one for that matter) are arguably more engaged/competitive than the true player population, which pushes up the win-rate in the sample slightly.
+
+## Getting Lucky
+
+The change in win-rate, from the baseline, by class and how lucky the player was in the mulligan stage is shown below. The opacity of a group is reflective of the number of matches considered.
+
+```{r, echo=FALSE, message=FALSE}
+#Win rates by luck and class
+data %>%
+  group_by(player_class,
+           Luck = ifelse(went_first & card_played != 'NULL', '2xLucky',
+                         ifelse(went_first, '1xLucky', '0xlucky'))) %>%
+  summarise(rate = sum(games_won) / sum(games_played),
+            play = sum(games_played)) %>%
+  inner_join(baseClassWinRate, by = "player_class") %>%
+  mutate(Improvement = rate - baseRate) %>%
+  ggplot(aes(x = Luck,
+             y = Improvement,
+             fill = player_class,
+             alpha = play)) +
+  geom_bar(stat = 'identity', position = 'dodge', color = 'black') +
+  facet_grid(~ player_class, scales = 'free_x') +
+  theme(axis.text.x = element_text(angle = 35, hjust = 1)) +
+  scale_y_continuous(labels = percent) +
+  scale_fill_manual(values = hsColors) +
+  guides(fill=FALSE, alpha=FALSE) +
+  ggtitle('Improvement from base win-rate by players luck.',
+          subtitle = '2xLuck: Goes 1st, plays 1 drop. 1xLuck: Goes 1st, no 1 drop. 0xLuck: Goes 2nd.')
+```
+
+When you don't go first (0xLucky), you're somewhere between 3.5% and 6% less likely to win compared to the base rate, depending on class. If you go first but don't have a turn-1 play (1xLucky), expect your win rate to improve from 2% to 3.2% from the base. If however you do go first and draw a playable 1-drop (2xLucky), expect your win-rate to improve a minimum of 5% all the way up to around 13%.
+
+The extent to which your mulligan luck effects your win-rate is controllable to some extent by what class you pick. If you are happy to roll the dice and go for glory, pick classes like Shaman, Rogue and Warlock. If you want to play it safe and consistent, play Priest, Paladin or Warrior.
+
+## Drawing the Nuts
+
+All 1-drops aren't equal, and some actually lower your chance of winning when played on turn-1. Below is a breakdown of the effect of individual cards, in the edge-case where the player gets 2xLucky. Cards had to be played more than 300 times to be included in the plot.
+
+```{r, echo=FALSE, message=FALSE, fig.height=10, fig.width=7}
+#Base win rates by card played
+data %>%
+  group_by(player_class,
+           card_played) %>%
+  filter(card_played != 'NULL') %>%
+  summarise(win = sum(games_won),
+            play = sum(games_played),
+            rate = sum(games_won) / sum(games_played)) %>%
+  inner_join(baseClassWinRate, by = "player_class") %>%
+  mutate(improvement = rate - baseRate,
+         playPerClass = play / n) %>%
+  filter(play >= 300) %>%
+  ggplot(aes(x = reorder(card_played, improvement),
+             y = improvement,
+             fill = player_class,
+             alpha = playPerClass)) +
+  geom_bar(stat = 'identity',
+           color = 'black') +
+  theme(axis.text.x = element_text(angle = 22, hjust = 1)) +
+  facet_wrap(~ player_class, scales = 'free_x') +
+  scale_y_continuous(labels = percent) +
+  scale_fill_manual(values = hsColors,
+                    guide = guide_legend(title = "Player Class")) +
+  guides(alpha=FALSE, fill=FALSE) +
+  xlab('Card Played') +
+  ggtitle('Improvement from base win-rate by card played when 2xLucky.',
+          subtitle = 'Opacity proportional to likelyhood of playing card within the class.')
+
+```
+
+
+Perhaps the most controversial card of MSoG, Small-Time Buccaneer, makes a big impact in Rogue. Being able to consistently grab a weapon on turn 2 makes this little guy a pretty good in the class, especially on turn 1. Tunnel Trogg also shows its face in Shaman, as does one of only 2 weapons, Spirit claws. Paladin has the best spell by far, Smugglers Run. And remember Zoolock? Well unsuprisingly cards like Flame Imp, Argent Squire, Malchezaar's Imp and Possessed Villager all make excellent turn-1 plays.
+
+<img src="https://hydra-media.cursecdn.com/hearthstone.gamepedia.com/thumb/0/09/Zombie_Chow(683).png/200px-Zombie_Chow(683).png?version=d26e6a0ace152cb06497dac37dadb093" align="right"> 
+With all this said though, there is only one undisputed king of the arena. Whilst you don't see him so often being from an older set, Zombie Chow is in the top 2 most powerful turn-1 plays in every class with enough sample. In Warlock, Rogue, Paladin and Shaman, a turn-1 Zombie chow will net you an improvement in win rate of over 15%! Mistress of Mixtures, Zombie Chow's spiritual successor, also shows up everywhere but its effect is less dramatic.
+
+Druid, Hunter and Warrior don't see enough play to generate sufficient statistics to make an accurate estimation of the luck-effect of some of the rarer cards. Nevertheless some of the most effective early game cards are in these classes. Living Roots is one of only a few spells to make the cut (presumably players are choosing the two 1/1's), and N'Zoth's First Mate improves win-rate >13% in Warrior. Hunter has 3 pretty good options available to it, with Fiery Bat edging out the more played Alley Cat.
+
+There are many cards here that don't improve your win-rate any more than doing nothing (but going first) on turn-1. In-fact, some popular plays actually decrease your win rate relative to the base. The next bad play on the list, which only just missed the cut, was a turn-1 Mirror Image, which decreased a players chance of winning over 15%! Don't do that...
+
+## Summing Up
+
+Mulligan RNG is determined mostly by dice-rolls which occur before players can interact with the board or each other, so its easy to understand why players who think they are more skill-full than their opponent could get salty loosing because of it.
+
+But that's hearthstone. Getting unlucky might be frustrating when you have gold on the line in arena, but on the other hand consistency can be really boring. Just look to "real" sport (the outdoor kind) to see how dull it can be when the same people [win all the time](https://www.formula1.com/). It sucks to lose turn 5 when your opponent has that turn-1 Mana Wyrm, but it feels great to overcome those odds and win, that's where you get to exhibit your true skill.
+
+And honestly, whats wrong with a few noobs crushing top players every now and then? Makes for [great viewing](https://youtu.be/HVQ2GgPzv_g)!
+

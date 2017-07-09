@@ -1,0 +1,86 @@
+---
+title: "Crafting Playable Legendaries"
+output:
+  html_document: default
+  html_notebook: default
+---
+
+It's doesn't feel great when you craft a card that seems good in theory, only to realize a week down the track your not really playing with it (I'm looking at you Finja!). So what legendaries are actually playable in 2017? To find out, we grabbed data for ~250,000 legendary minion plays from early 2017, grouped by the class of their player. What proceeds constitutes my interpretation of the data, but I encourage you to have play with the visualization, and figure out what works for your play-style.
+
+```{r, echo=FALSE, message=FALSE}
+library(highcharter)
+
+plotData <- read.csv('processedData.csv')
+
+highchart() %>%
+  hc_title(text = "Play Rate of legendaries by players class") %>%
+  hc_subtitle(text = 'Data is derived from ~250,000 cards played on Jan 3rd, 2017. Source: HSReplay.net replay database. Plot is zoomable.') %>%
+  hc_chart(type = "column",
+           zoomType = 'xy') %>%
+  hc_plotOptions(series=list(stacking='normal')) %>% 
+  hc_xAxis(categories = plotData$card_name,
+           labels = list(step = 1,
+                         rotation = 90)) %>% 
+  hc_add_series(name = "Druid", color = '#FF7D0A', data = plotData$DRUID) %>% 
+  hc_add_series(name = "Hunter", color = '#ABD473', data = plotData$HUNTER) %>% 
+  hc_add_series(name = "Mage", color = '#69CCF0', data = plotData$MAGE) %>% 
+  hc_add_series(name = "Paladin", color = '#F58CBA', data = plotData$PALADIN) %>% 
+  hc_add_series(name = "Rogue", color = '#FFF569', data = plotData$ROGUE) %>% 
+  hc_add_series(name = "Priest", color = '#E4EDF0', data = plotData$PRIEST) %>% 
+  hc_add_series(name = "Shaman", color = '#0070DE', data = plotData$SHAMAN) %>% 
+  hc_add_series(name = "Warlock", color = '#9482C9', data = plotData$WARLOCK) %>% 
+  hc_add_series(name = "Warrior", color = '#C79C6E', data = plotData$WARRIOR) %>%
+  hc_exporting(enabled = TRUE)
+```
+
+### Top Crafts
+
+<img src="https://hydra-media.cursecdn.com/hearthstone.gamepedia.com/thumb/2/2c/Bloodmage_Thalnos(525)_Gold.png/200px-Bloodmage_Thalnos(525)_Gold.png?version=9240446a3ad6c4d062e176047c7be683" align="right"> It's doubtful there will ever be a more playable legendary than Patches the Pirate (#1). [The pirate package is better than ever](https://www.youtube.com/watch?v=2XY2q1fqidI), and this 1 drop that you don't even have to draw is the undisputed champion of just showing up... all the time. 
+
+LoE introduced a slew of reasonably costed legendaries with powerful effects, and the data suggests their influence is still strong on ladder (Brann #2, Reno #5, Finley #6). Emperor Thaurissan (#7) also falls under that banner, leading the charge for BRM. It's hard to recommend crafting these guys though, given they won't make it past the year of the Kraken.
+
+With this in mind, Bloodmage Thalnos (#3) from the classic set looks like your top craft by a fair margin as its low cost and high utility in a wide variety of classes means you're actually likely to play it, a lot. He's not flashy, but he gets the job done.
+
+Once you have him, Aya Blackpaw (#8), Kazakus (#4) and the holy trinity (Ragnaros the Firelord #9, Sylvanas Windrunner #10 and Leeroy Jenkins #11) are great options (no surprises there). The kicker is that [Blizzard will probably nerf some classic cards soon](https://us.battle.net/forums/en/hearthstone/topic/20752669377?page=2#post-24), and this data would place some of these old favorites squarely in the firing line. Of course, you will get your dust back if Blizzard does swing the nerf axe.
+
+### Think Twice Crafts
+
+So in 2017, should you craft an old god? With aggro dominating the meta, its seemingly very difficult to actually play a 10 drop. C'thun (#28) and N'zoth (#31) see some fringe play but they have fallen far from grace. The Yogg (#50) [nerf](http://us.battle.net/hearthstone/en/blog/20303031/upcoming-balance-changes-update-613-9-28-2016) seems to have "worked", and Y'sharj doesn't even make the cut.
+
+With them, cards like Cairne Bloodhoof (#37) and Twin Emperor Vek'lor (#39), which became staples of the meta in WotOG/Karazhan have mostly disappeared. Harrison Jones has also been relegated to #29, despite the prevalence of weapons, with players seemingly opting for the cheaper ooze.
+
+### Class breakdown
+
+So lets assume your focusing on a single class, which isn't a bad idea if your just starting your collection. What crafts make sense?
+
+**Druid:** Fandral (#13) stands alone among Druid legendaries, and is the second most played class legendary. Its relatively cheap as a 4-drop and fits into a lot of archetypes. Its also a pretty interesting card to play with on a budget, boosting the value of your commons and rares. Aya also seems pretty playable, especially if you already own Brann.
+
+**Hunter:** Traditionally, Hunter has been a great budget class. Its never really relied on legendaries, but its not found a place in the current meta. Barnes (#14) and Rag were the only to register enough data to make the cut in Hunter. If your plan is to focus on hunter, your playing HS Hard-mode.
+
+**Mage:** The rise of Reno Mage has lead to a wide variety of legends becoming payable in Mage, but its 3rd, 4th and 5th most frequently dropped cards are rotating out soon. As such, unless you really hate your money, its not a deck new players should invest in right off the bat. As a good first craft though its hard to go past Thalnos, which fits nicely in freeze, tempo and budget Reno lists.
+
+**Paladin:** To play Paladin you need to invest a lot in class and niche legendaries. Legendaries like Tirion Fordring (#25), Wickerflame Burnbristle (#32), Ragnaros, Lightlord (#34) and Finja, the Flying Star (#37), which are literally or effectively unplayable in other classes, see the most play. You might regret investing in MSoG Paladin once you realize its bad and decide to try another class.
+
+<img src="https://hydra-media.cursecdn.com/hearthstone.gamepedia.com/thumb/d/df/Edwin_VanCleef(3).png/200px-Edwin_VanCleef(3).png?version=61238e3b78010a18d89ba79be314d462" align="left"> **Rogue:** On the other hand, Rogue seems a great class to invest in. Patches and Thalnos are highly playable in the class and Edwin VanCleef (#12) is the most often played class legendary. 
+
+**Preist:** Much like Mage, this class sees a wide variety of legendaries being played due to the Reno archetype becoming viable in MSoG. Brann is pretty critical to the class, with it finding a spot in both dragon and Reno archetypes. Inspire (shadow) and combo based versions of priest require some pretty obscure crafts like Nexus-Champion Saraad (#46), Prophet Velen (#44), and Confessor Paletress (#41).
+
+Priest is tricky to recommend crafts for as the key dragons and inspire cards, as well as Reno Jackson will rotate soon [(and he wont be coming back)](https://twitter.com/bdbrode/status/817625802116214784). If you think the "Reno" archetype will remain viable without the man himself, craft Kazakus (#4). If not, big hitters like Ragnaros, Sylvanas and Y'Sera (#20) are your best bet.
+
+**Shaman:** The most played MSoG class legendary is White Eyes (#22), but its nowhere near the most popular within the class. Patches, Thalnos and Aya are no-brainers in terms of craft value, as their highly playable in multiple classes and wont rotate soon.
+
+**Warlock:** Of the 3 Kabal members, Warlock seems to play the lowest number of niche legendaries, seemingly placing it as a good starting point for new players wanting to play a Reno archetype. The problem is that 3 of the 7 heavily played cards are rotating soon, and the classic Leeroy combo depends on Thaurissan so its effectively out too. Warlock players, like priest, should craft Kazakus or Sylvanis/Ragnaros depending on how viable they see the "Reno" archetype post Reno.
+
+**Warrior:** Pirates... Pirates everywhere. For new players this is great as it's a cheap effective deck. Old Control Warrior tragics might find it difficult to see cards like Elise (#18) and Justicar (#17) become so irrelevant so close to their banishment to wild. Either way patches and Leeroy look like the safe crafts.
+
+### Ganging up
+
+MSoG introduced a way for players to branch out from a single class, with some legendaries being playable across a set of classes. If you pick just one gang, what should you craft.
+
+**The Grimey Goons:** In MSoG, Hunter, Warrior and Paladin pretty much boil down to Pirate Warrior. MSoG did a lot of good, but man did these classes lose out. Even Warrior, which was previously held as the gold standard for how a class should be balanced (with multiple archetypes viable) has lost allot of its charm.
+
+**Jade Lotus:** When viewed as a set, Patches, Thalnos and Aya are all very playable in the jade classes. Jade decks do not rely on cards like Reno, Brann and Thaurissan as much as the Kabal do, and thus they are well placed for the next rotation. Investing in the Jade Lotus classes seems to be the pick of the 3 moving forward.
+
+**The Kabal:** On the other hand these guys are a) expensive to get into and b) will get decimated next rotation. "1 of each card" decks are so reliant on Brann to generate value and consistency, and Reno for his powerful healing battlecry, that it's hard to see the archetype remaining viable beyond the year of the Kraken. Blizzard has said [they wont be adding any more 'no duplicates' cards for a while](http://au.ign.com/articles/2017/01/13/hearthstone-blizzard-on-designing-jade-testing-red-mana-and-leaving-reno-behind), and only time will tell if the Kabal goes the way if the Goons post MSoG.
+
+

@@ -1,0 +1,172 @@
+---
+title: 'Shaking up the Meta: Patch 7.1'
+output:
+  html_document: default
+  html_notebook: default
+---
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+library(dplyr)
+library(ggplot2)
+library(tidyr)
+library(scales)
+
+cardsPlayedPreNerfData <- read.csv('rawData/pre_patch_card_plays.csv')
+stbPredatorsPreNerfData <- read.csv('rawData/pre_patch_stb_descruction.csv') %>%
+  mutate(patch = '7.0')
+
+cardsPlayedPostNerfData <- read.csv('rawData/post_patch_card_plays.csv')
+stbPredatorsPostNerfData <- read.csv('rawData/post_patch_stb_descruction.csv') %>%
+  mutate(patch = '7.1')
+
+hsColors <- c('#FF7D0A', '#ABD473', '#69CCF0', '#F58CBA',
+              '#000000', '#FFF569', '#0070DE', '#9482C9', '#C79C6E')
+
+# cardsPlayedPreNerfData %>%
+#   filter(card_name == 'Steady Shot') %>%
+#   arrange(desc(times_played)) %>%
+#   transmute(player_class, 
+#             card_name,
+#             plays = round(times_played * 100 / sum(times_played), 2))
+```
+
+<img src="https://pbs.twimg.com/media/C5xe9rKUwAAPO15.jpg:thumb" align="right">
+In early February, [Blizzard announced changes](https://www.reddit.com/r/hearthstone/comments/5u1ues/upcoming_balance_and_ranked_play_changes/?ref=search_posts) to two cards considered by the community to be among the most powerful in the standard set. Arguably the most critical member of the now infamous "pirate package", Small-Time Buccaneer (STB), had its hit-points reduced from two to one. At the same time the mana cost of the Shaman weapon Spirit Claws was doubled from one to two.
+
+At first glance the changes seem fairly minor, given standard contains roughly 900 cards to chose from at the time of writing. But given the prevalence of these two cards in ranked standard, the flow-on effects have been noticeable. In this article, we analysed over 1M STB destructions and 50M cards played in the days just prior and after patch 7.1 (2017-02-28). We aim to provide a first-look into the imediate effect the nerfs have had on the meta, and how players interactions with the nerfed cards changed.
+
+## The heroes we need
+
+With the STB nerf specifically, the aim was purely to make the minion easier to remove... it still has the same same potential damage output and costs the same. So what cards are actually in peoples decks and dealing with STB that weren't before, and which cards have been relieved of this burden? The plot below shows the percentage of STBs cleared by predator before and after the patch. Predators had to have destroyed >0.5% of all STBs before or after the nerf to be included.
+
+```{r, echo=FALSE, fig.height=6, fig.width=9}
+stbPredatorsPreNerfData %>%
+  rbind(stbPredatorsPostNerfData) %>%
+  group_by(predator_class, predator_name, patch) %>%
+  summarise(num_stb_killed = sum(num_stb_killed)) %>%
+  ungroup() %>%
+  transmute(predator_class,
+            predator_name,
+            predator_id = paste(predator_class, predator_name, sep = ': '),
+            patch,
+            num_stb_killed) %>%
+  group_by(patch) %>%
+  mutate(num_stb_killed = num_stb_killed / sum(num_stb_killed)) %>%
+  group_by(predator_name, predator_class, predator_id) %>%
+  mutate(maxKills = max(num_stb_killed)) %>%
+  filter(maxKills > 0.005) %>%
+  ungroup() %>%
+  mutate(preKills = ifelse(patch == '7.0', num_stb_killed, lag(num_stb_killed))) %>%
+  ggplot(aes(x = reorder(predator_id, preKills),
+             y = num_stb_killed,
+             fill = patch)) +
+  geom_bar(stat = 'identity', position = 'dodge') +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1)) +
+  scale_fill_manual(values = hsColors[c(1, 3)]) +
+  scale_y_continuous(labels = percent) +
+  guides(alpha = FALSE) +
+  ggtitle('Number of STBs Destroyed by Predator.',
+          subtitle = 'Only predators that destroyed >0.5% of all STBs either pre or post nerf considered.') +
+  xlab('Predator') +
+  ylab('Percentage of STBs Destroyed')
+```
+
+At first glance its clear and perhaps unsurprising that players with access to a hero capable of dealing 1 damage are taking advantage. Jaina and Malfurion in particular are many times more likely to take care of business on their own, saving resources in the process. Frostbolt, which achieves the same outcome as a ping for the same cost, is a great example of this.
+
+Garrosh and Thrall (and Morgl) now account for the same and 50% less of the STB population respectively, despite having access to weapons which deal 1 damage (Rusty Hook, Upgrade, Spirit Claws). This suggests these two classes which were previously heavily reliant on the pirate package are being played less frequently. Thrall's weapon availability and therefore ability to deal damage has also likely been adversely affected by the modification to Spirit Claws.
+
+In terms of spells, Mortal Coil, Maelstrom Portal, Fan of Knives, Swipe and Wrath have become big-hitters when it comes to STB removal. On the minion side, mutiny is well and truly declared with Patches the Pirate making STB walk the plank twice as frequently in Rogue and Warrior. Cheap priest minions like Northshire Cleric and Netherspite Historian have also stepped up where priest previously had to wait for much higher cost solutions.
+
+Many of the old champions sometimes teched in simply to deal with STB are being put to use elsewhere. In particular, Backstab, Living Roots, Arcane Blast, Demonwrath and Lightning Bolt, which all deal a cheap 2 or 3 damage are finding new targets.
+
+### Winners and losers
+
+These nerfs have had flow-on effects to others cards and decks, and in effect have resulted in a wide range of them becoming better or worse. So which cards have gone down with the (pirate) ship along with STB and Spirit Claws? To find out, in the plot below, we compare relative play-rates of individual cards pre- and post-nerf.
+
+```{r, , echo=FALSE, warning=FALSE, fig.height=5}
+cardsPlayedPreNerfData %>%
+  inner_join(cardsPlayedPostNerfData,
+             by = c("player_class", "card_name")) %>%
+  group_by(player_class, card_name) %>%
+  summarise(prePlays = sum(times_played.x),
+            postPlays = sum(times_played.y)) %>%
+  ungroup(patch) %>%
+  mutate(prePlays = prePlays / sum(prePlays),
+         postPlays = postPlays / sum(postPlays)) %>%
+  filter(prePlays > 0.001 | postPlays > 0.001) %>%
+  mutate(delta = prePlays / postPlays,
+         card_id = paste(player_class, card_name, sep = ': ')) %>%
+  arrange(desc(delta)) %>%
+  head(30) %>%
+  ggplot(aes(x = reorder(card_id, delta),
+             y = delta,
+             #alpha = postPlays,
+             fill = player_class)) +
+  geom_bar(stat = 'identity', 
+           position = 'dodge', 
+           color = 'black') +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1),
+        strip.background = element_blank(),
+        strip.text.x = element_blank()) +
+  scale_fill_manual(values = hsColors[c(3, 5, 6, 7, 8, 9)]) +
+  guides(fill=FALSE, alpha=FALSE) +
+  ggtitle('Top30 cards less played post-nerf (relative to pre-nerf era)',
+          subtitle = 'Only cards with >0.1% play-rate before or after the patch considered.') +
+  xlab('') +
+  ylab('Relative Play Rate (Before/After)')
+```
+
+The above plot leaves some room for interpretation, however it would be hard to argue there was one clear loser. The top 7 cards hit heaviest (relatively speaking) by the nerfs were played in Shaman. In fact, all of these cards go into the ["tier-1" aggro shaman](https://tempostorm.com/hearthstone/meta-snapshot/standard/2017-02-12) list, which was featured heavily in the very recent [HTC APAC winter championship playoffs](https://us.battle.net/forums/en/hearthstone/topic/20753316155), and was reliant on both of the nerfed cards.
+
+Its worth contrasting this with what is seen in Rogue and Warrior. In the latter 2 classes, only the cards directly affected by the nerf make the list, implying players of Pirate Warrior and Rogue are still playing the other cards in the deck, implying they were primarily finding replacements for STB alone and keeping the core deck structure.
+
+Also of note is the high number of Reno Mage cards on the list, which appears to have also fallen out of favour. Reno Mage was heralded as one of the best anti-aggro decks, which (unlike [Control Warrior](https://us.battle.net/forums/en/hearthstone/topic/20753316155)) also has a decent chance against other control decks. But as aggresive decks have become less common, and more players are playing Jade, Reno Mage has taken a hit.
+
+Of course some cards becoming less playable implies other are played more. The two directly affected cards were staples in aggressive archetypes and thus making them weaker helps control or combo style decks. Many postulated Druid would dominate a slower meta, with the buff to swipe and the Jade and Kun combo decks being strong. But what can the data tell us about how the meta really shifted. 
+
+```{r, echo=FALSE, warning=FALSE, fig.height=5}
+cardsPlayedPreNerfData %>%
+  inner_join(cardsPlayedPostNerfData,
+             by = c("player_class", "card_name")) %>%
+  group_by(player_class, card_name) %>%
+  summarise(prePlays = sum(times_played.x),
+            postPlays = sum(times_played.y)) %>%
+  ungroup(patch) %>%
+  mutate(prePlays = prePlays / sum(prePlays),
+         postPlays = postPlays / sum(postPlays)) %>%
+  filter(prePlays > 0.001 | postPlays > 0.001) %>%
+  mutate(delta = postPlays / prePlays,
+         card_id = paste(player_class, card_name, sep = ': ')) %>%
+  arrange(desc(delta)) %>%
+  head(30) %>%
+  ggplot(aes(x = reorder(card_id, delta),
+             y = delta,
+             #alpha = postPlays,
+             fill = player_class)) +
+  geom_bar(stat = 'identity', 
+           position = 'dodge', 
+           color = 'black') +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1),
+        strip.background = element_blank(),
+        strip.text.x = element_blank()) +
+  scale_fill_manual(values = hsColors[c(1, 3, 6, 8, 9)]) +
+  guides(fill=FALSE, alpha=FALSE) +
+  ggtitle('Top30 cards more played post-nerf (relative to pre-nerf era)',
+          subtitle = 'Only cards with >0.1% play-rate before or after the patch considered.') +
+  xlab('') +
+  ylab('Relative Play Rate (After/Before)')
+```
+
+<img src="https://hydra-media.cursecdn.com/hearthstone.gamepedia.com/thumb/b/b7/Naga_Corsair(49730).png/200px-Naga_Corsair(49730).png?version=a0111f579fd0596412b876e47c5afc58" align="right">
+Immediately obvious is the high number of Warlock, Druid and Rogue cards on the list. The Warlock cards are all staples of Zoolock, a cheap deck which was extremely popular prior to ONiK and MSG. Secondary to this, people are trying Druid, specifically Jade Druid, which is almost a certainty to beat other control decks but struggled specifically against ultra-aggro pirate based decks. Mirror Image and Flamewaker are a dead give-away for tempo mage, which also appears to have made a comeback.
+
+The kicker here, and perhaps the biggest open question in all of this, is the effect of [this Kripparian video](https://www.youtube.com/watch?v=0BivnMliKd4) posted just days before the patch went live. It seems unusual that players would gravitate so heavily to Zoolock, is it possible that Kripp generated a bigger meta shift with a single video than the nerfs?
+
+Perhaps the most interesting single data point is that of Naga Corsair. This easily obtainable common card, which at the time of writing is the suggested replacement on a popular decklist on Hearthpwn entitled ["Post-Nerf Pirate Warrior is Still Strong"](http://www.hearthpwn.com/decks/741216-post-nerf-pirate-warrior-is-still-strong) appears to have fulfilled the role of STB quite nicely. When taken as a whole, the data also tells us why Pirate warrior is still good.
+
+1. People are playing Jade Druid a lot more, which aggro decks prey on.
+2. There main adversary, Aggro Shaman, has dissapeared.
+3. Reno Mage, another weakness of Pirate Warrior, is seeing much less play.
+
+Perhaps the most novel thing to come out of the nerfs is the "Murloc Package", which appears to be having greatest impact in Rogue. Turns out cards like Finja, the Flying Star combined with Murloc Warleader and Bluegill Warrior [are pretty good](https://tempostorm.com/hearthstone/decks/aggro-water-rogue-standard-meta-snapshot-march-5-2017) in more than just Paladin. Rogue seems to have taken the Pirate Formula and added Murlocs to the mix, creating an interesting new "water" archetype.
+

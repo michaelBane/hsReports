@@ -1,0 +1,228 @@
+---
+title: "Quantifying the Memes"
+subtitle: 13 Million games analysed
+output:
+  html_document: default
+  html_notebook: default
+---
+
+```{r setup, include=FALSE}
+library(dplyr)
+library(ggplot2)
+library(scales)
+library(tidyr)
+
+options(scipen=999)
+
+hsColors <- c('#FF7D0A', '#ABD473', '#69CCF0', '#F58CBA',
+              '#000000', '#FFF569', '#0070DE', '#9482C9', '#C79C6E')
+
+data <- read.csv('rawData/Card_Included_Stats_June1st_to_26th.csv') %>%
+  filter(rank_category != 'other')
+
+legends <- c("Al'Akir the Windlord",
+"Alexstrasza",
+"Anomalus",
+"Archmage Antonidas",
+"Auctionmaster Beardo",
+"Awaken the Makers",
+"Aya Blackpaw",
+"Barnes",
+"Baron Geddon",
+"Bloodmage Thalnos",
+"C'Thun",
+"Cairne Bloodhoof",
+"Captain Greenskin",
+"Cenarius",
+"Cho'gall",
+"Clutchmother Zavas",
+"Deathwing",
+"Deathwing, Dragonlord",
+"Don Han'Cho",
+"Edwin VanCleef",
+"Elise the Trailblazer",
+"Fandral Staghelm",
+"Finja, the Flying Star",
+"Fire Plume's Heart",
+"Genzo, the Shark",
+"Grommash Hellscream",
+"Gruul",
+"Hallazeal the Ascended",
+"Harrison Jones",
+"Hemet, Jungle Hunter",
+"Herald Volazj",
+"Hobart Grapplehammer",
+"Hogger",
+"Hogger, Doom of Elwynn",
+"Illidan Stormrage",
+"Inkmaster Solia",
+"Jungle Giants",
+"Kalimos, Primal Lord",
+"Kazakus",
+"King Krush",
+"King Mosh",
+"King Mukla",
+"Knuckles",
+"Krul the Unshackled",
+"Kun the Forgotten King",
+"Lakkari Sacrifice",
+"Leeroy Jenkins",
+"Lord Jaraxxus",
+"Lorewalker Cho",
+"Lyra the Sunshard",
+"Madam Goya",
+"Malkorok",
+"Malygos",
+"Mayor Noggenfogger",
+"Medivh, the Guardian",
+"Millhouse Manastorm",
+"Moroes",
+"Mukla, Tyrant of the Vale",
+"N'Zoth, the Corruptor",
+"Nat Pagle",
+"Nat, the Darkfisher",
+"Nozdormu",
+"Onyxia",
+"Open the Waygate",
+"Ozruk",
+"Patches the Pirate",
+"Prince Malchezaar",
+"Princess Huhuran",
+"Prophet Velen",
+"Pyros",
+"Ragnaros, Lightlord",
+"Raza the Chained",
+"Sergeant Sally",
+"Shaku, the Collector",
+"Sherazin, Corpse Flower",
+"Shifter Zerus",
+"Soggoth the Slitherer",
+"Spiritsinger Umbra",
+"Sunkeeper Tarim",
+"Swamp King Dred",
+"The Beast",
+"The Black Knight",
+"The Boogeymonster",
+"The Caverns Below",
+"The Curator",
+"The Last Kaleidosaur",
+"The Marsh Queen",
+"The Voraxx",
+"Tinkmaster Overspark",
+"Tirion Fordring",
+"Twin Emperor Vek'lor",
+"Tyrantus",
+"Unite the Murlocs",
+"White Eyes",
+"Wickerflame Burnbristle",
+"Wrathion",
+"Xaril, Poisoned Mind",
+"Y'Shaarj, Rage Unbound",
+"Yogg-Saron, Hope's End",
+"Ysera")
+```
+
+<img class="card-image" src="https://hydra-media.cursecdn.com/hearthstone.gamepedia.com/thumb/b/b4/Alarm-o-Bot%28425%29.png/200px-Alarm-o-Bot%28425%29.png?version=df150337d78bc613e42cd0b0738643aa" alt="Alarm O'Bot" align="right">In Patch 7.1 (Late February 2017) [Blizzard introduced the ranked floors feature](https://us.battle.net/forums/en/hearthstone/topic/20753287770), which prevent players from de-leveling once they reach ranks 15, 10 and 5. In theory, this was intended to give players a chance to temporarily de-prioritize win-rate, take a break from the ladder grind and play something a little less serious.
+
+On average, players should be less concerned about win-rate at ranked floors, and are therefore more likely to queue up with decks built around the cards they enjoy playing, as opposed to those they consider competitive. This leads to the tantalizing prospect of quantifying, with some objectivity, a "bad but fun rating" for each card.
+
+In the following article, we compare inclusion rates of cards at ranked floors to those at grind ranks, with the intention of uncovering the cards and decks players play "just for the memes", when ranking doesn't matter. It should be noted that fun in Hearthstone is subjective, and no single metric can quantify it. Having said that, all the cards and decks presented have one common element, they have little to no competitive viability but they still see play. Any card that induces that kind of behavior in the player base, must be doing something right.
+
+
+## Just for fun
+
+Without further ado, the list of the dankest memes in Hearthstone is shown below. Whats immediately apparent is the shear number of Warlock cards on the list. Warlock has been the big loser in the Journey to Un'Goro in terms of competitive viability, so it certainly makes sense players would gravitate to the class when win-rate doesn't matter.
+
+**Figure 1: Relative lift in deck inclusion rate at ranked floors vs. grind ranks by card. Card must have been played over 1000 times to be included. Data is taken from 13 Million ranked standard games played in June 2017. Top 40 shown.**
+
+```{r, echo=FALSE, fig.height=6}
+data %>%
+  select(rank_category, card_name, games_played_with_card_in_deck) %>%
+  spread(rank_category, games_played_with_card_in_deck, fill = 0) %>%
+  transmute(card_name,
+            atRank = Legend + Rank5 + Rank10 + Rank15,
+            grind = GrindToLegend + GrindTo5 + GrindTo10 + GrindTo15,
+            pcAtRank = atRank / sum(atRank),
+            pcGrind = grind / sum(grind),
+            `Total Games` = atRank + grind,
+            Dankness = pcAtRank / pcGrind - 1) %>%
+  arrange(desc(Dankness)) %>%
+  mutate(i = 1,
+         rank = cumsum(i)) %>%
+  filter(rank <= 40,
+         `Total Games` > 1000) %>%
+  ggplot(aes(x = reorder(card_name, Dankness),
+             y = Dankness)) +
+  geom_bar(stat = 'identity',
+           fill = 'darkblue') +
+  scale_y_continuous(labels = scales::percent) +
+  scale_alpha_continuous(trans = 'log10') +
+  xlab('') +
+  ylab('Lift') +
+  coord_flip()
+```
+
+When looking down the list, the majority of card are staples in a handful of popular decks. The following is a list of the the top decks, based of figure 1, worth giving a try next time you reach a ranked floor:
+
+**Renounce Warlock** - [Featured Deck](https://youtu.be/NuNVLqUnP9U)
+
+**Stealth Rogue** - [Featured deck](https://hsreplay.net/decks/6Yv466kUSjdaW58C2IuUub/) 
+
+**Holy Wrath Paladin** - [Featured Deck](https://www.youtube.com/watch?v=K5uQ10PBCJc)
+
+**Demon/Reno Warlock** - [Featured Deck](http://www.hearthpwn.com/decks/686321-one-card-warlock)
+
+**Quest Warlock** - [Featured Deck](https://www.youtube.com/watch?v=qxKGB13nPCs)
+
+**Waygate Mage** - [Featured Deck](http://www.hearthpwn.com/decks/855631-disguisedtoast-curator-quest-mage)
+
+Renounce Warlock is the undisputed king of the ranked floor, with at least 10 of the cards on the list being typical includes in the deck. The deck runs a whole bunch of bad spells that your unlikely to ever see when rank matters. Another Warlock Archetype, demon-lock, has seen frequent experimentation throughout the life of the game, but unlike almost every other tribe, demons have never really had there time in the sun. Krul is the highest legendary on the list, its a card that players clearly want to work but with a [deck inclusion win-rate of 37%](https://hsreplay.net/cards/#text=krul&showSparse=yes), they haven't yet.
+
+<img src="https://hydra-media.cursecdn.com/hearthstone.gamepedia.com/thumb/6/6d/Renounce_Darkness%2833136%29.png/200px-Renounce_Darkness%2833136%29.png?version=e9ee9f2bc3b848f5c4b8701cfc36b1cb" alt="Renounce Darkness" align="right">
+
+Lakkari sacrifice has seen quite the evolution since its release. At first, it was used in faster discard zoo-lock style decks but has since found play if slower hand-lock style deck, but it has never been strong competitively. On the other hand, Waygate Mage is a deck which has seen some competitive play and really straddles the line between pure meme and competitively viable. Having said that, the win-rate of this archetype is [consistently below 50%](https://hsreplay.net/decks/#includedCards=41168). Whats pretty much universally accepted is the despite its competitive short comings, its a very unique deck and a lot of fun to play.
+
+A blast from the past, Malygos Miracle Rogue, see play also at ranked floors, despite its abysmal win-rate (42%). Razor-petal Volley compliments the classic Sinister Strike for that heavy Malygos burn turn should you make it to the late game. Moonfire also makes the list, suggesting Malygos based Druid builds are still also fairly popular with players. Lotus Assassins popularity suggests players are trying out the stealth rogue archetype, which is actually one of the few archetypes on this list with a >50% win-rate.
+
+Holy Wrath Paladin memes are as old as hearthstone itself, but with the the "nerf" to Molten Giant and release of Hemet, Jungle Hunter, players were provided a way to improve the consistency and potency of the decks win-condition. Your unlikely to find a more all in deck than this one, with games often coming down to a roll of the dice. Good stuff.
+
+On a more serious note, whats apparent from the data is that **players love playing combo decks**, despite the fact they are mostly not very good anymore. Renounce Warlock (Barnes/Y'shaarj), Malygos Miracle Rogue, Holy Wrath Paladin, Demon-lock (Krul/Demons in hand) and Waygate Mage all involve some form of set-up with some significant swing in late game. Blizzard has fairly consistently [nerfed cards which are strong in combo-style decks](https://us.battle.net/forums/en/hearthstone/topic/20753247406), but players seem to be voting with their feet and playing them anyway.
+
+On the other hand, would you really want to see a Holy-Wrath Paladin meta, where tilting 25 damage pure luck combos were the norm? Or a meta where you got stomped regularly by Renounce RNG? Where combo decks fit in the meta is a topic for hot debate, but whats great is that the ranked floors have helped combo carve out a small niche in the rank 15, 10, 5 and Legend micro-meta.
+
+## Legendaries
+
+The below figure shows the Top 40 "most fun" legendaries. These are the legendaries players are most likely to play with if there just trying to have fun. Next time you read a 'safe legendary disenchant' guide, i hope you can use the below as a guide to how much fun you can have with a card, even if you might not win many games.
+
+**Figure 2: Relative lift in deck inclusion rate at ranked floors vs. grind ranks by card for Legendies. Card must have been played over 1000 times to be included. Data is taken from 13 Million ranked standard games played in June 2017. Top 40 shown.**
+
+```{r, echo=FALSE, fig.height=6}
+data %>%
+  select(rank_category, card_name, games_played_with_card_in_deck) %>%
+  spread(rank_category, games_played_with_card_in_deck, fill = 0) %>%
+  transmute(card_name,
+            atRank = Legend + Rank5 + Rank10 + Rank15,
+            grind = GrindToLegend + GrindTo5 + GrindTo10 + GrindTo15,
+            pcAtRank = atRank / sum(atRank),
+            pcGrind = grind / sum(grind),
+            `Total Games` = atRank + grind,
+            Dankness = pcAtRank / pcGrind - 1) %>%
+  arrange(desc(Dankness)) %>%
+  filter(card_name %in% legends) %>%
+  mutate(i = 1,
+         rank = cumsum(i)) %>%
+  filter(rank <= 40,
+         `Total Games` > 1000) %>%
+  ggplot(aes(x = reorder(card_name, Dankness),
+             y = Dankness)) +
+  geom_bar(stat = 'identity',
+           fill = 'darkblue') +
+  scale_y_continuous(labels = scales::percent) +
+  scale_alpha_continuous(trans = 'log10') +
+  xlab('') +
+  ylab('Lift') +
+  coord_flip()
+```
+
+
+
