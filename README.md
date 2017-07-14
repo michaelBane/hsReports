@@ -1,6 +1,6 @@
 # [July 2017: Just for Fun - Top Includes at Rank Floors](https://hsreplay.net/articles/17/just-for-fun-top-includes-at-rank-floors) 
 
-In Patch 7.1 (February 2017) Blizzard introduced the ranked floors feature, which prevent players from de-leveling once they reach ranks 15, 10 and 5. In theory, this was intended to give players a chance to temporarily de-prioritize win-rate, take a break from the ladder grind and play something a little less serious. In the article, we compare inclusion rates of cards at ranked floors to those at grind ranks, with the intention of uncovering the cards and decks players play "just for fun", when ranking up doesn't matter.
+In February 2017, Blizzard introduced the ranked floors feature, which prevent players from de-leveling once they reach ranks 15, 10 and 5. In theory, this was intended to give players a chance to temporarily de-prioritize win-rate, take a break from the ladder grind and play something a little less serious. In the article, we compare inclusion rates of cards at ranked floors to those at grind ranks, with the intention of uncovering the cards and decks players play "just for fun", when ranking up doesn't matter.
 
 <blockquote class="reddit-card"><a href="https://www.reddit.com/r/hearthstone/comments/6n14zt/just_for_fun_top_includes_at_rank_floors_13m/?ref=share&ref_source=embed">Just for Fun: Top Includes at Rank Floors (13M Games Analyzed)</a> from <a href="http://www.reddit.com/r/hearthstone">hearthstone</a></blockquote>
 <script async src="//embed.redditmedia.com/widgets/platform.js" charset="UTF-8"></script>
@@ -32,7 +32,7 @@ So have Blizzard, really delivered the fabled "Control Meta"? To answer this que
 <blockquote class="reddit-card" data-card-created="1493866478" data-card-preview="0"><a href="https://www.reddit.com/r/hearthstone/comments/690iji/pace_of_the_meta_ungoro_vs_gadgetzan_67m_replays/?ref=share&ref_source=embed">Pace of the Meta: Un'Goro vs. Gadgetzan - 67M replays analyzed</a> from <a href="http://www.reddit.com/r/hearthstone">hearthstone</a></blockquote>
 <script async src="//embed.redditmedia.com/widgets/platform.js" charset="UTF-8"></script>
 
-# [Apr 2017: The Best Quests](https://rawgit.com/michaelBane/hearthstoneReports/master/HS04_Quests/quests.html)
+# [Apr 2017: The Best Quests](https://rawgit.com/michaelBane/hsReports/master/HS04_Quests/quests.html)
 
 One of the most anticipated features of the newly released Journey to Ongoro expansion has been the set of new legendary quest. These 1-cost spells that start in your hand provide each class with a specific objective, with the promise of epic rewards should you satisfy it. Now that we are finally able to play with the cards, its fair to say they have been pretty popular. But are they good? And how are people taking advantage of the mechanics? To find out, we analyses 170M replays, with a view to uncovering which quests are best, and which cards are best in quest-decks.
 
