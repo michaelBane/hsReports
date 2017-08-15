@@ -1,0 +1,50 @@
+---
+title: "Meta Diversity"
+subtitle: 13 Million games analysed
+output:
+  html_document: default
+  html_notebook: default
+---
+
+```{r setup, include=FALSE}
+library(dplyr)
+library(ggplot2)
+library(scales)
+library(tidyr)
+
+#options(scipen=999)
+
+hsColors <- c('#FF7D0A', '#ABD473', '#69CCF0', '#F58CBA',
+              '#000000', '#FFF569', '#0070DE', '#9482C9', '#C79C6E')
+
+data <- read.csv('rawData/all_cards_played.csv')
+```
+
+```{r, echo=FALSE}
+data %>%
+  select(-games_played) %>%
+  mutate(game_date = as.Date(game_date)) %>%
+#  complete(game_date, 
+#           card_name,
+#           fill = list(total_cards_included = 0))
+  group_by(game_date) %>%
+  mutate(p = total_cards_included / sum(total_cards_included)) %>%
+  summarise(H = -sum(p * log(p))) %>%
+  ggplot(aes(x = game_date,
+             y = H)) +
+  geom_point() +
+  geom_vline(xintercept = c(as.numeric(as.Date('2017-04-06')), 
+                            as.numeric(as.Date('2017-08-10')),
+                            as.numeric(as.Date('2017-02-28')),
+                            as.numeric(as.Date('2017-07-11')))) +
+  geom_vline(xintercept = c(as.numeric(as.Date('2017-02-01')), 
+                            as.numeric(as.Date('2017-03-01')),
+                            as.numeric(as.Date('2017-04-01')),
+                            as.numeric(as.Date('2017-05-01')),
+                            as.numeric(as.Date('2017-06-01')),
+                            as.numeric(as.Date('2017-07-01')),
+                            as.numeric(as.Date('2017-08-01'))),
+             lty = 2)
+
+
+```
