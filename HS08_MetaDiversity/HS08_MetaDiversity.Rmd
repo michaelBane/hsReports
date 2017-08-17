@@ -1,9 +1,8 @@
 ---
 title: "Meta Diversity"
-subtitle: 13 Million games analysed
 output:
-  html_document: default
   html_notebook: default
+  html_document: default
 ---
 
 ```{r setup, include=FALSE}
@@ -17,34 +16,107 @@ library(tidyr)
 hsColors <- c('#FF7D0A', '#ABD473', '#69CCF0', '#F58CBA',
               '#000000', '#FFF569', '#0070DE', '#9482C9', '#C79C6E')
 
-data <- read.csv('rawData/all_cards_played.csv')
-```
-
-```{r, echo=FALSE}
-data %>%
-  select(-games_played) %>%
-  mutate(game_date = as.Date(game_date)) %>%
-#  complete(game_date, 
-#           card_name,
-#           fill = list(total_cards_included = 0))
-  group_by(game_date) %>%
-  mutate(p = total_cards_included / sum(total_cards_included)) %>%
-  summarise(H = -sum(p * log(p))) %>%
-  ggplot(aes(x = game_date,
-             y = H)) +
-  geom_point() +
-  geom_vline(xintercept = c(as.numeric(as.Date('2017-04-06')), 
-                            as.numeric(as.Date('2017-08-10')),
-                            as.numeric(as.Date('2017-02-28')),
-                            as.numeric(as.Date('2017-07-11')))) +
-  geom_vline(xintercept = c(as.numeric(as.Date('2017-02-01')), 
+resets <- c(as.numeric(as.Date('2017-02-01')), 
                             as.numeric(as.Date('2017-03-01')),
                             as.numeric(as.Date('2017-04-01')),
                             as.numeric(as.Date('2017-05-01')),
                             as.numeric(as.Date('2017-06-01')),
                             as.numeric(as.Date('2017-07-01')),
-                            as.numeric(as.Date('2017-08-01'))),
-             lty = 2)
+                            as.numeric(as.Date('2017-08-01')))
 
+releases <- c(as.numeric(as.Date('2017-04-06')), 
+                            as.numeric(as.Date('2017-08-10')),
+                            as.numeric(as.Date('2017-02-28')),
+                            as.numeric(as.Date('2017-07-11')))
 
+classes <- data.frame(Class = c('DRUID',
+                                'HUNTER',
+                                'MAGE',
+                                'PALADIN',
+                                'PRIEST',
+                                'ROGUE',
+                                'SHAMAN',
+                                'WARLOCK',
+                                'WARRIOR'),
+                      player_class = 2:10)
+
+data <- read.csv('rawData/all_cards_played2.csv')
 ```
+
+Theres something special about those first few days of a new expansion. With new sets come new possibilities, everyone is trying new stuff and your opponents could be playing anything! But as time goes by, strong decks emerge and start stomping on your home-brew creations. Within a month you probably know every card in your opponents deck by turn-2 and your playing a [deck you got from the internet](https://hsreplay.net/decks/).
+
+Deck and card diversity in a meta is intrinsically linked to the quality of the play experience. Lower diversity leads to staleness as players grow tired of replaying the same or similar match-ups. So what does deck diversity look like as new old sets sun-set and new ones release? With the release of Knights of the Frozen Throne, theres probably no better time to look.
+
+In the following article, we borrow concepts from ecological science to track diversity in the cards that people que up with. This way we present a first purely objective insight into how players 'work out' the meta and congregate toward common play-styles.
+
+## Tracking Diversity
+
+Diversity of a population can be measured using the ["Shannon Index"](https://en.wikipedia.org/wiki/Diversity_index#Shannon_index). Drawing on the ecology analogy, In our study we treat each card as a species _i_ and its play rate as its dominance on the population _p_. The result is an objective measure of the diversity of play _H'_ (which we can track over time).
+
+Figure 1: Shannon Index (Meta Diversity) by date for the meta as a whole. Derived from X million cards included in decks played since Feb 2017. Key dates outlined (Patches/Content releases solid, season resets dashed).
+
+```{r, echo=FALSE}
+data %>%
+  mutate(game_date = as.Date(game_date)) %>%
+  group_by(game_date, card_name) %>%
+  summarise(plays = sum(total_cards_included)) %>%
+  group_by(game_date) %>%
+  mutate(p = plays / sum(plays)) %>%
+  summarise(`Diversity Score` = -sum(p * log(p))) %>%
+  ggplot(aes(x = game_date,
+             y = `Diversity Score`)) +
+  geom_point() +
+  geom_vline(xintercept = releases) +
+  geom_vline(xintercept = resets,
+             lty = 2) +
+  xlab('')
+```
+
+The Shannons Index methodology appears to be sensitive enough to detect shifts in the meta diversity, with trends following a fairly logical trajectory. The following represents a few insights that are evident from the figure:
+
+* Content realeases drive massive spikes in deck diversity
+* The Shaman nerf temporarily improved meta diverity but it quickly reverted
+* The Quest Rogue Nerf had little overall effect on meta diversity
+* Season resets tend to temporarily improve deck diversity.
+* Periods between a season reset and a content release see enhanced deck diversity.
+* Deck diversity was better in Un'Goro than in MSOG, despite there being fewer cards.
+* The KOFT Meta is more diverse than ever, which might be expected given the higher card count.
+* The Un'Goro meta never really "stabalised", in stark contrast to MSOG. Deck diversity coninued on a downward trajectory until KOFT.
+
+
+## Breaking it Down
+
+Of course, a meta is as much about the inter-play between the classes as anything else. The following shows the above plot but broken down by class. It provides an insight into how the classes have evolved over time.
+
+Figure 2: Shannon Index (Meta Diversity) by date and player class. Derived from X million cards included in decks played since Feb 2017. Key dates outlined (Patches/Content releases solid, season resets dashed).
+
+```{r, echo=FALSE}
+data %>%
+  inner_join(classes, by = "player_class") %>%
+  mutate(game_date = as.Date(game_date)) %>%
+  group_by(game_date, card_name, Class) %>%
+  summarise(plays = sum(total_cards_included)) %>%
+  group_by(game_date, Class) %>%
+  mutate(p = plays / sum(plays)) %>%
+  summarise(`Diversity Score` = -sum(p * log(p)),
+            plays = sum(plays)) %>%
+  ggplot(aes(x = game_date,
+             y = `Diversity Score`,
+             color = Class)) +
+  geom_line() +
+  geom_vline(xintercept = releases) +
+  geom_vline(xintercept = resets,
+             lty = 2) +
+  scale_color_manual(values = hsColors) +
+  xlab('')
+```
+
+*Druid:*  This class went from least diverse toward the end of MSOG to middle of the road during JUG. Currently is sits second lowest. With the shaman nerf and the rise of Reno decks Druid really gravitated to the Jade archetype, but more recently token, mid-range and hybrid lists are also seeing significant play.
+
+*Hunter:* Rexxar floundered during MSOG, with no universally accepted viable list for players to gravitate to. Its no suprise hunter deversity took a dive with JUG. Hunter has only really done mid-range well, and with new tools for the archetype and the quest falling flat, alternative lists never took off.
+
+*Mage:* 
+
+
+
+
