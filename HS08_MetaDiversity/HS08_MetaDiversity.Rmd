@@ -1,8 +1,8 @@
 ---
 title: "Meta Diversity"
 output:
-  html_notebook: default
   html_document: default
+  html_notebook: default
 ---
 
 ```{r setup, include=FALSE}
@@ -24,10 +24,15 @@ resets <- c(as.numeric(as.Date('2017-02-01')),
                             as.numeric(as.Date('2017-07-01')),
                             as.numeric(as.Date('2017-08-01')))
 
-releases <- c(as.numeric(as.Date('2017-04-06')), 
-                            as.numeric(as.Date('2017-08-10')),
-                            as.numeric(as.Date('2017-02-28')),
-                            as.numeric(as.Date('2017-07-11')))
+releases <- c(as.Date('2017-04-06'), 
+                            as.Date('2017-08-10'),
+                            as.Date('2017-02-28'),
+                            as.Date('2017-07-11'))
+
+releasesComment <- c("Un'Goro Release",
+                     'Frozen Throne Release',
+                     'STB/Spirit Claws Nerf',
+                     'Caverns Below Nerf')
 
 classes <- data.frame(Class = c('DRUID',
                                 'HUNTER',
@@ -43,55 +48,65 @@ classes <- data.frame(Class = c('DRUID',
 data <- read.csv('rawData/all_cards_played2.csv')
 ```
 
-Theres something special about those first few days of a new expansion. With new sets come new possibilities, everyone is trying new stuff and your opponents could be playing anything! But as time goes by, strong decks emerge and start stomping on your home-brew creations. Within a month you probably know every card in your opponents deck by turn-2 and your playing a [deck you got from the internet](https://hsreplay.net/decks/).
+Theres something special about those first few days of a new expansion. With new sets come new possibilities, everyone is trying new stuff and your opponents deck could contain anything! But as time goes by, strong decks emerge and start to stomp on your favourite home-brew creations. Within a month you probably know every card in your opponents deck by turn-2 and your playing a [deck you got from the internet](https://hsreplay.net/decks/), not that there's anything wrong with that ;).
 
-Deck and card diversity in a meta is intrinsically linked to the quality of the play experience. Lower diversity leads to staleness as players grow tired of replaying the same or similar match-ups. So what does deck diversity look like as new old sets sun-set and new ones release? With the release of Knights of the Frozen Throne, theres probably no better time to look.
+Deck and card diversity in a meta is intrinsically linked to the quality of the play experience. Lower diversity leads to staleness as players grow tired of replaying the same or similar match-ups. So what does deck diversity actualy look like as old sets sun-set and new ones release? With the recent introduction of Knights of the Frozen Throne expansion, theirs probably no better time to look!
 
-In the following article, we borrow concepts from ecological science to track diversity in the cards that people que up with. This way we present a first purely objective insight into how players 'work out' the meta and congregate toward common play-styles.
+In the following article, we borrow concepts from ecological science of al things to track diversity in the cards that people queue up with. This leads us to into presenting a first purely objective insight into how players 'work out' the meta and congregate toward common play-styles.
 
 ## Tracking Diversity
 
-Diversity of a population can be measured using the ["Shannon Index"](https://en.wikipedia.org/wiki/Diversity_index#Shannon_index). Drawing on the ecology analogy, In our study we treat each card as a species _i_ and its play rate as its dominance on the population _p_. The result is an objective measure of the diversity of play _H'_ (which we can track over time).
+Diversity in a population can be measured using the ["Shannon Index"](https://en.wikipedia.org/wiki/Diversity_index#Shannon_index). Drawing on the ecology analogy, in our study we treat each card as a species _i_ and its frequency of inclusion in decks as its dominance on the population _p_. The result is an objective measure of the diversity of play _H'_ (which we can track over time).
 
-Figure 1: Shannon Index (Meta Diversity) by date for the meta as a whole. Derived from X million cards included in decks played since Feb 2017. Key dates outlined (Patches/Content releases solid, season resets dashed).
+Figure 1: Shannon Index (Meta Diversity) by date for the meta as a whole. Derived from 3.75 Billion card-includes in Standard decks played since January 2017. Key dates outlined (Patches & Content releases solid, Season resets dashed, STB = Small Time Buccaneer).
 
 ```{r, echo=FALSE}
-data %>%
+highData <- data %>%
   mutate(game_date = as.Date(game_date)) %>%
   group_by(game_date, card_name) %>%
   summarise(plays = sum(total_cards_included)) %>%
   group_by(game_date) %>%
   mutate(p = plays / sum(plays)) %>%
-  summarise(`Diversity Score` = -sum(p * log(p))) %>%
+  summarise(`Diversity Score` = -sum(p * log(p)))
+
+highData %>%
   ggplot(aes(x = game_date,
              y = `Diversity Score`)) +
   geom_point() +
-  geom_vline(xintercept = releases) +
+  geom_vline(xintercept = as.numeric(releases),
+             alpha = 1/2) +
   geom_vline(xintercept = resets,
-             lty = 2) +
+             lty = 2,
+             alpha = 1/2) +
+  geom_text(data = data.frame(releases = releases - 2,
+                              releasesComment = releasesComment),
+            aes(x = releases,
+                y = 5.85,
+                label = releasesComment),
+            angle = 90,
+            size = 2) +
   xlab('')
 ```
 
-The Shannons Index methodology appears to be sensitive enough to detect shifts in the meta diversity, with trends following a fairly logical trajectory. The following represents a few insights that are evident from the figure:
+The diversity metric appears to be sensitive enough to detect shifts in the meta diversity, with trends following a fairly logical trajectory. The following represents a few insights that are evident from the figure:
 
-* Content realeases drive massive spikes in deck diversity
-* The Shaman nerf temporarily improved meta diverity but it quickly reverted
-* The Quest Rogue Nerf had little overall effect on meta diversity
-* Season resets tend to temporarily improve deck diversity.
-* Periods between a season reset and a content release see enhanced deck diversity.
-* Deck diversity was better in Un'Goro than in MSOG, despite there being fewer cards.
-* The KOFT Meta is more diverse than ever, which might be expected given the higher card count.
-* The Un'Goro meta never really "stabalised", in stark contrast to MSOG. Deck diversity coninued on a downward trajectory until KOFT.
+* Major content releases drive massive spikes in deck diversity.
+* The STB/Spirit Claws nerf temporarily improved meta diversity but it quickly reverted.
+* The Caverns Below nerf had little overall effect on meta diversity.
+* Periods between a season reset and a content release or nerf see enhanced deck diversity.
+* The Frozen Throne meta is more diverse than ever, which might be expected given the higher card count.
+* The Un'Goro meta never really "stabilized", in stark contrast to MSoG. Deck diversity continued on a downward trajectory right up until the KOFT realease.
 
+Perhaps the most important observation is that deck diversity was consistently higher during Un'Goro compared to MSoG, despite there being less total cards to play with! Such an achievement is probably another reason why the Un'Goro meta was regarded so highly, with player sentiment not dipping to the lows it saw toward the end of MSoG.
 
 ## Breaking it Down
 
-Of course, a meta is as much about the inter-play between the classes as anything else. The following shows the above plot but broken down by class. It provides an insight into how the classes have evolved over time.
+Of course, a meta is as much about the inter-play between the classes as anything else. The following shows the above plot  broken down by class.
 
-Figure 2: Shannon Index (Meta Diversity) by date and player class. Derived from X million cards included in decks played since Feb 2017. Key dates outlined (Patches/Content releases solid, season resets dashed).
+Figure 2: Shannon Index (Meta Diversity) by date and player class. Derived from 3.75 Billion card-includes in Standard decks played since January 2017. Key dates outlined (Patches & Content releases solid, Season resets dashed, STB = Small Time Buccaneer).
 
-```{r, echo=FALSE}
-data %>%
+```{r, echo=FALSE, fig.height=8, fig.width=10}
+pData <- data %>%
   inner_join(classes, by = "player_class") %>%
   mutate(game_date = as.Date(game_date)) %>%
   group_by(game_date, card_name, Class) %>%
@@ -99,24 +114,39 @@ data %>%
   group_by(game_date, Class) %>%
   mutate(p = plays / sum(plays)) %>%
   summarise(`Diversity Score` = -sum(p * log(p)),
-            plays = sum(plays)) %>%
-  ggplot(aes(x = game_date,
+            plays = sum(plays))
+
+ggplot() +
+  geom_line(data = pData,
+            aes(x = game_date,
              y = `Diversity Score`,
-             color = Class)) +
-  geom_line() +
-  geom_vline(xintercept = releases) +
+             color = Class),
+            size = 2) +
+  geom_vline(xintercept = as.numeric(releases),
+             alpha = 1/2) +
   geom_vline(xintercept = resets,
-             lty = 2) +
+             lty = 2,
+             alpha = 1/2) +
+  geom_text(data = data.frame(releases = releases - 4,
+                              releasesComment = releasesComment),
+            aes(x = releases,
+                y = 4.5,
+                label = releasesComment),
+            angle = 90,
+            size = 2) +
   scale_color_manual(values = hsColors) +
-  xlab('')
+  facet_wrap( ~ Class, strip.position="right") +
+  # geom_line(data = highData,
+  #           aes(x = game_date,
+  #               y = `Diversity Score`)) +
+  xlab('') +
+  guides(colour=FALSE)
 ```
 
-*Druid:*  This class went from least diverse toward the end of MSOG to middle of the road during JUG. Currently is sits second lowest. With the shaman nerf and the rise of Reno decks Druid really gravitated to the Jade archetype, but more recently token, mid-range and hybrid lists are also seeing significant play.
+<img class="card-image" src="https://hearthstone.gamepedia.com/media/hearthstone.gamepedia.com/thumb/f/fa/Primalfin_Totem%2855596%29_Gold.png/200px-Primalfin_Totem%2855596%29_Gold.png?version=26461310813db4218f750534d53e10a9" alt="I took ages for players to work out Token Shaman" align="right">A classes diversity appears to be linked to its competitive viability particularly once the meta begins to settle. MSoG era Paladin and Hunter, and Un'Goro Warlock saw some of the highest diversity ever seen. This is likely due to players continuing to test and try to find competitive builds, or because there being played by players less knowledgeable about the overall meta.
 
-*Hunter:* Rexxar floundered during MSOG, with no universally accepted viable list for players to gravitate to. Its no suprise hunter deversity took a dive with JUG. Hunter has only really done mid-range well, and with new tools for the archetype and the quest falling flat, alternative lists never took off.
+The low points of diversity represent period where single powerful archetypes were dominant. For example, Jade druid post the [nerf to shaman](https://hsreplay.net/articles/5/shaking-meta-patch-71-numbers) became incredibly popular among Druid players. Hunter has seen little in the way of viable archetypes other than mid-range, and Un'Goro provided enough tools for players to gravitate back to it. Shaman has typically seen some of the lowest diversity in actual play, despite its richness in viable archetypes particularly during the year of the Kraken.
 
-*Mage:* 
-
-
+Very early signs in the KOFT meta point to strong diversity in priest builds, with archetypes like Resurrect, Ramp, Control and Highlander being popular. Druid and Shaman see the least diversity, with druid builds starting to homogenize the Token, Ramp and Jade archetypes into single decks! Evolve shaman is also seeing significant play, which is unsurprising given how obviously the Trall Deathseer hero fits into that already strong build.
 
 
