@@ -80,7 +80,7 @@ Please consider [downloading the deck tracker](https://hsreplay.net) or [donatin
 
 <style>
     #header_wrap {
-    background-image: url(http://www.hearthstonetopdecks.com/wp-content/uploads/2017/02/ungoro-wallpaper005-1024x576.jpg);
+    background-image: url(http://www.hearthstonetopdecks.com/wp-content/uploads/2017/07/featured-knightsofthefrozenthrone.jpg);
     background-size: cover;
     background-position-y: center;}
 </style>
