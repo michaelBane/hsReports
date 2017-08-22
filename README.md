@@ -1,3 +1,12 @@
+## [August 2017: Charting meta diversity in Hearthstone](https://hsreplay.net/articles/26/tracking-diversity-in-the-hearthstone-meta) 
+
+Theres something special about those first few days of a new expansion. With new sets come new possibilities, everyone is trying new stuff and your opponents deck could contain anything! Deck and card diversity in a meta is intrinsically linked to the quality of the play experience. Lower diversity leads to staleness as players grow tired of replaying the same or similar match-ups.
+
+In the following article, we borrow concepts from ecological science of all things to track diversity in the cards that people queue up with. We analyzed over 3.75 Billion cards included in decks from uploaded replays starting in late January of 2017 through today. This leads us to presenting a first purely objective insight into how players ‘work out’ the meta and congregate toward common play-styles.
+
+<blockquote class="reddit-card" data-card-created="1503362131"><a href="https://www.reddit.com/r/CompetitiveHS/comments/6v382v/charting_ecological_diversity_in_hearthstone_3/?ref=share&ref_source=embed">Charting Ecological diversity in hearthstone, 3 billion deck includes analysed</a> from <a href="http://www.reddit.com/r/CompetitiveHS">CompetitiveHS</a></blockquote>
+<script async src="//embed.redditmedia.com/widgets/platform.js" charset="UTF-8"></script>
+
 ## [July 2017: Just for Fun - Top Includes at Rank Floors](https://hsreplay.net/articles/17/just-for-fun-top-includes-at-rank-floors) 
 
 In February 2017, Blizzard introduced the ranked floors feature, which prevent players from de-leveling once they reach ranks 15, 10 and 5. In theory, this was intended to give players a chance to temporarily de-prioritize win-rate, take a break from the ladder grind and play something a little less serious. In the article, we compare inclusion rates of cards at ranked floors to those at grind ranks, with the intention of uncovering the cards and decks players play "just for fun", when ranking up doesn't matter.
