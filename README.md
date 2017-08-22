@@ -1,4 +1,4 @@
-## [August 2017: Charting meta diversity in Hearthstone](https://hsreplay.net/articles/26/tracking-diversity-in-the-hearthstone-meta) 
+## [August 2017: Charting Meta Diversity](https://hsreplay.net/articles/26/tracking-diversity-in-the-hearthstone-meta) 
 
 Theres something special about those first few days of a new expansion. With new sets come new possibilities, everyone is trying new stuff and your opponents deck could contain anything! Deck and card diversity in a meta is intrinsically linked to the quality of the play experience. Lower diversity leads to staleness as players grow tired of replaying the same or similar match-ups.
 
