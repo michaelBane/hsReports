@@ -1,0 +1,91 @@
+---
+title: "Meta Diversity"
+output:
+  html_document: default
+  html_notebook: default
+---
+
+```{r setup, include=FALSE}
+library(dplyr)
+library(ggplot2)
+library(scales)
+library(tidyr)
+
+#options(scipen=999)
+
+hsColors <- c('#FF7D0A', '#ABD473', '#69CCF0', '#F58CBA',
+              '#000000', '#FFF569', '#0070DE', '#9482C9', '#C79C6E')
+
+vanillaData <- read.csv('rawData/Minion Damage Analysis Aug 20th - 30th Rank 1 - 4 - All Vanilla Minions.csv')
+spData <- read.csv('rawData/Minion Damage Analysis Aug 20th - 30th Rank 1 - 4 - Spreading Plague.csv')
+ssData <- read.csv('rawData/Minion Damage Analysis Aug 20th - 30th Rank 1 - 4 - Spikeridged Steed.csv')
+
+vanillaPlotData <- vanillaData %>%
+  group_by(card_cost, has_taunt, card_name) %>%
+  summarise(avg_damage_output = weighted.mean(x = avg_damage_output, 
+                                              w = times_played),
+            avg_damage_soaked = weighted.mean(x = avg_damage_soaked, 
+                                              w = times_played),
+            times_played = sum(times_played)) %>%
+  filter(times_played > 1000)
+
+spPlotData <- spData %>%
+  summarise(avg_damage_output = mean(avg_damage_output),
+            avg_damage_soaked = mean(avg_damage_soaked))
+
+ssPlotData <- ssData %>%
+  summarise(avg_damage_output = mean(avg_damage_output - avg_atk_of_spikeridged_target),
+            avg_damage_soaked = mean(avg_damage_soaked - avg_health_of_spikeridged_target))
+```
+
+```{r, echo=FALSE}
+ggplot() +
+  #geom_point() +
+  geom_density2d(data = vanillaPlotData,
+                 aes(x = avg_damage_soaked,
+                     y = avg_damage_output),
+                 color = 'green') +
+  geom_text(data = vanillaPlotData,
+            aes(x = avg_damage_soaked,
+                y = avg_damage_output,
+                size = times_played,
+                label = card_name,
+                color = card_cost)) +
+  geom_abline(slope = 1,
+              intercept = 0,
+              lty = 2) +
+  theme_bw() +
+  ylim(0, 20) + xlim(-1, 10)
+```
+
+```{r, echo=FALSE}
+ggplot() +
+  #geom_point() +
+  geom_density2d(data = vanillaPlotData,
+                 aes(x = avg_damage_soaked,
+                     y = avg_damage_output),
+                 color = 'green') +
+  geom_text(data = filter(vanillaPlotData, has_taunt == TRUE),
+            aes(x = avg_damage_soaked,
+                y = avg_damage_output,
+                size = times_played,
+                label = card_name,
+                color = card_cost)) +
+  geom_text(data = spPlotData,
+             aes(x = avg_damage_soaked, 
+                 y = avg_damage_output),
+             label = 'Spreading Plague',
+             size = 5,
+             color = 'blue') +
+  geom_text(data = ssPlotData,
+            aes(x = avg_damage_soaked, 
+                y = avg_damage_output),
+            label = 'Spikeridge Steed',
+            size = 5,
+            color = 'red') +
+  geom_abline(slope = 1,
+              intercept = 0,
+              lty = 2) +
+  theme_bw() +
+  ylim(0, 13) + xlim(0, 20)
+```
