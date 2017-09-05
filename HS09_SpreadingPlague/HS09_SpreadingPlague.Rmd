@@ -38,11 +38,13 @@ ssPlotData <- ssData %>%
             avg_damage_soaked = mean(avg_damage_soaked - avg_health_of_spikeridged_target))
 ```
 
+<img class="card-image" src="http://media-hearth.cursecdn.com/avatars/339/379/62841.png" alt="" align="right">
+
 A little over a week ago [the community reached out](https://www.reddit.com/r/hearthstone/comments/6wprfy/hi_hsreplaynet_can_you_use_your_data_to_show_how/) and asked us to look at the power level of a particularly controversial card, Spreading Plague. The ask was fairly straight forward, and provides a road-map for the following article. To quote from the title:
 
 > Hi HSReplay.net! Can you use your data to show how much damage does Spreading Plague soak on average, and compare it with other great anti-aggro cards like Sludge Belcher or Spikeridged Steed? That would be a really interesting point to start a discussion about the potential nerf.
 
-That post got over 430 up-votes (about 400 more than [my last full article](https://hsreplay.net/articles/26/tracking-diversity-in-the-hearthstone-meta) _kappa_), so here we are, you guys asked so we tried our damnedest to deliver! Many of the views expressed in that thread can be summarized by the following [comment](https://www.reddit.com/r/hearthstone/comments/6wprfy/hi_hsreplaynet_can_you_use_your_data_to_show_how/dma2t7h/):
+That post netted over 430 up-votes (about 400 more than [my last full article](https://hsreplay.net/articles/26/tracking-diversity-in-the-hearthstone-meta) _kappa_), so here we are, you guys asked so we tried our damnedest to deliver! Many of the views expressed in that thread can be summarized by the following [comment](https://www.reddit.com/r/hearthstone/comments/6wprfy/hi_hsreplaynet_can_you_use_your_data_to_show_how/dma2t7h/):
 
 > If you're going to do this, people here correctly pointed out that it's not only about damage soaked but also damage dealt and minions killed. I'm not a pro in data analysis so I hope you'll figure out the best way to write about the topic and derive some logical conclusions.
 
@@ -52,17 +54,32 @@ The following analysis looks at the combined impact cards have, in terms of the 
 
 To establish whether Spreading Plague is indeed outside the bounds of whats reasonable, we first need to establish what's 'normal'. Figure 1 shows the average damage done vs. damage received of every collectible minion in the Standard set. Looking at the plot, the vast majority of minions don't stray far from a fairly compact region within the space. We have fitted a contour to the data which represents the 'normal' bound of offensive and defensive output. This contour provides a baseline for us to compare Spreading Plague and Spikeridged Steed too.
 
-**Figure 1: Average damage done vs. damage recieved for minions. Density contours indicate the tyical bounds of these parameters (90% of minons fall within the outer contour). 1 minon was removed (Anomolous).**
+**Figure 1: Average damage done vs. damage recieved for minions. Density contours indicate the tyical bounds of these parameters (90% of minons fall within the outer contour).**
 
 ```{r, echo=FALSE, warning=FALSE}
+vanillaInteresting <- c('Primordial Drake',
+                        'Twilight Drake',
+                        'Bittertide Hydra',
+                        'Doomsayer',
+                        'Crypt Lord',
+                        'Injured Blademaster',
+                        'Abyssal Enforcer',
+                        "C'Thun",
+                        'Leeroy Jenkins')
+
 ggplot() +
   #geom_point() +
-  geom_text(data = vanillaPlotData,
+  geom_point(data = vanillaPlotData,
             aes(x = avg_damage_soaked,
                 y = avg_damage_output,
-                size = times_played,
-                label = card_name),
+                size = times_played),
             alpha = 1/5) +
+    geom_text(data = filter(vanillaPlotData, card_name %in% vanillaInteresting),
+            aes(x = avg_damage_soaked,
+                y = avg_damage_output,
+                label = card_name),
+            alpha = 1/5,
+            nudge_y = -0.5) +
   geom_abline(slope = 1,
               intercept = 0,
               lty = 2) +
@@ -71,7 +88,6 @@ ggplot() +
                      y = avg_damage_output),
                  color = 'green') +
   theme_bw() +
-  ylim(0, 20) + xlim(-1, 10) +
   ylab('Average Damage Done') +
   xlab('Average Damage Taken') +
   theme(legend.position="none")
@@ -80,8 +96,8 @@ ggplot() +
 Before we proceed, its important to note there's a few caveats to this baseline.
 
 * Spells are not considered in the analysis. Therefore cards like Frost Nova, which are comparable in there effect to Spreading Plague, are not included. Spells effects are more varied than simple minions on the board and deriving an objective measure of damage stalled/healed/avoided for every individual spell and buff is beyond the scope of this work.
-* Some minions have unusual interactions and thus may skew the data in the baseline. For example, Bittertide Hydra does damage to the players own face, upping its damage output, and Doomsayer doesn't technically damage other minions despite its powerful effect. Again, its not feasible to deal with every special case, which will introduce some error.
-* The list only considers Standard matches, so tools like Sludge Belcher and Deathlord aren't considered. Combining results from both sets didn't make sense as these cards exist in completely different metas.
+* Some minions have unusual interactions and thus may skew the data in the baseline. For example, Bittertide Hydra does damage to the players own face, upping its damage output, and Doomsayer doesn't technically damage other minions despite its powerful effect. Again, its not feasible to deal with every special case.
+* The list only considers Standard matches, so tools like Sludge Belcher and Deathlord aren't considered. Combining results from both formats didn't make sense as these cards exist in completely different metas.
 
 ## The Perfect Plague.
 
@@ -98,28 +114,49 @@ Next comes the focus of the article, Spreading Plague.
 2. Determine the damage done and absorbed by these scarabs specifically.
 3. Average over all the scarabs spawned by a single cast of Spreading Plague (not over the individual Scarabs)
 
-These figures represent the closest possible comparison of the damage done and absorbed by the minions these spells interact with and generate. The following shows the contours from Figure 1 overlayed onto just the taunt minions. We have also included our derived equivilent values for Spreading Plague and Spikeridged Steed.
+These figures represent the closest possible comparison of the damage done and absorbed by the minions these spells interact with and generate. The following shows the contours from Figure 1 overlayed onto just the taunt minions. We have also included our derived equivalent values for Spreading Plague and Spikeridged Steed.
 
 **Figure 2: Average damage done vs. damage recieved for taunt minions, Spreading Plague and Spikeridge Steed. Density contours are taken from Figure 1.**
 
 ```{r, echo=FALSE, warning=FALSE}
+vanillaInterestingTaunts <- c('Primordial Drake',
+                        'Crypt Lord',
+                        'Abomination',
+                        "Al'Akir the Windlord",
+                        'Righteous Protector')
+
 ggplot() +
   #geom_point() +
-  geom_text(data = filter(vanillaPlotData, has_taunt == TRUE),
+  geom_point(data = filter(vanillaPlotData, has_taunt == TRUE),
             aes(x = avg_damage_soaked,
                 y = avg_damage_output,
-                size = times_played,
-                label = card_name),
+                size = times_played),
             alpha = 1/2) +
+      geom_text(data = filter(vanillaPlotData, card_name %in% vanillaInterestingTaunts),
+            aes(x = avg_damage_soaked,
+                y = avg_damage_output,
+                label = card_name),
+            alpha = 1/5,
+            nudge_y = -0.5) +
   geom_text(data = spPlotData,
              aes(x = avg_damage_soaked, 
                  y = avg_damage_output),
              label = 'Spreading Plague',
-             size = 5) +
+             size = 5,
+            nudge_y = -0.5) +
   geom_text(data = ssPlotData,
             aes(x = avg_damage_soaked, 
                 y = avg_damage_output),
             label = 'Spikeridge Steed',
+            size = 5,
+            nudge_y = -0.5) +
+  geom_point(data = spPlotData,
+             aes(x = avg_damage_soaked, 
+                 y = avg_damage_output),
+             size = 5) +
+  geom_point(data = ssPlotData,
+            aes(x = avg_damage_soaked, 
+                y = avg_damage_output),
             size = 5) +
   geom_abline(slope = 1, 
               intercept = 0,
@@ -131,16 +168,18 @@ ggplot() +
   theme_bw() +
   ylab('Average Damage Done') +
   xlab('Average Damage Taken') +
-  xlim(0, 16) + ylim(0, 11) +
+  xlim(0, 16) + ylim(0, 16) +
   theme(legend.position="none")
 ```
 
-Firstly, Spikeridged steed sits just outside the range of whats considered normal damage output and defense. The card is considered a staple in any Control Paladin deck, so its perhaps not surprising it sits at a high power level. Given the cost of the card its likely the buff would be applied to a minion already on the board and ready to attack, giving it a slight advantage over the other vanilla minions in the plot. Nonetheless the call as to whether this implies the card is overpowered is fairly subjective, however comparisons can be made to Twilight Drake which sits in a similar spot.
+<img class="card-image" src="https://hearthstone.gamepedia.com/media/hearthstone.gamepedia.com/f/f1/Protect_the_King%21%2842032%29.png" alt="" align="right">
+
+Firstly, Spikeridged Steed sits just outside the range of whats considered normal damage output and defense. The card is considered a staple in any Control Paladin deck, so its perhaps not surprising it sits at a high power level. Given the cost of the card its likely the buff would be applied to a minion already on the board and ready to attack, giving it a slight advantage over the other vanilla minions in the plot. Nonetheless the call as to whether this implies the card is overpowered is fairly subjective, however comparisons can be made to Twilight Drake which sits in a similar spot.
 
 On the other hand, Spreading Plague sits way, _way_ outside of the limits, its in a league of its own when it comes to stopping power.
 
 Interestingly the damage output is fairly reasonable in comparison, or at least it sits within a 'normal' range. On average, it doesn't fair much better than the Paladin 1-drop, Righteous Protector. This data leads us to the conclusion that the issue with the card lies more in its ability to absorb damage than dish it out, although given how good it is in defense, you could certainly argue the card could see play even if it had zero capacity to deal damage.
 
-Many have expressed the opinion that the card needs to be nerfed, and with [imminent updates](https://twitter.com/bdbrode/status/904399898258190336) on the state of Druid that may just happen. Either way the above analysis certainly legitimizes that sentiment. The data suggest that for Spreading Plague to be more in line with the rest of the card pool, the scarabs in generates would need to be closer to 1/2's (60% lower base stats), or not have taunt attached.
+Many have expressed the opinion that the card needs to be nerfed, and with [imminent updates](https://twitter.com/bdbrode/status/904399898258190336) on the state of Druid that may just happen. Either way the above analysis certainly legitimizes that sentiment, as the cards effect is way outside the established design space. The data suggest that for Spreading Plague to be more in line with the rest of the card pool, the scarabs in generates would need to be closer to 1/2's (60% lower base stats), like the poison spiders also introduced in KOFT. A global change of this nature to Plague Scarabs might go some way to improving the balance of Druid in the meta as a whole.
 
 
