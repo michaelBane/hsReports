@@ -1,4 +1,13 @@
-## [August 2017: Charting Meta Diversity](https://hsreplay.net/articles/26/tracking-diversity-in-the-hearthstone-meta) 
+## [Sep 2017: Deep Dive into Spreading Plague](https://hsreplay.net/articles/28/deep-dive-into-spreading-plague)
+
+A little over a week ago the community reached out and asked us to look at the power level of a controversial card, Spreading Plague. The ask was fairly straight forward, and it provides a roadmap for the following article. To quote from the title:
+
+Hi HSReplay.net! Can you use your data to show how much damage does Spreading Plague soak on average, and compare it with other great anti-aggro cards like Sludge Belcher or Spikeridged Steed? That would be a really interesting point to start a discussion about the potential nerf.
+
+<blockquote class="reddit-card" data-card-created="1504659418" data-card-preview="1"><a href="https://www.reddit.com/r/hearthstone/comments/6y8z26/by_community_request_deep_dive_into_spreading/?ref=share&ref_source=embed">By community request: Deep Dive into Spreading Plague - 1.5M games analyzed</a> from <a href="http://www.reddit.com/r/hearthstone">hearthstone</a></blockquote>
+<script async src="//embed.redditmedia.com/widgets/platform.js" charset="UTF-8"></script>
+
+## [Aug 2017: Charting Meta Diversity](https://hsreplay.net/articles/26/tracking-diversity-in-the-hearthstone-meta) 
 
 Theres something special about those first few days of a new expansion. With new sets come new possibilities, everyone is trying new stuff and your opponents deck could contain anything! Deck and card diversity in a meta is intrinsically linked to the quality of the play experience. Lower diversity leads to staleness as players grow tired of replaying the same or similar match-ups.
 
@@ -7,14 +16,14 @@ In the following article, we borrow concepts from ecological science of all thin
 <blockquote class="reddit-card" data-card-created="1503362131"><a href="https://www.reddit.com/r/CompetitiveHS/comments/6v382v/charting_ecological_diversity_in_hearthstone_3/?ref=share&ref_source=embed">Charting Ecological diversity in hearthstone, 3 billion deck includes analysed</a> from <a href="http://www.reddit.com/r/CompetitiveHS">CompetitiveHS</a></blockquote>
 <script async src="//embed.redditmedia.com/widgets/platform.js" charset="UTF-8"></script>
 
-## [July 2017: Just for Fun - Top Includes at Rank Floors](https://hsreplay.net/articles/17/just-for-fun-top-includes-at-rank-floors) 
+## [Jul 2017: Just for Fun - Top Includes at Rank Floors](https://hsreplay.net/articles/17/just-for-fun-top-includes-at-rank-floors) 
 
 In February 2017, Blizzard introduced the ranked floors feature, which prevent players from de-leveling once they reach ranks 15, 10 and 5. In theory, this was intended to give players a chance to temporarily de-prioritize win-rate, take a break from the ladder grind and play something a little less serious. In the article, we compare inclusion rates of cards at ranked floors to those at grind ranks, with the intention of uncovering the cards and decks players play "just for fun", when ranking up doesn't matter.
 
 <blockquote class="reddit-card"><a href="https://www.reddit.com/r/hearthstone/comments/6n14zt/just_for_fun_top_includes_at_rank_floors_13m/?ref=share&ref_source=embed">Just for Fun: Top Includes at Rank Floors (13M Games Analyzed)</a> from <a href="http://www.reddit.com/r/hearthstone">hearthstone</a></blockquote>
 <script async src="//embed.redditmedia.com/widgets/platform.js" charset="UTF-8"></script>
 
-## [June 2017: Deep-Dive into Curious Glimmerroot](https://hsreplay.net/articles/16/deep-dive-into-curious-glimerroot)
+## [Jun 2017: Deep-Dive into Curious Glimmerroot](https://hsreplay.net/articles/16/deep-dive-into-curious-glimerroot)
 
 Curious Glimmerroot is one of the most unique cards in the Journey to Un'Goro expansion. With it comes a completely new mechanic; a mini-game of sorts, that has the player guess something about their opponent's deck.
 
