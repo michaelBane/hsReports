@@ -4,7 +4,7 @@ A little over a week ago the community reached out and asked us to look at the p
 
 Hi HSReplay.net! Can you use your data to show how much damage does Spreading Plague soak on average, and compare it with other great anti-aggro cards like Sludge Belcher or Spikeridged Steed? That would be a really interesting point to start a discussion about the potential nerf.
 
-<blockquote class="reddit-card" data-card-created="1504659418" data-card-preview="1"><a href="https://www.reddit.com/r/hearthstone/comments/6y8z26/by_community_request_deep_dive_into_spreading/?ref=share&ref_source=embed">By community request: Deep Dive into Spreading Plague - 1.5M games analyzed</a> from <a href="http://www.reddit.com/r/hearthstone">hearthstone</a></blockquote>
+<blockquote class="reddit-card" data-card-created="1504659558" data-card-preview="1"><a href="https://www.reddit.com/r/hearthstone/comments/6y8z26/by_community_request_deep_dive_into_spreading/?ref=share&ref_source=embed">By community request: Deep Dive into Spreading Plague - 1.5M games analyzed</a> from <a href="http://www.reddit.com/r/hearthstone">hearthstone</a></blockquote>
 <script async src="//embed.redditmedia.com/widgets/platform.js" charset="UTF-8"></script>
 
 ## [Aug 2017: Charting Meta Diversity](https://hsreplay.net/articles/26/tracking-diversity-in-the-hearthstone-meta) 
