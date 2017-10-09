@@ -1,3 +1,10 @@
+## [Oct 2017: Big Priest By The Numbers](https://hsreplay.net/articles/29/big-priest-by-the-numbers)
+
+The following article focuses on a less popular but certainly more novel archetype commonly referred to as “Big Priest”, also known as "Resurrect Priest" or even sometimes "High-roll Priest". This deck aims to summon and resurrect big minions in the early game using Barnes and the newly introduced Priest spells Shadow Essence and Eternal Servitude. 
+
+<blockquote class="reddit-card" data-card-created="1507544711"><a href="https://www.reddit.com/r/hearthstone/comments/75226x/big_priest_by_the_numbers_an_indepth_look_at_the/?ref=share&ref_source=embed">Big Priest By The Numbers: An in-depth look at the deck's Turn 4 - HSReplay.net</a> from <a href="http://www.reddit.com/r/hearthstone">hearthstone</a></blockquote>
+<script async src="//embed.redditmedia.com/widgets/platform.js" charset="UTF-8"></script>
+
 ## [Sep 2017: Deep Dive into Spreading Plague](https://hsreplay.net/articles/28/deep-dive-into-spreading-plague)
 
 A little over a week ago the community reached out and asked us to look at the power level of a controversial card, Spreading Plague. The ask was fairly straight forward, and it provides a roadmap for the following article. To quote from the title:
