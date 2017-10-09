@@ -1,0 +1,91 @@
+---
+title: "Highroll Priest Deep Dive"
+output:
+  html_document: default
+  html_notebook: default
+---
+
+```{r setup, include=FALSE, warning=FALSE}
+library(dplyr)
+library(ggplot2)
+library(scales)
+library(tidyr)
+
+#options(scipen=999)
+
+hsColors <- c('#FF7D0A', '#ABD473', '#69CCF0', '#F58CBA',
+              '#000000', '#FFF569', '#0070DE', '#9482C9', '#C79C6E')
+
+data <- read.csv('rawData/Big Priest Turn 4 Barnes Summons - Barnes Summons.csv') %>%
+    mutate(created_entity_creationC = ifelse(barnes_created_entity %in% c('Obsidian Statue', 
+                                             'Malygos',
+                                             'Prophet Velen',
+                                             'Priest of the Feast'),
+                'No EOT Effect',
+                ifelse(barnes_created_entity %in% c("Ysera",
+                                                    'The Lich King') & created_entity_creation == '',
+                       'Hand Full',
+                       ifelse(barnes_created_entity == "Y'Shaarj, Rage Unbound" & created_entity_creation == '',
+                       'No Minion Pulled',
+                as.character(created_entity_creation)))))
+
+validBarnesPulls <- c("Y'Shaarj, Rage Unbound",
+                      "Ysera",
+                      'The Lich King',
+                      'Obsidian Statue',
+                      'Malygos',
+                      'Prophet Velen',
+                      'Priest of the Feast')
+```
+
+Priest is a class that's re-invented itself over the last couple of expansions. Since the community backlash which came with the release of Purity in One Night in Karazhan, Blizzard has gotten serious about Priest. Classic archetypes like control are seeing significantly lower popularity and new archetypes have taken there place. The most popular and successful of these currently are the singleton decks, containing Raza the Chained and Shadowreaper Anduin for serious hero-power value.
+
+The following article focuses on a less popular but certainly more novel archetype commonly referred to as "High-roll Priest". This deck aims to summon and resurrect big minions in the early game using Barnes and the newly introduced Priest spells Shadow Essence and Eternal Servitude. [Tempo Storm](https://youtu.be/-aTZ7SgOVBw) for example provides a fairly comprehensive primer to the deck and its play-style for those unfamiliar.
+
+This deck and ones like it have seen criticism in Hearthstones history due to their inconsistent nature. The deck feels unstoppable when you have that turn-4 Barnes but weak when you don't draw your early summon enablers. Games being decided by early game coin-flips have fairly consistently been labeled as bad for the game, as no player has control over them. The following article examines just how much your win-rate is affected by your turn-4 play, to determine just how much your luck influences your win rate with this deck.
+
+In order to establish the impact of Barnes on curve, we:
+
+1. Found all the games where a Priest played a Barnes on curve.
+2. Found the summoned minion (by Barnes).
+3. Found the outcome of the summoned minions end of turn effect.
+4. Derived the win-rate conditional on 2 & 3.
+
+The deck is characterized by the early summon mechanics however there are some variations on whats actually being summoned. By far the most [common variant](https://hsreplay.net/decks/gRIuaxDqNNFRVkDh5SSwvf/) includes just Y'Shaarj, The Lich King, two Obsidian Statues and Ysera. All of these have impact-full end of turn effects and significant stats for when there re-summoned. [Some decks](https://hsreplay.net/decks/ZP2Q1ToFiv864iDWBsfD7b/) run Priest of the Feast for extra healing should Barnes not be drawn, however you risk summoning it with Barnes. Finally, [another popular variant](https://hsreplay.net/decks/7Feaak94gIyIv2MWGzApjh/) runs Malygos and Prophet Velen along side cheap burn spells. The analysis focuses on just these minions.
+
+**Figure 1:** Win-rate by turn-4 play in High-Roll Priest. Barnes Pull Sequence contains the initial Barnes summon and the subsequent end of turn effect of the summoned minion (if applicable). Dashed lines indicate overall win-rate when Barnes is and isn't played on turn-4.
+
+```{r data, echo=FALSE, warning=FALSE}
+library(scales)
+data %>%
+  filter(barnes_created_entity %in% validBarnesPulls,
+         created_entity_creationC != 'Deathwing, Dragonlord') %>%
+  ggplot(aes(x = reorder(paste(barnes_created_entity, 
+                               created_entity_creationC, 
+                               sep = ' -> '), win_rate),
+             y = win_rate / 100,
+             fill = barnes_created_entity)) +
+  geom_bar(stat = 'identity') +
+  geom_hline(yintercept = .4941,
+             lty = 2) +
+  geom_hline(yintercept = .6447,
+             lty = 2) +
+  guides(fill = FALSE) +
+  scale_y_continuous(labels = percent,
+                     limits = c(0, 1),
+                     breaks = 0:100 / 10) +
+  coord_flip() +
+  xlab('') +
+  ylab('Win Rate')
+```
+
+The data suggest that by far the best outcome of the Barnes summon is Y'Shaarj, with your likelihood of winning increasing over 30% independent of which minion it pulls from your deck! The best minions you can summon are Obsidian Statue (and you have twice the chance to pull these), Lich King and your 'real' Y'Shaarj. Even if you hit the Priest of the Feast, your still very favored to win as there's a high likelihood you will be able to re-summon the full 10/10 Y'Shaarj in the turns after.
+
+Obsidian Statue looks like the solid performer of the deck. Its more likely you will get this as you most likely have 2 in your deck, and when you do its performance is only beaten by the luckiest end of turn effects from Ysera and The Lich King.
+
+Ysera and The Lich King only increase your win-rate around 5-20% depending on your luck. Dream and Death Knight cards that help you control the board have the biggest impact (Ysera Awakens, Dream and Death and Decay). Whether Ysera is a better summon than The Lich King depends on which card you get from them but on average Ysera looks the better summon. At 12 health, Ysera can certainly be difficult to deal with when re-summoned in the mid-game. It turns that many of the Death Knight cards have little to no impact, for example Army of the Dead is of almost no use if your deck is mostly spells, and Anti-Magic shell isn't great if you don't have a wide board.
+
+Finally, Prophet Velen and Malygos are not good turn-4 pulls. Admittedly, the deck aims to combine these minions with burn, so the deck does not really aim to pull these so early. Similarly, pulling a Priest of the Feast from Barnes is worse than not playing Barnes on curve at all, so your hedging your bets playing the card.
+
+The deck certainly lives up to its name, with your chance of winning varying up to 40% conditional on pure luck. However the same could be said for many other ['bad but fun' decks](https://hsreplay.net/articles/17/just-for-fun-top-includes-at-rank-floors) such as Renounce Warlock or Holy Wrath Paladin which see fairly niche play. Given the deck represents only approximately 3-4% (and decreasing) of all games recorded and its modest win-rate peaking around 51-52%, its certainly not that comparable to Pirate Warrior or Aggro Shaman. The deck makes you play differently which is probably why its popularity outshines its win-rate.
+
