@@ -1,3 +1,7 @@
+## [Feb 2017: Kripparian Youtube Feature](https://www.youtube.com/watch?v=wpK0Hr2o9eg)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/wpK0Hr2o9eg" frameborder="0" allowfullscreen></iframe>
+
 ## [Oct 2017: Big Priest By The Numbers](https://hsreplay.net/articles/29/big-priest-by-the-numbers)
 
 The following article focuses on a less popular but certainly more novel archetype commonly referred to as “Big Priest”, also known as "Resurrect Priest" or even sometimes "High-roll Priest". This deck aims to summon and resurrect big minions in the early game using Barnes and the newly introduced Priest spells Shadow Essence and Eternal Servitude. 
