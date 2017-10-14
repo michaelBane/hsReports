@@ -1,4 +1,4 @@
-## [Feb 2017: Kripparian Youtube Feature](https://www.youtube.com/watch?v=wpK0Hr2o9eg)
+## [Oct 2017: Kripparian Youtube Feature 2](https://www.youtube.com/watch?v=wpK0Hr2o9eg)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/wpK0Hr2o9eg" frameborder="0" allowfullscreen></iframe>
 
