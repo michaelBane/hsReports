@@ -1,0 +1,84 @@
+---
+title: "The Keleseth Effect"
+output:
+  html_document: default
+  html_notebook: default
+---
+
+```{r setup, include=FALSE, warning=FALSE}
+library(dplyr)
+library(ggplot2)
+library(scales)
+library(tidyr)
+library(jsonlite)
+
+#options(scipen=999)
+url <- 'https://hsreplay.net/api/v1/archetypes/?format=json'
+
+hsColors <- c('#FF7D0A', '#ABD473', '#69CCF0', '#F58CBA',
+              '#000000', '#FFF569', '#0070DE', '#9482C9', '#C79C6E')
+
+data <- read.csv('rawData/On Curve Keleseth Data - Results.csv')
+
+archetypes <- fromJSON(url) %>%
+   select(id, name)
+
+# data %>%
+#   summarise(sum(oncurvekelesethgames) / sum(games))
+# 0.2465652
+```
+
+Prince Keleseth is one of those cards that has been at the forefront of community discussion from reveal to the settled meta we are currently in. All the 3 Princes were heralded as dust-worthy from the minute they were announced, with the idea that playing just a single 2, 3, or 4 drop appearing at first glance to be simply not worth the hit to consistency. 
+
+Fast-forward a few months and the reality is that Keleseth has made its way into the upper echelon of the meta (helped by the nerf to Druid). High-roll mechanics are something we have covered previously, but [Trump probably best describes the problem](https://youtu.be/YA1yxdMrr-Q?t=1m44s) with Keleseth from a design point of view. In short, the overall win-rate depends heavily on early game draw luck, something the player has little control over.
+
+The following analysis aims to extract the effect of an on-curve Prince Keleseth, specifically on a per archetype basis.
+
+## Trump was right
+
+The following shows the improvement in win-rate when Keleseth is played on curve by archetype. The data suggests **players have a 24.6% chance of playing Keleseth on curve**, which is fairly consistent with the [theoretical probability](https://hearthstoneplayers.com/hearthmath-numbers-behind-mulligan/). Its probably not surprising to anybody that's played Hearthstone in the past month that the win-rates are significantly improved when you find the Keleseth on curve. 
+
+```{r main, echo=FALSE, warning=FALSE}
+data %>%
+  inner_join(archetypes, by = c('archetype_id' = 'id')) %>%
+  filter(games > 10000) %>%
+  mutate(`Off-Curve Games` = games - oncurvekelesethgames,
+         `Off-Curve Wins` = wins - oncurvekelesethwins,
+         `Off-Curve Winrate` = `Off-Curve Wins` * 100 / `Off-Curve Games`,
+         delta = oncurve_winrate / `Off-Curve Winrate`) %>%
+  select(name,
+         games,
+         `Off-Curve Winrate`,
+         `On-Curve Winrate` = oncurve_winrate) %>%
+  gather(KPI, Value, -name, -games) %>%
+  ggplot(aes(x = reorder(name, Value),
+             y = Value / 100,
+             fill = KPI,
+             alpha = log(games))) +
+  geom_bar(stat = 'identity', 
+           position = 'dodge',
+           color = 'black') +
+  geom_hline(yintercept = 0.5,
+             lty = 2) +
+  coord_flip() +
+  xlab('') +
+  ylab('Win Rate') +
+  scale_y_continuous(labels = percent) +
+  guides(alpha = FALSE)
+```
+
+**Figure 1: Win-Rate by archetype for games where Prince Keleseth was played on curve (turn 2, or turn 1 with coin) vs not played on curve. Only decks within the arcehtype that run Prince Keleseth are included. Only archetypes with >1000 games are retained. Opacity is indicative of the number of games played**
+
+<img class="card-image" src="http://media-hearth.cursecdn.com/avatars/339/767/58723.png" alt="" align="right">
+
+The effect of an on-curve Keleseth is relatively consistent across the archetypes (especially the non-priest ones). It turns out that the difference between winning and losing conditional on drawing your Keleseth on curve varies between around 32-42% pretty consistently. Of course, many of the decks that include Keleseth share similar characteristics (aggressive style minion based tempo decks) and even a reasonable cross over in card inclusions (Pirates especially). Similarly, not having a 2-drop on turn-2 has fairly similar consequences across the archetypes.
+
+With this in mind, but within that bandwidth, its the highest swing archetypes are actually the most competitive and popular on ladder, and its the on-curve win-rates that tend to separate them in terms of overall win-rate. For example, Tempo Rogue ( [Teir 1](https://hsreplay.net/meta/)) and Pirate Warrior ( [Teir 2](https://hsreplay.net/meta/)) both have near 50% WR in the case that Keleseth isn't played on curve, but in the case that it is, Tempo Rouge gets a 41% boost compared to 32% for Pirate Warrior.
+
+So turns it out Trumps "Darkest Timeline" was scarily accurate, to paraphrase:
+
+> "Prince Keleseth is run in a deck that win usually 50% of the time... And you play him on turn 2 and win lets say 75% of the time... The deck becomes good and its soley becausea you played Keleseth on 2... Even though it will only happen about 25% of the time... the 25% of the time you win 75% of the time makes the deck good."
+
+This prediction is pretty much bang-on, even down to the win-rates (especially for Zoolock which was referenced). Blizzard has made it clear they like for every game to feel different, and high-roll mechanics can help that cause. In reality, Keleseth has has the opposite effect due to its sheer amount of play and its presence across multiple top tier decks.
+
+
