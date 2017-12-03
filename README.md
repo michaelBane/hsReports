@@ -1,3 +1,10 @@
+## [Nov 2017: The Keleseth Effect](https://hsreplay.net/articles/31/the-keleseth-effect)
+
+Prince Keleseth has made its way even into the highest ranks of the meta (helped by the nerf to Druid). High-roll mechanics are something we have covered previously, but Trump probably best describes the problem with Keleseth from a design point of view. In short, the overall win rate depends heavily on early game draw luck, something the player has little control over. The following analysis aims to extract the effect of an on-curve Prince Keleseth, specifically on a per archetype basis.
+
+<blockquote class="reddit-card" data-card-created="1512340421"><a href="https://www.reddit.com/r/hearthstone/comments/7h9qhi/the_keleseth_effect_prince_keleseths_winrate_when/?ref=share&ref_source=embed">The Keleseth Effect: Prince Keleseth's winrate when played on curve</a> from <a href="http://www.reddit.com/r/hearthstone">hearthstone</a></blockquote>
+<script async src="//embed.redditmedia.com/widgets/platform.js" charset="UTF-8"></script>
+
 ## [Oct 2017: Kripparian Youtube Feature 2](https://www.youtube.com/watch?v=wpK0Hr2o9eg)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/wpK0Hr2o9eg" frameborder="0" allowfullscreen></iframe>
