@@ -1,0 +1,120 @@
+---
+title: "Quests vs. Death Knights vs. Legendary Weapons"
+output:
+  html_document: default
+  html_notebook: default
+---
+
+```{r setup, include=FALSE, warning=FALSE}
+library(dplyr)
+library(ggplot2)
+library(scales)
+library(tidyr)
+library(jsonlite)
+
+#options(scipen=999)
+hsColors <- c('#FF7D0A', '#ABD473', '#69CCF0', '#F58CBA', '#000000', '#FFF569', '#0070DE', '#9482C9', '#C79C6E')
+metaData <- fromJSON('https://api.hearthstonejson.com/v1/22611/enUS/cards.collectible.json')
+
+dks <- c(42987, 43392, 43398, 43406, 43408, 43415, 43417, 43419, 43423)
+legWep <- c(43369, 43426, 45528, 46077, 46107, 46299, 46263, 46305, 47035)
+quests <- c(41168, 41222, 41099, 41856, 41368, 41427, 41494, 41499, 41868)
+
+classifications <- data.frame(grp = c(rep('aquest', 9), rep('bDK', 9), rep('clegWep', 9)),
+                              dbf_id = c(quests, dks, legWep))
+
+data <- read.csv('rawData/Legendary Weapons Analysis V2 - Results.csv')
+gamesData <- read.csv('rawData/Legendary Weapons Analysis V2 - Total Games.csv')
+classes <- metaData %>%
+  select(dbfId, cardClass)
+```
+
+Its been a year of Mammoth proportions, with no less than 54 class legendaries being released! Half of these have been built up as the marquee content of each update, with Blizzard hyping the crap out of the quests, Death Knights and Legendary Weapons during the pre-launch windows. If you have been living under a rock for the past year, here are the three new types of legendary introduced:
+
+* Quests: Released with Journey to Un'Goro, these legendary spells start in your hand and require you to fulfill a set of conditions for a big reward.
+* Death Knights: Released with Knight of the Frozen Throne, these playable heroes replace your starting hero, Jarraxxus style.
+* Legendary Weapons: Just released in Kobolds and Catacombs, well, their weapons but legendary...
+
+Now that the year of the mammoth is in its twilight, it seems natural to ask the question of which set had the biggest impact on the meta during their respective launch windows, and what do they look like now? The following constitutes somewhat of a Quests vs. Death Knights vs. Legendary weapons ultimate showdown.
+
+## Play Rates
+
+During the launch week of an expansion, its reasonable to expect elevated play rates for marquee content, even if win-rates arent optimal. By looking at play-rates, we get a snapshot into the immmeditate impact the content had on the meta, before the meta gets 'figured out' and everybody starts playing serious decks again. The following shows the overall proportion of decks that include the marquee legendries during by expansion windows for the first 7 days of launch.
+
+```{r, echo=FALSE, warning=FALSE}
+data %>%
+  inner_join(classifications, by = 'dbf_id') %>%
+  inner_join(gamesData, by = c('game_date', 'game_type')) %>%
+  inner_join(classes, by = c('dbf_id' = 'dbfId')) %>%
+  mutate(game_date = as.Date(game_date),
+         era = ifelse(game_date < '2017-05-01', 'aUNG',
+                      ifelse(game_date < '2017-09-01', 'bKFT', 'cKC')),
+         playRate = card_included_in_games_qdklw / total_games) %>%
+  filter(game_type == 2,
+         !(game_date %in% c(as.Date('2017-04-06'),
+                          as.Date('2017-08-10'),
+                          as.Date('2017-12-07')))) %>%
+  group_by(card_name, era, grp, cardClass) %>%
+  summarise(playRate = mean(playRate),
+            winRate = mean(win_rate) / 100) %>%
+  ggplot(aes(x = reorder(card_name,playRate),
+             y = playRate,
+             fill = cardClass)) +
+  geom_bar(stat = 'identity') +
+  facet_grid(era~grp, scales = 'free_x') +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+  scale_y_continuous(labels = percent) +
+  scale_fill_manual(values = hsColors) +
+  guides(fill = FALSE) +
+  xlab('') + ylab('Play Rate')
+```
+
+The data shows that during their respective launch windows, each of the marquee legendary sets saw a significant amount of play. There is stark contrast however between the popularity of Quests and Death Knights in their post-launch launch windows. Quests have seen basically no play since Knights of the Frozen Throne launched but Death Knights were actually played more than Legendary weapons during the Kobolds and Katacombs launch window. Its fair to say legendary weapons have had the least immediate impact of all 3 releases, at least in terms of play-rates.
+
+As time has passed, the only Quest that saw >1% play was Open the Waygate, with the OTK Mage deck seeing viability in a Druid control dominated meta. But with KaCs launch, the quest is no longer required to OTK and its popularity has taken another hit. The bigest winners in terms of Death Knights have been Deathstalker Rexxar and Bloodreaver Guldan, with plenty of tools for Control Warlock and Minionless Hunter decks being introduced in KaC. Shadowreaper Anduin is still roughly as popular as it was but Malfurian the Pestilent took a hit with the patch x.x nerfs.
+
+## Win Rates
+
+Of course, play-rates only tell part of the story with win-rates dictating to some extend the cards that people like to play (even in launch week). The following shows the initial win-rates of the marquee cards.
+
+```{r, echo=FALSE, warning=FALSE}
+data %>%
+  inner_join(classifications, by = 'dbf_id') %>%
+  inner_join(gamesData, by = c('game_date', 'game_type')) %>%
+  inner_join(classes, by = c('dbf_id' = 'dbfId')) %>%
+  mutate(game_date = as.Date(game_date),
+         era = ifelse(game_date < '2017-05-01', 'aUNG',
+                      ifelse(game_date < '2017-09-01', 'bKFT', 'cKC')),
+         playRate = card_included_in_games_qdklw / total_games) %>%
+  filter(game_type == 30,
+         !(game_date %in% c(as.Date('2017-04-06'),
+                          as.Date('2017-08-10'),
+                          as.Date('2017-12-07')))) %>%
+  group_by(card_name, era, grp, cardClass) %>%
+  summarise(playRate = mean(playRate),
+            winRate = mean(win_rate) / 100) %>%
+  ggplot(aes(x = reorder(card_name,winRate),
+             y = winRate,
+             fill = cardClass)) +
+  geom_bar(stat = 'identity') +
+  geom_hline(yintercept = 0.5,
+             lty = 2) +
+  facet_grid(era~grp, scales = 'free_x') +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+  scale_y_continuous(labels = percent,
+                     limits = c(.35, .65), 
+                     oob = rescale_none) +
+  scale_fill_manual(values = hsColors) +
+  guides(fill = FALSE) +
+  xlab('') + ylab('Win Rate')
+
+```
+
+First of all, for those interested in "the best" legendary weapons, Val'anyr, Aluneth, Skull of the Man'ari and Rhok'delar have found decks and arechtypes with alot of play data to support the positive min-rates, and make for good crafts if you really want a legendary weapon.
+
+With respect to initial win-rates, Quests clearly took longer to refine than Death Knights and Legendary weapon lists. In the initial week, 5/9 quests had sub 50% win-rates, with the most played (The caverns Below & Fire Plumes Heart) having near 50% win rates. Death Knights and Legendary weapons on the other hand have the vast majority being viable even in the first week. This could be attributable to these cards fitting in to already existing archetypes, wheras the rotation our of 3 sets from statndard with JUG lead to greater uncertainty in vaible deck archetypes.
+
+The data showcases the beauty of launch week, with the play-rate often differing wildly from the win-rates. Rogue exhibits this heavily, with all three marquee legendaries plat-rates outperforming their win-rates.
+
+
+
