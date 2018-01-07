@@ -114,7 +114,7 @@ Please consider [downloading the deck tracker](https://hsreplay.net) or [donatin
 
 <style>
     #header_wrap {
-    background-image: url(http://www.hearthstonetopdecks.com/wp-content/uploads/2017/07/featured-knightsofthefrozenthrone.jpg);
+    background-image: url(http://www.hearthstonetopdecks.com/wp-content/themes/hstd/images/header-sm-default.jpg);
     background-size: cover;
     background-position-y: center;}
 </style>
