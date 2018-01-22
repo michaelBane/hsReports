@@ -1,3 +1,7 @@
+## [Dec 2017: Quests vs. DKs vs. Leg. Weapons](https://clips.twitch.tv/CrowdedCharmingSaladPRChase)
+
+<iframe src="https://clips.twitch.tv/embed?clip=CrowdedCharmingSaladPRChase" frameborder="0" allowfullscreen="true" height="378" width="620"></iframe>
+
 ## [Dec 2017: Quests vs. DKs vs. Leg. Weapons](https://hsreplay.net/articles/35/quests-death-knights-and-legendary-weapons-showdown)
 
 Now that the Year of the Mammoth is in its twilight, it seems natural to ask the question of which set had the biggest impact on the meta during their respective launch windows, and what do they look like now? The following constitutes our Quests vs. Death Knights vs. Legendary Weapons showdown!
