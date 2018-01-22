@@ -1,6 +1,8 @@
-## [Dec 2017: Quests vs. DKs vs. Leg. Weapons](https://clips.twitch.tv/CrowdedCharmingSaladPRChase)
+## [Jan 2017: HCT Grand Final Shoutout](https://clips.twitch.tv/CrowdedCharmingSaladPRChase)
 
-<iframe src="https://clips.twitch.tv/embed?clip=CrowdedCharmingSaladPRChase" frameborder="0" allowfullscreen="true" height="378" width="620"></iframe>
+During game one of the 2017 Hearthstone World Championship tour Grand Final, The article "The Keleseth Effect" was referenced by the casters. Peak viewership for the match was 147k people.
+
+<iframe src="https://clips.twitch.tv/embed?clip=CrowdedCharmingSaladPRChase" frameborder="0" allowfullscreen="true" height="378" width="620" autoplay=false></iframe>
 
 ## [Dec 2017: Quests vs. DKs vs. Leg. Weapons](https://hsreplay.net/articles/35/quests-death-knights-and-legendary-weapons-showdown)
 
