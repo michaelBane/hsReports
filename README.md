@@ -1,4 +1,11 @@
-## [Jan 2017: HCT Semi-Final Shoutout](https://clips.twitch.tv/CrowdedCharmingSaladPRChase)
+## [Feb 2018: Patch 10.2 in Numbers](https://articles.hsreplay.net/2018/02/14/patch-10-2-and-the-dead-of-neutral-stone/)
+
+Strong neutral cards can be very beneficial for the game as they represent high value crafts and excellent build-around opportunities. However if too powerful, they can lead to a lack of class identity and repetitious gameplay. In late January, Blizzard announced a set of nerfs to a number neutral cards which had found their way into many decks across multiple classes.
+
+<blockquote class="reddit-card"><a href="https://www.reddit.com/r/hearthstone/comments/7xjdsf/patch_102_nerfs_the_most_affected_decks/?ref=share&ref_source=embed">Patch 10.2 Nerfs: The Most Affected Decks - HSReplay.net</a> from <a href="http://www.reddit.com/r/hearthstone">r/hearthstone</a></blockquote>
+<script async src="//embed.redditmedia.com/widgets/platform.js" charset="UTF-8"></script>
+
+## [Jan 2018: HCT Semi-Final Shoutout](https://clips.twitch.tv/CrowdedCharmingSaladPRChase)
 
 During game one of the first semi-final of the 2017 Hearthstone World Championship, The article "The Keleseth Effect" was referenced by the casters. Peak viewership for the day was 147k people.
 
