@@ -9,7 +9,7 @@ Strong neutral cards can be very beneficial for the game as they represent high 
 
 During game one of the first semi-final of the 2017 Hearthstone World Championship, The article "The Keleseth Effect" was referenced by the casters. Peak viewership for the day was 147k people.
 
-<iframe src="https://clips.twitch.tv/embed?clip=CrowdedCharmingSaladPRChase" frameborder="0" allowfullscreen="true" height="378" width="620" autoplay="false"></iframe>
+<iframe src="https://clips.twitch.tv/embed?clip=CrowdedCharmingSaladPRChase&autoplay=false" frameborder="0" allowfullscreen="true" height="378" width="620"></iframe>
 
 ## [Dec 2017: Quests vs. DKs vs. Leg. Weapons](https://hsreplay.net/articles/35/quests-death-knights-and-legendary-weapons-showdown)
 
