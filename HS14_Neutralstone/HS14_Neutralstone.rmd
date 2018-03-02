@@ -1,0 +1,188 @@
+---
+title: 'Shaking up the Meta: Patch 7.1'
+output:
+  html_document: default
+  html_notebook: default
+---
+
+
+Strong neutral cards can be very beneficial for the game as they represent high value crafts and excellent build-around opportunity (Old Gods anyone?). However if too powerful, they can lead to a lack of class identity and repetitious gameplay. The popularity and strength of neutral cards in Cobalds and Catacombs lead to the game being labeled "Neutral-Stone" by some, with top players even reaching top ranks with purely neutral based decks.
+
+In late January, [Blizzard announced a set of nerfs](https://playhearthstone.com/en-us/blog/21361570) to primarily neutral cards which had found their way into a number of decks across multiple classes. The changes are summarised below.
+
+* [Patches the Pirate](): Charge removed.
+* [Raza the Unchained](): Hero power cost reduction from (0) to (1).
+* [Bonemare](): From (7) to (8) mana.
+* [Corridor Creeper](): From 5 to 3 attack.
+
+The following article looks at the effect of these nerfs, in particular the relative play rate of neutral cards. Specifically, in a similar fashion to out [7.1 analyis](https://articles.hsreplay.net/2017/03/13/shaking-up-the-meta-patch-7-1-in-numbers/), we analyzed over 200 million plays of cards played in the 4 days immediately preceding and proceeding patch 10.2, to gather the cards with the lowest and highest relative play rate after the nerfs.
+
+## The end of Neutral-stone
+
+Since most of the cards impacted were neutral, it seems reasonable that the neutral play rate would decrease. **The data suggests that prior to patch 10.2, roughly 1/3 (32.1%) cards played in games of Hearthstone were neutral. The play rate of neutrals has since reduced to 1/4 (25.8%), a significant decrease**. It should be noted, Patches summons aren't included. 
+
+The below shows the relative play rates of neutral cards pre- vs. post-patch.
+
+![Rplot](/content/images/2018/02/Rplot.png)
+
+Since the changes, [Patches the Pirate]() and [Corridor Creeper]() are seeing around a 15x reduction in play-rate (and therefore summon rate for Patches), implying their essentially nuked from orbit. Despite not being directly affected [Southsea Deckhand]() has suffered a similar fate. [Golaka Crawler]() is seeing alot less play since Pirates have become far less impact-full. [Bonemare]() is the best off of the directly impacted cards but it didn't really have a place in the standard pre-nerf meta game anyway.
+
+# Big winners and Losers
+
+As direct changes are made to meta-defining cards, the entire meta shifts resulting in each and every cards becoming more or less playable. The image below shows the cards which were most adversely affected by the nerfs, i.e. the cards which are seeing less play (this time cut by the class of the player).
+
+![HS12_Fig2](/content/images/2018/02/HS12_Fig2.png)
+
+Perhaps unsurprisingly, Corridor Creeper features heavily. The top half of the list shows the card being cut from Rogue, Hunter, Mage, Druid, Warlock and Priest, reflective of the sheer power of the card previously.
+
+The greatest impact appears to be in Rogue, which commonly played all of the nerfed neutral cards. Tempo Rogue appears to be a thing of the past, at least in this form. The nerfs appear to have addressed the power level of Prince Keleseth (at least in Rogue), which was a [point of contention amongst the community](https://articles.hsreplay.net/2017/11/03/the-keleseth-effect/). Aggro Druid also features heavily on the list, which relied on neutral pirates for token generation. Finally, given the direct nerf to Raza the Chained, Highlander Priest has also taken a hit.
+
+![HS14_Fig3](/content/images/2018/02/HS14_Fig3.png)
+
+Looking at the cards that have been boosted the most by the changes, the nearly forgotten card [Potion of Polymorph]() sits at the top. Given the incredible power of silence removal effect vs. the meta dominating Control and Cube Warlock archetypes, players are doing anything to get more of them. Players are clearly confident in their ability to predict plays from these archetpyes, opeining up the tantailizing prospect of new forms of counter-play.
+
+Paladin, appears to have reverted to the Murloc archetypes which were strong in Journey to Ungoro, with the addition of [Call to Arms]() boosting the deck to [the top of the meta](). Interestingly, Demons and Demon synergizing cards have also seen a boost, with more aggresive zoolock varieties becoming more prominent. Hunter secrets are also seeing a resurgence, and Rogue looks to be reverting back to Miracle based decks encorperating [Gatgetzan Auctioneer](). Finally, Mage has seen a re-surgence, particulaly the tempo and secret based decks. A classic, [Pyroblast]() seems to be having renewed impact as players look to bypass big taunts like [Voidlord]().
+
+So there you have it. Thus far the nerfs have had a few really positive impacts, namely
+* 
+
+
+
+
+
+
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+library(dplyr)
+library(ggplot2)
+library(tidyr)
+library(scales)
+library(jsonlite)
+
+cardsPlayedPreNerfData <- read.csv('rawData/The Dead Of Neutral Stone - Pre Patch.csv')
+cardsPlayedPostNerfData <- read.csv('rawData/The Dead Of Neutral Stone - Post Patch.csv')
+metaData <- fromJSON('https://api.hearthstonejson.com/v1/22611/enUS/cards.collectible.json')
+hsColors <- c('#FF7D0A', '#ABD473', '#69CCF0', '#F58CBA',
+              '#000000', '#FFF569', '#0070DE', '#9482C9', '#C79C6E')
+
+cardsPlayedPreNerfData %>%
+  inner_join(cardsPlayedPostNerfData,
+             by = c("player_class", "card_name", "dbfid")) %>%
+  inner_join(select(metaData, cardClass, dbfId),
+                    by = c("dbfid" = "dbfId")) %>%
+  mutate(isNeutral = cardClass == 'NEUTRAL') %>%
+  group_by(isNeutral) %>%
+  summarise(prePlays = sum(times_played.x),
+            postPlays = sum(times_played.y)) %>%
+  ungroup() %>%
+  mutate(prePlays = prePlays / sum(prePlays),
+         postPlays = postPlays / sum(postPlays))
+```
+
+
+
+```{r, , echo=FALSE, warning=FALSE, fig.height=5}
+cardsPlayedPreNerfData %>%
+  inner_join(cardsPlayedPostNerfData,
+             by = c("player_class", "card_name", "dbfid")) %>%
+  inner_join(select(metaData, cardClass, dbfId),
+                    by = c("dbfid" = "dbfId")) %>%
+  filter(cardClass == 'NEUTRAL') %>%
+  group_by(cardClass, card_name) %>%
+  summarise(prePlays = sum(times_played.x),
+            postPlays = sum(times_played.y)) %>%
+  ungroup(patch) %>%
+  mutate(prePlays = prePlays / sum(prePlays),
+         postPlays = postPlays / sum(postPlays)) %>%
+  filter(prePlays > 0.001 | postPlays > 0.001) %>%
+  mutate(delta =  postPlays / prePlays,
+         card_id = card_name) %>%
+  arrange(desc(delta)) %>%
+  head(30) %>%
+  ggplot(aes(x = reorder(card_id, delta),
+             y = delta)) +
+  geom_bar(stat = 'identity', 
+           position = 'dodge', 
+           color = 'black') +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1),
+        strip.background = element_blank(),
+        strip.text.x = element_blank()) +
+  scale_fill_manual(values = hsColors[c(1, 2, 3, 4, 5, 6, 8)]) +
+  guides(fill=FALSE, alpha=FALSE) +
+  ggtitle('Top30 cards more played post-nerf (relative to pre-nerf era)',
+          subtitle = 'Only cards with >0.1% play-rate before or after the patch considered.') +
+  xlab('') +
+  ylab('Relative Play Rate (After/Before)')
+
+```
+
+
+
+
+```{r, , echo=FALSE, warning=FALSE, fig.height=5}
+cardsPlayedPreNerfData %>%
+  inner_join(cardsPlayedPostNerfData,
+             by = c("player_class", "card_name", "dbfid")) %>%
+  group_by(player_class, card_name) %>%
+  summarise(prePlays = sum(times_played.x),
+            postPlays = sum(times_played.y)) %>%
+  ungroup(patch) %>%
+  mutate(prePlays = prePlays / sum(prePlays),
+         postPlays = postPlays / sum(postPlays)) %>%
+  filter(prePlays > 0.001 | postPlays > 0.001) %>%
+  mutate(delta = prePlays / postPlays,
+         card_id = paste(player_class, card_name, sep = ': ')) %>%
+  arrange(desc(delta)) %>%
+  head(30) %>%
+  ggplot(aes(x = reorder(card_id, delta),
+             y = delta,
+             #alpha = postPlays,
+             fill = player_class)) +
+  geom_bar(stat = 'identity', 
+           position = 'dodge', 
+           color = 'black') +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1),
+        strip.background = element_blank(),
+        strip.text.x = element_blank()) +
+  scale_fill_manual(values = hsColors[c(1, 2, 3, 4, 5, 6, 8)]) +
+  guides(fill=FALSE, alpha=FALSE) +
+  ggtitle('Top30 cards less played post-nerf (relative to pre-nerf era)',
+          subtitle = 'Only cards with >0.1% play-rate before or after the patch considered.') +
+  xlab('') +
+  ylab('Relative Play Rate (Before/After)')
+```
+
+
+```{r, echo=FALSE, warning=FALSE, fig.height=5}
+cardsPlayedPreNerfData %>%
+  inner_join(cardsPlayedPostNerfData,
+             by = c("player_class", "card_name", "dbfid")) %>%
+  group_by(player_class, card_name) %>%
+  summarise(prePlays = sum(times_played.x),
+            postPlays = sum(times_played.y)) %>%
+  ungroup(patch) %>%
+  mutate(prePlays = prePlays / sum(prePlays),
+         postPlays = postPlays / sum(postPlays)) %>%
+  filter(prePlays > 0.001 | postPlays > 0.001) %>%
+  mutate(delta = postPlays / prePlays,
+         card_id = paste(player_class, card_name, sep = ': ')) %>%
+  arrange(desc(delta)) %>%
+  head(30) %>%
+  ggplot(aes(x = reorder(card_id, delta),
+             y = delta,
+             #alpha = postPlays,
+             fill = player_class)) +
+  geom_bar(stat = 'identity', 
+           position = 'dodge', 
+           color = 'black') +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1),
+        strip.background = element_blank(),
+        strip.text.x = element_blank()) +
+  scale_fill_manual(values = hsColors[c(2, 3, 4, 5, 6, 8)]) +
+  guides(fill=FALSE, alpha=FALSE) +
+  ggtitle('Top30 cards more played post-nerf (relative to pre-nerf era)',
+          subtitle = 'Only cards with >0.1% play-rate before or after the patch considered.') +
+  xlab('') +
+  ylab('Relative Play Rate (After/Before)')
+```
+

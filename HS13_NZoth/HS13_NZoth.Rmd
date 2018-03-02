@@ -1,0 +1,62 @@
+---
+title: "A Look back at N'Zoth"
+output:
+  html_document: default
+  html_notebook: default
+---
+
+```{r setup, include=FALSE, warning=FALSE}
+library(dplyr)
+library(ggplot2)
+library(scales)
+library(tidyr)
+library(jsonlite)
+
+#options(scipen=999)
+hsColors <- c('#FF7D0A', '#ABD473', '#69CCF0', '#F58CBA', '#000000', '#FFF569', '#0070DE', '#9482C9', '#C79C6E')
+data <- read.csv("rawData/N'Zoth Spawns - Sheet1.csv")
+```
+
+Before Quests, Legendary Weapons and Death Knights. Before the Kabal and Grimmy Goons and the Jade Lotus, there were the Old Gods. Hearthstone had never seen such impactfull cards, with each of them having their turn in the limelight. Of these four gods of old, N'Zoth has arguable had the greatest utility and versatility of them all. N'Zoth is a card thats shifted with the meta-game, and made a mark across multiple archetypes in Hearthstones history. With a view to the coming rotatation, the following represents my refelection on a card that was probably the best 1600 dust investment you ever made.
+
+## N'Zoth the adaptable
+
+Being a neutral card, N'Zoth has had the chance to impact every class, and its certainly done so. But N'Zoth has never been an 'auto-include', it never just fit into any deck and never saw equal play across the classes like a Coridor Creeper or Patches. Instead, N'Zoth shifted across archetypes and classes as the meta-game called for. Unfortunatley we dont have data stretching all the way back to the cards release, however let me provide a breif rundown of the first few expansions. 
+
+At release, N'Zoth found a home primarily in Paladin, where the addition of healing tools like Forbidden Healing and Ragnaros, Lightlord allowed for a more controlling and defensive archetype. Turns out, at the time, resurecting a Tirion, Sylvanis, Cairne with a few other smaller deathrattles was enough to win games. Other classes, mainly Rogue, Hunter and Preist experimented with the card but could not match the impact of Tirion. During WotoG, N'Zoth played second fiddle to some of its counterparts, especially C'Thun.
+
+One Night in Karazhan really didnt intoduce much in the way of tools for N'Zoth either. Resurect Preist becauses popular which alowwed for multiple resummons or resurected and Barnes created minions. Players were also starting to experiment with N'Zoth in Control Warrior archetypes, as an arternative to classic finishers like Y'Sera or Gromm. So whilst the card saw some utility, it wasnt until the introduction of strong deathrattles where the card hit its stride. Fortunately, we have data for this!
+
+```{r}
+data %>%
+  unite('dt', c(year, week_of_year), sep = '-') %>%
+  group_by(dt,
+           card_class,
+           game_type) %>%
+  summarise(num_occurances = sum(num_occurances)) %>%
+  ggplot(aes(x = dt,
+             y = num_occurances,
+             fill = card_class)) +
+  geom_histogram(stat = 'identity') +
+  scale_fill_manual(values = hsColors) +
+  facet_wrap(~ game_type, scales = 'free') +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1))
+```
+
+```{r}
+data %>%
+  unite('dt', c(year, week_of_year), sep = '') %>%
+  group_by(nzoth_created_entity,
+           card_class,
+           game_type) %>%
+  summarise(num_occurances = sum(num_occurances)) %>%
+  filter(num_occurances > 10000) %>%
+  ggplot(aes(x = reorder(nzoth_created_entity, num_occurances),
+             y = num_occurances,
+             fill = card_class)) +
+  geom_histogram(stat = 'identity') +
+  scale_fill_manual(values = hsColors) +
+  coord_flip() +
+  facet_wrap(~ game_type, scales = 'free')
+```
+
