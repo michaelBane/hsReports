@@ -1,0 +1,103 @@
+---
+title: "Rotation: Community Favourites"
+output:
+  html_notebook: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+library(dplyr)
+library(ggplot2)
+library(scales)
+library(tidyr)
+library(jsonlite)
+
+options(scipen=999)
+
+hsColors <- c('#FF7D0A', '#ABD473', '#69CCF0', '#F58CBA',
+              '#000000', '#FFF569', '#0070DE', '#9482C9', '#C79C6E')
+
+data <- read.csv('rawData/Rank Floors - Kobolds - Sheet1.csv') %>%
+  filter(rank_category != 'other')
+metaData <- fromJSON('https://api.hearthstonejson.com/v1/23180/enUS/cards.collectible.json') %>%
+  select(dbfId, set)
+```
+
+```{r coarse, echo=FALSE}
+data %>%
+  inner_join(metaData, by = c('dbf_id' = 'dbfId')) %>%
+  filter(set %in% c('GANGS', 'KARA', 'OG') |
+           card_name %in% c('Ice Block',
+                            'Coldlight Oracle',
+                            'Molten Giant')) %>%
+  select(rank_category, card_name, games_played_with_card_in_deck) %>%
+  spread(rank_category, games_played_with_card_in_deck, fill = 0) %>%
+  transmute(card_name,
+            atRank = Legend + Rank5 + Rank10 + Rank15,
+            grind = GrindToLegend + GrindTo5 + GrindTo10 + GrindTo15,
+            pcAtRank = atRank / sum(atRank),
+            pcGrind = grind / sum(grind),
+            `Total Games` = atRank + grind,
+            Dankness = pcAtRank / pcGrind - 1) %>%
+  arrange(desc(`Total Games`)) %>%
+  mutate(i = 1,
+         rank = cumsum(i)) %>%
+  filter(rank <= 40) %>%
+  ggplot(aes(x = reorder(card_name, Dankness),
+             y = Dankness)) +
+  geom_bar(stat = 'identity',
+           fill = 'darkblue') +
+  scale_y_continuous(labels = scales::percent) +
+  scale_alpha_continuous(trans = 'log10') +
+  xlab('') +
+  ylab('Lift') +
+  coord_flip()
+```
+
+```{r, echo=FALSE}
+data %>%
+  inner_join(metaData, by = c('dbf_id' = 'dbfId')) %>%
+  filter(set %in% c('GANGS', 'KARA', 'OG')|
+           card_name %in% c('Ice Block',
+                            'Coldlight Oracle',
+                            'Molten Giant')) %>%
+  select(rank_category, card_name, games_played_with_card_in_deck) %>%
+  spread(rank_category, games_played_with_card_in_deck, fill = 0) %>%
+  transmute(card_name,
+            atRank = Legend + Rank5 + Rank10 + Rank15,
+            grind = GrindToLegend + GrindTo5 + GrindTo10 + GrindTo15,
+            pcAtRank = atRank / sum(atRank),
+            pcGrind = grind / sum(grind),
+            `Total Games` = atRank + grind,
+            Dankness = pcAtRank / pcGrind - 1) %>%
+  arrange(desc(Dankness)) %>%
+  filter(`Total Games` > 5000) %>%
+  mutate(i = 1,
+         rank = cumsum(i)) %>%
+  filter(rank <= 40) %>%
+  ggplot(aes(x = reorder(card_name, Dankness),
+             y = Dankness)) +
+  geom_bar(stat = 'identity',
+           fill = 'darkblue') +
+  scale_y_continuous(labels = scales::percent) +
+  scale_alpha_continuous(trans = 'log10') +
+  xlab('') +
+  ylab('Lift') +
+  coord_flip()
+```
+
+
+OTK Warlock - https://www.hearthpwn.com/decks/1037208-crazy-otk-controlock
+OTK Preist
+Renounce Lock
+Control Shaman
+Weasel Preist
+Jade Shaman / Rogue
+OTK Paladin
+
+Freeze Mage
+Caverns Rogue
+Weapon Rogue
+Ctrl Mage
+Quest Mage
+
