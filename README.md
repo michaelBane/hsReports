@@ -1,3 +1,10 @@
+## [Mar 2018: 9 Fun Decks To Play Before Rotation](https://articles.hsreplay.net/2018/03/06/8-decks-to-try-before-rotation-ranked-floor-analysis/)
+
+Rotations can be a bittersweet affair. They spice up the meta, and while the sentiment towards them is usually overwhelmingly positive, players will often lament the loss of their old favorites. The following article uses the ranked floor lift methodology for quantifying fun in Hearthstone to estimate which rotating cards will be missed most and which decks you should try before the rotation.
+
+<blockquote class="reddit-card" data-card-created="1520384646"><a href="https://www.reddit.com/r/hearthstone/comments/82iw5a/nine_fun_decks_to_play_before_rotation_hsreplaynet/?ref=share&ref_source=embed">Nine Fun Decks To Play Before Rotation - HSReplay.net</a> from <a href="http://www.reddit.com/r/hearthstone">r/hearthstone</a></blockquote>
+<script async src="//embed.redditmedia.com/widgets/platform.js" charset="UTF-8"></script>
+
 ## [Feb 2018: Patch 10.2 in Numbers](https://articles.hsreplay.net/2018/02/14/patch-10-2-and-the-dead-of-neutral-stone/)
 
 Strong neutral cards can be very beneficial for the game as they represent high value crafts and excellent build-around opportunities. However if too powerful, they can lead to a lack of class identity and repetitious gameplay. In late January, Blizzard announced a set of nerfs to a number neutral cards which had found their way into many decks across multiple classes.
