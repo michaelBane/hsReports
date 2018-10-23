@@ -1,0 +1,49 @@
+---
+title: "Millhouse"
+output:
+  html_notebook: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+library(dplyr)
+library(ggplot2)
+library(scales)
+library(tidyr)
+library(jsonlite)
+
+hsColors <- c('#FF7D0A', '#ABD473', '#69CCF0', '#F58CBA',
+              '#000000', '#FFF569', '#0070DE', '#9482C9', '#C79C6E')
+
+url <- 'https://hsreplay.net/api/v1/archetypes/?format=json'
+archetypes <- fromJSON(url) %>%
+   select(id, name, player_class_name)
+
+data <- read.csv('apr.csv')
+
+```
+
+
+```{r}
+data %>%
+  mutate(ï..gameplayed = as.numeric(as.character(ï..gameplayed)),
+          archetype_id = as.integer(as.character(archetype_id))) %>%
+  group_by(postnerf) %>%
+  mutate(normGames = ï..gameplayed / sum(ï..gameplayed, na.rm = TRUE)) %>%
+  select(-ï..gameplayed) %>%
+  spread(postnerf, normGames) %>%
+  mutate(diff = `TRUE` / `FALSE`) %>%
+  inner_join(archetypes, by = c('archetype_id' = 'id')) %>%
+  filter(`FALSE` > 0.01 | `TRUE` > 0.01) %>%
+  ggplot(aes(x = reorder(name, diff),
+             y = log10(diff),
+             fill = player_class_name)) +
+  geom_bar(stat = 'identity') +
+  geom_hline(yintercept = 0,
+             lty = 2,
+             color = 'red') +
+  coord_flip() +
+  scale_fill_manual(values = hsColors) +
+  xlab('') + ylab('Relative improvement in Play-Rate') +
+  guides(fill = FALSE)
+```

@@ -1,0 +1,21 @@
+SELECT 		SUM(total_plays) as plays,
+       		turn,
+       		cps.game_type,
+       		case 
+       		  when c.type = 10 then f_enum_name('CardClass', c.card_class)
+       		  when c.name = 'The Coin' then 'The Coin'
+       		  else 'Other'
+       		end AS play_category
+FROM   		card_played_stats cps
+JOIN   		card c on c.dbf_id = cps.dbf_id
+WHERE  		cps.game_date >= '2018-10-13'
+AND         cps.rank < 5
+AND			cps.game_type in (2, 3, 30)
+GROUP BY 	cps.turn, 
+  			cps.game_type,
+			case 
+       		  when c.type = 10 then f_enum_name('CardClass', c.card_class)
+       		  when c.name = 'The Coin' then 'The Coin'
+       		  else 'Other'
+       		end
+-- HAVING		plays > 10000

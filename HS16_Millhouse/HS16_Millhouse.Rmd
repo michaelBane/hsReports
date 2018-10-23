@@ -1,0 +1,100 @@
+---
+title: "Millhouse"
+output:
+  html_notebook: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+library(dplyr)
+library(ggplot2)
+library(scales)
+library(tidyr)
+library(jsonlite)
+
+options(scipen=999)
+
+hsColors <- c('#FF7D0A', '#ABD473', '#69CCF0', '#F58CBA',
+              '#000000', '#FFF569', '#0070DE', '#9482C9', '#C79C6E')
+
+data <- read.csv('rawData/millHouse.csv')
+topPlays <- read.csv('rawData/topPlays.csv')
+metaData <- fromJSON('https://api.hearthstonejson.com/v1/23180/enUS/cards.collectible.json') %>%
+  select(dbfId, set)
+```
+
+```{r coarse, echo=FALSE}
+data %>%
+  ggplot(aes(x = cst,
+             y = games,
+             fill = f_enum_name)) +
+  geom_bar(stat = 'identity',
+           color = 'black') +
+  facet_wrap(~ f_enum_name, 
+             scales = 'free_y',
+             ncol = 3) +
+  xlim(0, 40) +
+  guides(fill = FALSE) +
+  scale_fill_manual(values = hsColors) +
+  xlab('Un-discounted cost of Spells Played') +
+  ylab('Games')
+```
+
+```{r, echo=FALSE}
+topPlays %>%
+  filter(rk == 1)
+
+data
+```
+
+cst	game_id	shortid	card_class	rk
+62	589,198,171	nsXNiZoFTgPfQ4eWFuMoqH	9	1
+49	513,320,015	5fTvJshv35BZVnKQfa7WaT	9	2
+48	553,997,340	hG2yDYCrkGaLcVZYfjd7QV	9	3
+48	584,643,496	A8sHRJWpePchqYM3dJDHGE	9	4
+44	634,185,088	Pvf2sMJsDkLKz9jPDeqbHP	9	5
+44	567,329,108	zjoveyXSiHhpRNf8DGvuwA	9	6
+44	587,154,020	nxDQZmke9uoijGkH7B8P8d	9	7
+41	596,647,459	s2te4cZJB7f7QMgAuEZXsJ	9	8
+40	544,221,110	f8Rv9rNtZFjwhdynr2Zmza	9	9
+40	624,850,389	cJwHxE4LkUzQe8hBNYVnEN	9	10
+39	618,711,387	z8QHtHUYSt3xhxm5L9kHaf	9	11
+39	628,142,565	ZLBKFyowTk2SbCz7F8hmAF	9	12
+39	603,119,118	6KXuyBYRUXdECFcande727	9	13
+37	625,339,807	4FyM3YnWnEzBQ4KbSjRC3R	9	14
+37	587,257,879	QUikFmhL4mZBsxkqCu84GW	9	15
+37	566,342,607	NXsuvQevBAhrrLM7AjYPyA	9	16
+35	568,476,556	c2xEeH6iFQfrSvGTRrEpVM	9	17
+35	636,331,397	qxhwBSv9GXu2XYF45ryN7M	9	18
+35	490,903,393	fjeN9tXVJtf4BBtqaA86RT	9	19
+35	490,286,697	AMozsdCXeeCaFaskayYdrk	9	20
+35	619,529,099	qY3s57yJPfm2a5n4YRCxij	9	21
+35	541,108,014	8YVFhtsRtGrgTFr7i45nhj	9	22
+35	540,722,032	yfY6bJH5t3i7c3LBEiTErk	9	23
+34	616,365,564	6ydY64QCxgiybPrRGco5RV	9	24
+34	491,375,561	4MMNEUsvc85s9ry7UaeTiJ	9	25
+34	592,609,810	sJntG9AqYezWvbn96RZNb7	9	26
+34	636,659,096	yC2ukgh63jBNEVGy5zKrdi	9	27
+34	506,225,192	DyPcto3oZNtoG7HxDHVncF	9	28
+33	529,281,532	Y95mPHLiZ8LXpkKnBbVdtF	9	29
+33	594,992,769	a4K7bjhrbCz4EYqScTkz6L	9	30
+33	617,140,722	nekReh5TSEV9WQPRiXRs28	9	31
+33	589,486,020	HXgQtnckfpzJMEpWUeVg6a	9	32
+33	579,235,673	txgKLQP98SoG3G2T4KBuFT	9	33
+33	554,201,755	3VgMDxk5PEVd7x5JNohxuV	9	34
+33	520,836,062	3pFjmM7DE3Sb8icRDd3yCG	9	35
+33	587,799,751	ksmYiHNcVZLP3Nps8R7mSc	9	36
+33	636,107,512	VEiGAeLM4rhp4ZY2tCFWkX	9	37
+33	508,007,318	WyvoHJmbAWjywTKkfTvkTG	9	38
+33	602,825,830	8MQgE33EHiLUtqx4CoPvZA	9	39
+33	571,779,031	mWRjEZKBUnBkjKYEoYHMZ5	9	40
+32	518,228,364	ieW33W4KJaqhVS9KNWgMi6	9	41
+32	580,059,081	w94aFBv7syXdPatrDZtarc	9	42
+31	528,374,625	5yNEWVCcC5uJwozCyQZuqF	9	43
+31	544,534,138	Uuf3weBUiTJyP5XAV7zxr8	9	44
+31	494,781,033	4RSYBBorvQAdhfk5c66aza	9	45
+31	491,318,204	BqafvPNBXMVjVziGNc7RyE	9	46
+31	626,622,444	M98LDLTzbCQsLDQ86BTmgf	9	47
+31	612,753,073	3qsk3LiqFCm3oP3nL9bBQd	9	48
+31	600,197,079	7wDny2hKR6ZkYaJm5fkza4	9	49
+31	620,863,541	njNzqKorBUDD9LuveP3JED	9	50

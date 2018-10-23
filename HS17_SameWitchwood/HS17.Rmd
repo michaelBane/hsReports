@@ -1,0 +1,82 @@
+---
+title: "Millhouse"
+output:
+  html_notebook: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+library(dplyr)
+library(ggplot2)
+library(scales)
+library(tidyr)
+library(jsonlite)
+
+hsColors <- c('#FF7D0A', '#ABD473', '#69CCF0', '#F58CBA',
+              '#000000', '#FFF569', '#0070DE', '#9482C9', '#C79C6E')
+
+tableauColors <- rep(c('#1F77B4', '#FF7F0E', '#2CA02C', '#D62728', '#9467BD', 
+                       '#8C564B', '#E377C2', '#7F7F7F', '#BCBD22', '#17BECF',
+                       '#AEC7E8', '#FFBB78', '#98DF8A', '#FF9896', '#C5B0D5',
+                       '#C49C6E', '#F7B6D2', '#C7C7C7', '#DBDB8D', '#9EDAE5'), 10)
+
+releases <- c(as.Date('2017-04-06'),
+              as.Date('2017-08-10'),
+              as.Date('2017-07-11'),
+              as.Date('2017-12-07'),
+              as.Date('2018-01-29'),
+              as.Date('2018-04-11'))
+
+releasesComment <- c("Un'Goro Release",
+                     'Frozen Throne Release',
+                     'Caverns Below Nerf',
+                     "Kobolds and Katacombs Launch",
+                     "Creeper Nerf",
+                     "Witchwood Release")
+
+sets <- c('GILNEAS',
+          'LOOTAPALOOZA',
+          'ICECROWN',
+          'UNGORO',
+          'GANGS',
+          'KARA',
+          'OG',
+          'EXPERT1',
+          'CORE')
+
+data <- read.csv('rawData/rawData.csv')
+dataWild <- read.csv('rawData/rawDataWild.csv')
+```
+
+```{r coarse, echo=FALSE}
+dataWild %>%
+  mutate(game_date = as.Date(game_date, '%d/%m/%Y'),
+         total_plays = as.numeric(gsub(',', '', ï..total_plays)),
+         `Card Set` = card_set) %>%
+  filter(#`Card Set` %in% sets,
+         game_date >= as.Date('2017-04-06')) %>%
+  ggplot() +
+  geom_bar(aes(x = game_date,
+               y = total_plays,
+               fill = `Card Set`),
+           stat = 'identity', 
+           width = 1,
+           position = 'fill') +
+  geom_vline(xintercept = as.numeric(releases),
+             lty = 2) +
+  geom_text(data = data.frame(releases = releases + 2,
+                              releasesComment = releasesComment),
+            aes(x = releases,
+                y = 0.15,
+                label = releasesComment),
+            angle = 90,
+            size = 2) +
+  scale_fill_manual(values = tableauColors) +
+  scale_y_continuous(labels = percent) +
+  ylab('Share of Play') +
+  xlab('Game Date')
+
+```
+
+
+
